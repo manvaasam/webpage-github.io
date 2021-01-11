@@ -8,7 +8,7 @@ FILE STRUCTURE:
 NOTE : OTHER image used in footer are in "image/otherlogo".
 
 Home page:
-	1) HTML   - home.html
+	1) HTML   - index.html
 	2) images - image/home
 PRODUCT Page:
 	1)HTML    -product.html
