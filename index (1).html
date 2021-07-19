@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./image/fav_icon.png" type="image/png" />
+    <title>Manvaasam</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.001.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body style="overflow-x: hidden">
+    <nav class="shadow-sm navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="aboutus.html"><img class="logo" src="./image/manvasam_logo1.png" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link px-3" href="index.html">
+                            <div class="tab-text">Home</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="product.html">
+                            <div class="tab-text">Products</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="gallery.html">
+                            <div class="tab-text">Gallery</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="course.html">
+                            <div class="tab-text">Courses</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="aboutus.html">
+                            <div class="tab-text">About&nbsp;us</div>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link px-3 dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Login
+                        </a>
+                        <div style="right: 0" class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                            <a class="dropdown-item" href="loginindex.php">Student Login</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="Mindex.html">Manvaasam Login</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li>
+                        <a class="nav-link"
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSdU3temNU7_tPoLRX__95b2Tdbw9frmZGswBFFx5AAM4tmZuA/viewform"
+                            target="_blank">
+                            <button class="btn btn-success btn-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    aria-hidden="true" focusable="false" width="0.8rem" height="0.8rem"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2S7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z"
+                                        fill="#fff" />
+                                </svg>
+                                Join with us
+                            </button>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="https://chat.whatsapp.com/L419in2xs11E02ga8UTN2u" target="_blank">
+                            <button class="btn btn-success btn-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem"
+                                    viewBox="0 0 448 512">
+                                    <path
+                                        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222c0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222c0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4l-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2c0-101.7 82.8-184.5 184.6-184.5c49.3 0 95.6 19.2 130.4 54.1c34.8 34.9 56.2 81.2 56.1 130.5c0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18c-5.1-1.9-8.8-2.8-12.5 2.8c-3.7 5.6-14.3 18-17.6 21.8c-3.2 3.7-6.5 4.2-12 1.4c-32.6-16.3-54-29.1-75.5-66c-5.7-9.8 5.7-9.1 16.3-30.3c1.8-3.7.9-6.9-.5-9.7c-1.4-2.8-12.5-30.1-17.1-41.2c-4.5-10.8-9.1-9.3-12.5-9.5c-3.2-.2-6.9-.2-10.6-.2c-3.7 0-9.7 1.4-14.8 6.9c-5.1 5.6-19.4 19-19.4 46.3c0 27.3 19.9 53.7 22.6 57.4c2.8 3.7 39.1 59.7 94.8 83.8c35.2 15.2 49 16.5 66.6 13.9c10.7-1.6 32.8-13.4 37.4-26.4c4.6-13 4.6-24.1 3.2-26.4c-1.3-2.5-5-3.9-10.5-6.6z"
+                                        fill="#fff" />
+                                </svg>
+                                WhatsApp Group
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-video-wrap">
+        <video src="./assets/videos/bg_autoplay_3.mp4" loop muted autoplay></video>
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="heroWrap-content">
+                <h2>FARMER'S BEST FRIENDS</h2>
+                <h1>Manvaasam</h1>
+                <p>We are the friend's of farmers. Our mission is to plant 100k tree before 2023
+                </p>
+                <a href="aboutus.html">
+                  <span class="btn btn-outline-white myPrimary">ABOUT US</span>
+                </a>
+              </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="flex-center my-5">
+            <div class="box">
+                <svg class="fa2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="1rem" height="1rem" viewBox="0 0 1664 1408"><path d="M768 832v384q0 80-56 136t-136 56H192q-80 0-136-56T0 1216V512q0-104 40.5-198.5T150 150T313.5 40.5T512 0h64q26 0 45 19t19 45v128q0 26-19 45t-45 19h-64q-106 0-181 75t-75 181v32q0 40 28 68t68 28h224q80 0 136 56t56 136zm896 0v384q0 80-56 136t-136 56h-384q-80 0-136-56t-56-136V512q0-104 40.5-198.5T1046 150t163.5-109.5T1408 0h64q26 0 45 19t19 45v128q0 26-19 45t-45 19h-64q-106 0-181 75t-75 181v32q0 40 28 68t68 28h224q80 0 136 56t56 136z" fill="#fff"/></svg>
+                <div class="text">
+                    <svg class="fa1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="1rem" height="1rem" viewBox="0 0 1664 1408"><path  d="M768 192v704q0 104-40.5 198.5T618 1258t-163.5 109.5T256 1408h-64q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h64q106 0 181-75t75-181v-32q0-40-28-68t-68-28H192q-80 0-136-56T0 576V192q0-80 56-136T192 0h384q80 0 136 56t56 136zm896 0v704q0 104-40.5 198.5T1514 1258t-163.5 109.5T1152 1408h-64q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h64q106 0 181-75t75-181v-32q0-40-28-68t-68-28h-224q-80 0-136-56t-56-136V192q0-80 56-136t136-56h384q80 0 136 56t56 136z" fill="#fff"/></svg>
+                    <div>
+                        <h2 style="font-weight: bold;" class="pb-2">
+                            QUOTE OF THE DAY
+                        </h2>
+                        <h4>
+                            “As long as there’s a few farmers out there, we’ll keep fighting for them.”
+                        </h4>
+                        <p style="text-align: right;">
+                            - Willie Nelson
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- <h2>
+            </h2>
+            <br><br>
+            <h3>To make a change ,be a Manvaasamist</h3> -->
+        </div>
+        <div class="row p-3" style="
+            background: #90d156;
+            border-radius: 100px 0px 100px 0px;
+            box-shadow: 0 4px 8px 0 #3d3d3d;
+          ">
+            <div class="col-sm-6 flex-center">
+                <img src="./image/home/demo_interview.jpeg" alt="demo_interview" class="img-fluid"
+                    style="width: 80%; height: 80%; padding: 4%" />
+            </div>
+            <div class="col-sm-6">
+                <div class=" flex-center">
+                    <div>
+
+                    <div class="text-center">
+                        <h2>DEMO INTERVIEW</h2>
+                        <h3>"Overcome your fear about interviews"</h3>
+                    </div>
+                    <h3>Process Flow:-</h3>
+                    <ol class="small">
+                        <li>Fill this Demo Interview Form</li>
+                        <li>Schedule your available Timing(30 minutes)</li>
+                        <li>
+                            Demo Interview Link will be shared via mail/Phone once payment
+                            is completed.
+                        </li>
+                        <li>Upload the Screenshot of Payment while Registration</li>
+                        <li>Feed backs will be shared at the end of the meet.</li>
+                    </ol>
+                    <br />
+                    <div class="text-center">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfyt21exsn0OtuFcaF4TtngpT6RuaYDWvFLk0o6EQ4yH8Vgqg/viewform"
+                            target="_blank"><button class="btn btn-primary mt-6">Book Your Slot</button></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="row py-4">
+            <div class="col-sm-6">
+                <img src="./image/manvasam_logo1.png" style="width: 80%; height: 175px" />
+            </div>
+            <div class="col-sm-6 text-center">
+                <div class="flex-center">
+                    <h2>Be a part of Manvaasam,for a change</h2>
+                </div>
+            </div>
+        </div>
+        <div class="py-5 text-center">
+            <h2>
+                We will Plant a sapling on your birthday and maintain it for lifelong
+                on behalf of you
+            </h2>
+            <div class="text-center">
+                <a href="https://docs.google.com/forms/d/1gW1NGolizN5DoeJ6cbmMNRNJXTNExdSIsSYM9BYl3Mc/viewform?edit_requested=true"
+                    target="_blank" class="btn btn-success wow animate__heartBeat animate__slower">Tell you Birth Day</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="jumbotron" style="
+        margin-bottom: 0;
+        background: #90d156;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 50px 50px 10px 10px;
+      ">
+        <div class="row">
+            <div class="col-sm-6">
+                <div style="margin-left: 15%; padding: 5%">
+                    <a href="tel:6380091001"><img style="width: 25px; margin-right: 2%; margin-left: 2%"
+                            src="./image/otherlogo/whatsapp.png" /></a>
+                    +91 6380091001<br />
+                    <a href="mailto:training@manvaasam.com"><img style="width: 25px; margin-left: 2%; margin-right: 2%"
+                            src="./image/otherlogo/gmail.png" /></a>training@manvaasam.com
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div style="margin-top: 5%">
+                    <center>
+                        <a href="https://manvaasamteam.wordpress.com/2021/02/24/a-gratitude-note/"><img target="_blank"
+                                style="width: 35px; margin-right: 8%" src="./image/otherlogo/blog.png" /></a>
+                        <a href="https://www.linkedin.com/in/manvaasam-team-/"><img
+                                style="width: 35px; margin-right: 8%" target="_blank"
+                                src="./image/otherlogo/linkedin.png" /></a>
+                        <a href="https://www.facebook.com/107974564140846/posts/133516268253342/?substory_index=0"><img
+                                target="_blank" style="width: 35px; margin-right: 8%"
+                                src="./image/otherlogo/fb.png" /></a>
+                        <a href="https://www.instagram.com/manvaasam_/"><img style="width: 35px; margin-right: 8%"
+                                target="_blank" src="./image/otherlogo/insta.png" /></a>
+                        <a href="https://www.youtube.com/channel/UCTybxerFOmv86ekeIO1hUQw"><img style="width: 45px"
+                                target="_blank" src="./image/otherlogo/youtube.png" /></a><br />
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
