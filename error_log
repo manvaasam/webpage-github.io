@@ -202,3 +202,24 @@ Stack trace:
 [13-Jul-2021 23:24:24 America/Boise] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home4/manvaasa/public_html/login.php on line 28
 [13-Jul-2021 23:24:46 America/Boise] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home4/manvaasa/public_html/login.php on line 28
 [13-Jul-2021 23:24:57 America/Boise] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home4/manvaasa/public_html/login.php on line 28
+[12-Aug-2021 08:32:02 America/Boise] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home4/manvaasa/public_html/adminlogin.php on line 28
+[12-Aug-2021 08:32:37 America/Boise] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home4/manvaasa/public_html/adminlogin.php on line 28
+[12-Aug-2021 08:33:32 America/Boise] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home4/manvaasa/public_html/Mlogin.php on line 28
+[12-Aug-2021 08:33:52 America/Boise] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home4/manvaasa/public_html/login.php on line 28
+[12-Aug-2021 08:34:08 America/Boise] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home4/manvaasa/public_html/login.php on line 28
+[12-Aug-2021 08:34:39 America/Boise] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home4/manvaasa/public_html/adminlogin.php on line 28
+[12-Aug-2021 08:34:52 America/Boise] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home4/manvaasa/public_html/adminlogin.php on line 28
+[15-Aug-2021 02:24:22 America/Boise] PHP Parse error:  syntax error, unexpected '<' in /home4/manvaasa/public_html/track.php on line 172
+[15-Aug-2021 02:24:38 America/Boise] PHP Parse error:  syntax error, unexpected '<' in /home4/manvaasa/public_html/track.php on line 172
+[15-Aug-2021 02:25:19 America/Boise] PHP Parse error:  syntax error, unexpected '<' in /home4/manvaasa/public_html/track.php on line 172
+[15-Aug-2021 02:32:12 America/Boise] PHP Parse error:  syntax error, unexpected 'color' (T_STRING), expecting ';' or ',' in /home4/manvaasa/public_html/track.php on line 172
+[15-Aug-2021 02:32:21 America/Boise] PHP Parse error:  syntax error, unexpected 'color' (T_STRING), expecting ';' or ',' in /home4/manvaasa/public_html/track.php on line 172
+[15-Aug-2021 02:37:04 America/Boise] PHP Parse error:  syntax error, unexpected 'color' (T_STRING), expecting ';' or ',' in /home4/manvaasa/public_html/track.php on line 174
+[15-Aug-2021 02:37:16 America/Boise] PHP Parse error:  syntax error, unexpected 'color' (T_STRING), expecting ';' or ',' in /home4/manvaasa/public_html/track.php on line 174
+[15-Aug-2021 02:37:23 America/Boise] PHP Parse error:  syntax error, unexpected 'color' (T_STRING), expecting ';' or ',' in /home4/manvaasa/public_html/track.php on line 174
+[15-Aug-2021 02:38:18 America/Boise] PHP Parse error:  syntax error, unexpected 'color' (T_STRING), expecting ';' or ',' in /home4/manvaasa/public_html/track.php on line 174
+[15-Aug-2021 02:39:48 America/Boise] PHP Parse error:  syntax error, unexpected 'color' (T_STRING), expecting ';' or ',' in /home4/manvaasa/public_html/track.php on line 174
+[15-Aug-2021 02:41:15 America/Boise] PHP Parse error:  syntax error, unexpected 'collapse' (T_STRING), expecting ';' or ',' in /home4/manvaasa/public_html/track.php on line 174
+[15-Aug-2021 02:42:17 America/Boise] PHP Parse error:  syntax error, unexpected 'margin' (T_STRING), expecting ';' or ',' in /home4/manvaasa/public_html/track.php on line 174
+[15-Aug-2021 02:42:27 America/Boise] PHP Parse error:  syntax error, unexpected 'margin' (T_STRING), expecting ';' or ',' in /home4/manvaasa/public_html/track.php on line 174
+[15-Aug-2021 07:13:33 America/Boise] PHP Parse error:  syntax error, unexpected 'color' (T_STRING), expecting ';' or ',' in /home4/manvaasa/public_html/track.php on line 174
