@@ -8,14 +8,14 @@
   <link rel="shortcut icon" href="fav_icon.png" type="image/png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Logistics Tracker</title>
-  <link rel="shortcut icon" href="./image/fav_icon.png" type="image/png">
-  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="shortcut icon" href="/image/fav_icon.png" type="image/png">
+  <link rel="stylesheet" type="text/css" href="/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
-  <link rel="stylesheet" href="./WOW-master/css/libs/animate.css">
+  <link rel="stylesheet" href="/WOW-master/css/libs/animate.css">
   <script>
     new WOW().init();
   </script>
@@ -182,7 +182,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="aboutus.html"><img class="logo" src="./image/manvasam_logo1.png"></a>
+        <a class="navbar-brand" href="aboutus.html"><img class="logo" src="/image/manvasam_logo1.png"></a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav " style="margin-top:1%;margin-bottom:1%">
