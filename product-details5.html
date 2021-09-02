@@ -45,11 +45,11 @@
       <div class="col-2">
         <p>Product / Growbags</p>
         <h2 id="ProductName">Manvaasam Growbags</h2>
-        <h4 id="orderprice">Rs. 181.00</h4>
+        <h4 id="orderprice">Rs. 50.00 + Shipping fee*</h4>
         <select onchange="changevalue()" id="ordersize" name="size" required>
-          <option value="small" selected>Small</option>
-          <option value="medium">Medium</option>
-          <option value="large">Large</option>
+          <option value="small" selected>Small (4 x 6)</option>
+          <option value="medium">Medium(15 x 15)</option>
+          <option value="large">Large(18 x 24)</option>
         </select>
         <input type="number" id="ordercount" value="1" onchange="changevalue()" name="count" required />
         <input type="hidden" name="product" value="manvaasam_cocopeate">
@@ -146,17 +146,17 @@
       var orderprice = document.getElementById('orderprice')
       var orderimg = document.getElementById('ProductImg')
       if (ordersize == 'small') {
-        orderprice.innerHTML = 'Rs. ' + (181 * ordercount)
+        orderprice.innerHTML = 'Rs. ' + (50 * ordercount) +' + Shipping fee*'
         orderimg.src = 'image/products/growbag.jpeg'
 
       }
       else if (ordersize == 'medium') {
-        orderprice.innerHTML = 'RS. ' + (249 * ordercount)
-        orderimg.src = 'image/products/growbags1.jpg'
+        orderprice.innerHTML = 'RS. ' + (100 * ordercount)+' + Shipping fee*'
+        orderimg.src = 'image/products/growbag.jpeg'
       }
       else {
-        orderprice.innerHTML = 'Rs. ' + (314 * ordercount)
-        orderimg.src = 'image/products/growbags2.jpg'
+        orderprice.innerHTML = 'Rs. ' + (160 * ordercount)+' + Shipping fee*'
+        orderimg.src = 'image/products/growbag.jpeg'
       }
     }
 

@@ -48,7 +48,7 @@
       <div class="col-2">
         <p>Product / Egg incubator</p>
         <h2 id="ProductName">Manvaasam Egg incubatort</h2>
-        <h4 id="orderprice">Rs. 181.00</h4>
+        <h4 id="orderprice">Rs. 3999.00 + Shipping fee*</h4>
         <form method="POST" id="submitform" action="backend/order.php">
           <input type="number" id="ordercount" value="1" onchange="changevalue()" name="count" required />
           <input type="hidden" name="product" value="manvaasam_cocopeate">
@@ -131,7 +131,7 @@
       var ordercount = document.getElementById('ordercount').value
       var orderprice = document.getElementById('orderprice')
       var orderimg = document.getElementById('ProductImg')
-      orderprice.innerHTML = 'Rs. ' + (181 * ordercount)
+      orderprice.innerHTML = 'Rs. ' + (3999 * ordercount) + ' + Shipping fee*'
     }
   </script>
 

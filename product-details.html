@@ -29,28 +29,16 @@
       <div class="col-2">
         <img src="image/products/cocopeate_1kg.jpeg" width="100%" id="ProductImg" />
 
-        <div class="small-img-row">
-          <div class="small-img-col">
-            <img src="image/products/cocopeate_1kg.jpeg" class="small-img" />
-          </div>
-          <div class="small-img-col">
-            <img src="image/products/cocopeate_3kg.jpeg" class="small-img" />
-          </div>
-          <div class="small-img-col">
-            <img src="image/products/cocopeate_5kg.jpeg" class="small-img" />
-          </div>
-
-        </div>
       </div>
       <div class="col-2">
         <p>Product / Cocopeat</p>
         <h2 id="ProductName">Manvaasam Cocopeat</h2>
-        <h4 id="orderprice">Rs. 181.00</h4>
+        <h4 id="orderprice">Rs. 181.00 + Shipping fee*</h4>
 
         <select onchange="changevalue()" id="ordersize" name="size" required>
-          <option value="small" selected>Small</option>
-          <option value="medium">Medium</option>
-          <option value="large">Large</option>
+          <option value="small" selected>Small(1 kg)</option>
+          <option value="medium">Medium(3 kg)</option>
+          <option value="large">Large(5 kg)</option>
         </select>
         <br>
         <input type="number" id="ordercount" value="1" onkeyup="changevalue()" onchange="changevalue()" name="count"
@@ -149,20 +137,19 @@
       var orderpriceinput = document.getElementById('orderpriceinput')
       var orderimg = document.getElementById('ProductImg')
       if (ordersize == 'small') {
-        orderprice.innerHTML = 'Rs. ' + (181 * ordercount) + '.00'
+        orderprice.innerHTML = 'Rs. ' + (181 * ordercount) + '.00 + Shipping fee*'
         orderpriceinput.value = (181 * ordercount)
-        orderimg.src = 'images/cocopeate_1kg.jpeg'
-
+       
       }
       else if (ordersize == 'medium') {
-        orderprice.innerHTML = 'RS. ' + (249 * ordercount) + '.00'
+        orderprice.innerHTML = 'RS. ' + (249 * ordercount) + '.00 + Shipping fee*'
         orderpriceinput.value = (249 * ordercount)
-        orderimg.src = 'images/cocopeate_3kg.jpeg'
+        
       }
       else {
-        orderprice.innerHTML = 'Rs. ' + (314 * ordercount) + '.00'
+        orderprice.innerHTML = 'Rs. ' + (314 * ordercount) + '.00 + Shipping fee*'
         orderpriceinput.value = (314 * ordercount)
-        orderimg.src = 'images/cocopeate_5kg.jpeg'
+        
       }
     }
   </script>

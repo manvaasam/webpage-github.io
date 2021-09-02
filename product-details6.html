@@ -46,12 +46,8 @@
       <div class="col-2">
         <p>Product / Seedballs</p>
         <h2 id="ProductName">Manvaasam Seedballs</h2>
-        <h4 id="orderprice">Rs. 181.00</h4>
-          <select onchange="changevalue()" id="ordersize" name="size" required>
-            <option value="small" selected>Small</option>
-            <option value="medium">Medium</option>
-            <option value="large">Large</option>
-          </select>
+        <h4 id="orderprice">Rs. 5.00 + Shipping fee*</h4>
+          
           <input type="number" id="ordercount" value="1" onchange="changevalue()" name="count" required />
           <input type="hidden" name="product" value="manvaasam_cocopeate">
           <button id="myBtn" >Buy Now</button>
@@ -143,22 +139,14 @@
     };
 
     function changevalue() {
-      var ordersize = document.getElementById('ordersize').value
+      //var ordersize = document.getElementById('ordersize').value
       var ordercount = document.getElementById('ordercount').value
       var orderprice = document.getElementById('orderprice')
       var orderimg = document.getElementById('ProductImg')
-      if (ordersize == 'small') {
-        orderprice.innerHTML = 'Rs. ' + (181 * ordercount)
+   
+        orderprice.innerHTML = 'Rs. ' + (5 * ordercount) + ' + Shipping fee*'
         orderimg.src = 'image/products/seedballs.jpg'
-      }
-      else if (ordersize == 'medium') {
-        orderprice.innerHTML = 'RS. ' + (249 * ordercount)
-        orderimg.src = 'image/products/seedballs1.jpg'
-      }
-      else {
-        orderprice.innerHTML = 'Rs. ' + (314 * ordercount)
-        orderimg.src = 'image/products/seedballs2.jpg'
-      }
+      
     }
   </script>
 
