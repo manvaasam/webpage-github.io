@@ -45,11 +45,11 @@
       <div class="col-2">
         <p>Product / vermicompost</p>
         <h2 id="ProductName">Manvaasam vermicompost</h2>
-        <h4 id="orderprice">Rs. 181.00</h4>
+        <h4 id="orderprice">Rs. 25.00 + Shipping fee*</h4>
         <select onchange="changevalue()" id="ordersize" name="size" required>
-          <option value="small" selected>Small</option>
-          <option value="medium">Medium</option>
-          <option value="large">Large</option>
+          <option value="small" selected>Small(1 kg)</option>
+          <option value="medium">Medium(3 kg)</option>
+          <option value="large">Large(5 kg)</option>
         </select>
         <input type="number" id="ordercount" value="1" onkeyup="changevalue()" onchange="changevalue()" name="count"
           required />
@@ -135,16 +135,16 @@
       var orderprice = document.getElementById('orderprice')
       var orderimg = document.getElementById('ProductImg')
       if (ordersize == 'small') {
-        orderprice.innerHTML = 'Rs. ' + (181 * ordercount)
+        orderprice.innerHTML = 'Rs. ' + (25 * ordercount) + ' + Shipping fee*'
         orderimg.src = 'image/products/vermicompost11.jpeg'
 
       }
       else if (ordersize == 'medium') {
-        orderprice.innerHTML = 'RS. ' + (249 * ordercount)
+        orderprice.innerHTML = 'RS. ' + (75 * ordercount) + ' + Shipping fee*'
         orderimg.src = 'image/products/vermicompost2.jpeg'
       }
       else {
-        orderprice.innerHTML = 'Rs. ' + (314 * ordercount)
+        orderprice.innerHTML = 'Rs. ' + (125 * ordercount) + ' + Shipping fee*'
         orderimg.src = 'image/products/vermicompost3.jpeg'
       }
     }

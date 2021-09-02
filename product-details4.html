@@ -48,12 +48,8 @@
       <div class="col-2">
         <p>Product / Bag</p>
         <h2 id="ProductName">Manvaasam Bag</h2>
-        <h4 id="orderprice">Rs. 181.00</h4>
-        <select onchange="changevalue()" id="ordersize" name="size" required>
-          <option value="small" selected>Small</option>
-          <option value="medium">Medium</option>
-          <option value="large">Large</option>
-        </select>
+        <h4 id="orderprice">Rs. 250.00 + Shipping fee*</h4>
+        
         <input type="number" id="ordercount" value="1" onchange="changevalue()" name="count" required />
         <input type="hidden" name="product" value="manvaasam_cocopeate">
         <button id="myBtn">Buy Now</button>
@@ -144,23 +140,15 @@
     };
 
     function changevalue() {
-      var ordersize = document.getElementById('ordersize').value
+    
       var ordercount = document.getElementById('ordercount').value
       var orderprice = document.getElementById('orderprice')
       var orderimg = document.getElementById('ProductImg')
-      if (ordersize == 'small') {
-        orderprice.innerHTML = 'Rs. ' + (181 * ordercount)
+  
+        orderprice.innerHTML = 'Rs. ' + (250 * ordercount) + ' + Shipping fee*'
         orderimg.src = 'image/products/1bag.jpg'
 
-      }
-      else if (ordersize == 'medium') {
-        orderprice.innerHTML = 'RS. ' + (249 * ordercount)
-        orderimg.src = 'image/products/2bag.jpg'
-      }
-      else {
-        orderprice.innerHTML = 'Rs. ' + (314 * ordercount)
-        orderimg.src = 'image/products/3bag.jpg'
-      }
+     
     }
 
   </script>
