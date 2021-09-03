@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Logistics Tracker</title>
   <link rel="shortcut icon" href="/image/fav_icon.png" type="image/png">
-  <link rel="stylesheet" type="text/css" href="/style.css">
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.001.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -189,16 +190,16 @@
           <li><a href="index.html">
               <div class="tab-text">Home</div>
             </a></li>
-          <li><a href="product.html">
+          <li><a href="/product.html">
               <div class="tab-text">Products</div>
             </a></li>
-          <li><a href="gallery.html">
+          <li><a href="/gallery.html">
               <div class="tab-text">Gallery</div>
             </a></li>
-          <li><a href="course.html">
+          <li><a href="/course.html">
               <div class="tab-text">Courses</div>
             </a></li>
-          <li><a href="aboutus.html">
+          <li><a href="/aboutus.html">
               <div class="tab-text">About us</div>
             </a></li>
           <li class="active"><a href="log.php">
@@ -229,7 +230,7 @@
     </div>
   </nav>
   <div class="col-sm-6 flex-center">
-    <img src="log.jpeg" class="img-fluid" style="width: 500px; height:550px;margin-top:50px; margin-right:80%" />
+    <img src="log.jpeg" class="img-fluid" style="width: 500px; height:500px;margin-top:100px; margin-left:100px" />
   </div>
   <div style="height:250px; width:400px; background-color: white; top:28%; left:63%; position:absolute; border-radius: 30px; box-sizing:border-box; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
     <div style="    margin-left: 5%; margin-right: 5%;">
