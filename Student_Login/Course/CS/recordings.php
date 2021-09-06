@@ -152,14 +152,14 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
         <div class="col-sm-4"><iframe  style="border-radius:30px 10px;"width="400" height="300" src="video/day_5.mp4" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         <div class="col-sm-4"><iframe  style="border-radius:30px 10px;"width="400" height="300" src="video/day_6.mp4" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
      </div>
-     <div class="row" style="margin-top:3%">
+    <!-- <div class="row" style="margin-top:3%">
         <div class="col-sm-4"><h3>DAY 7</h3></div>
         <div class="col-sm-4"><h3>DAY 8</h3></div>
         <div class="col-sm-4"><h3>DAY 9</h3></div>
         <div class="col-sm-4"><iframe  style="border-radius:30px 10px;"width="400" height="300" src="video/day_7.mp4" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         <div class="col-sm-4"><iframe  style="border-radius:30px 10px;"width="400" height="300" src="video/day_8.mp4" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         <div class="col-sm-4"><iframe  style="border-radius:30px 10px;"width="400" height="300" src="video/day_9.mp4" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-     </div>
+     </div> --!>
      
     <!--<div class="row" style="margin-top:3%">
         <div class="col-sm-4"><h3>DAY 10</h3></div>
