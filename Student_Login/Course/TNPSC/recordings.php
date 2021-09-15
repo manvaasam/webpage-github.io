@@ -137,40 +137,40 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
      </center>
      <br><br>
      <div class="row">
-        <div class="col-sm-4"><h3>DAY 1</h3></div>
-        <div class="col-sm-4"><h3>DAY 2</h3></div>
         <div class="col-sm-4"><h3>DAY 3</h3></div>
-        <div class="col-sm-4"><iframe  style="border-radius:30px 10px;"width="400" height="300" src="video/day_1.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-        <div class="col-sm-4"><iframe  style="border-radius:30px 10px;"width="400" height="300" src="video/day_2.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-        <div class="col-sm-4"><iframe  style="border-radius:30px 10px;"width="400" height="300" src="video/day_3.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-     </div>
-        <div class="row" style="margin-top:3%">
         <div class="col-sm-4"><h3>DAY 4</h3></div>
         <div class="col-sm-4"><h3>DAY 5</h3></div>
-        <div class="col-sm-4"><h3>DAY 6</h3></div>
+        <div class="col-sm-4"><iframe  style="border-radius:30px 10px;"width="400" height="300" src="video/day_3.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         <div class="col-sm-4"><iframe  style="border-radius:30px 10px;"width="400" height="300" src="video/day_4.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         <div class="col-sm-4"><iframe  style="border-radius:30px 10px;"width="400" height="300" src="video/day_5.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-        <div class="col-sm-4"><iframe  style="border-radius:30px 10px;"width="400" height="300" src="video/day_6.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
      </div>
-     <div class="row" style="margin-top:3%">
+        <div class="row" style="margin-top:3%">
+        <div class="col-sm-4"><h3>DAY 6</h3></div>
         <div class="col-sm-4"><h3>DAY 7</h3></div>
         <div class="col-sm-4"><h3>DAY 8</h3></div>
-        <div class="col-sm-4"><h3>DAY 9</h3></div>
+        <div class="col-sm-4"><iframe  style="border-radius:30px 10px;"width="400" height="300" src="video/day_6.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         <div class="col-sm-4"><iframe  style="border-radius:30px 10px;"width="400" height="300" src="video/day_7.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         <div class="col-sm-4"><iframe  style="border-radius:30px 10px;"width="400" height="300" src="video/day_8.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+     </div>
+     <div class="row" style="margin-top:3%">
+        <div class="col-sm-4"><h3>DAY 9</h3></div>
+        <div class="col-sm-4"><h3>DAY 18</h3></div>
+        <div class="col-sm-4"><h3>DAY 19</h3></div>
         <div class="col-sm-4"><iframe  style="border-radius:30px 10px;"width="400" height="300" src="video/day_9.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="col-sm-4"><iframe  style="border-radius:30px 10px;"width="400" height="300" src="video/day_18.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="col-sm-4"><iframe  style="border-radius:30px 10px;"width="400" height="300" src="video/day_19.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
      </div>
      
-    <!--<div class="row" style="margin-top:3%">
-        <div class="col-sm-4"><h3>DAY 10</h3></div>
-        <div class="col-sm-4"><h3>DAY 11</h3></div>
-        <div class="col-sm-4"><h3>DAY 12</h3></div>
-        <div class="col-sm-4"><iframe  style="border-radius:30px 10px;"width="400" height="300" src="video/day_10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-        <div class="col-sm-4"><iframe  style="border-radius:30px 10px;"width="400" height="300" src="video/day_11" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-        <div class="col-sm-4"><iframe  style="border-radius:30px 10px;"width="400" height="300" src="video/day_12" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <div class="row" style="margin-top:3%">
+        <div class="col-sm-4"><h3>DAY 20</h3></div>
+        <div class="col-sm-4"><h3>DAY 21</h3></div>
+        <div class="col-sm-4"><h3>DAY 22</h3></div>
+        <div class="col-sm-4"><iframe  style="border-radius:30px 10px;"width="400" height="300" src="video/day_20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="col-sm-4"><iframe  style="border-radius:30px 10px;"width="400" height="300" src="video/day_21" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="col-sm-4"><iframe  style="border-radius:30px 10px;"width="400" height="300" src="video/day_22" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
      </div><br>
      
-     <div class="row" style="margin-top:3%">
+    <!-- <div class="row" style="margin-top:3%">
         <div class="col-sm-4"><h3>DAY 13</h3></div>
         <div class="col-sm-4"><h3>DAY 14</h3></div>
         <div class="col-sm-4"><h3>DAY 15</h3></div>
