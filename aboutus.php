@@ -19,59 +19,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-
-                <a class="navbar-brand" href="aboutus.html"><img class="logo" src="./image/manvasam_logo1.png"></a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav " style="margin-top:1%;margin-bottom:1%">
-                    <li><a href="index.html">
-                            <div class="tab-text">Home</div>
-                        </a></li>
-                    <li><a href="product.html">
-                            <div class="tab-text">Products</div>
-                        </a></li>
-                    <li><a href="gallery.html">
-                            <div class="tab-text">Gallery</div>
-                        </a></li>
-                    <li><a href="course.html">
-                            <div class="tab-text">Courses</div>
-                        </a></li>
-                    <li class="active"><a href="aboutus.html">
-                            <div class="tab-text">About us</div>
-                        </a></li>
-                    <li><a href="./Logistics/log.php">
-                            <div class="tab-text">Logistics</div>
-                        </a></li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Login
-                            <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="./Student_Login/loginindex.php" target="_blank">Student Login</a></li>
-                            <li><a href="./Emp_Login/Mindex.html" target="_blank">Manvaasam Login</a></li>
-		            <li><a href="./Admin_Login/admin.php" target="_blank">Admin Login</a></li>  	
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right" style="margin-top:1%">
-                    <li><a
-                            href="https://docs.google.com/forms/d/e/1FAIpQLSdU3temNU7_tPoLRX__95b2Tdbw9frmZGswBFFx5AAM4tmZuA/viewform">
-                            <div class="tab-join"><button class="btn btn-success btn-sm"><span
-                                        class="glyphicon glyphicon-user"></span>Join with us</button></div>
-                        </a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right"style="margin-top:1%" >
-                    <li><a href="https://chat.whatsapp.com/L419in2xs11E02ga8UTN2u">
-                            <div class="tab-join"><button class="btn btn-success btn-sm"><span
-                                        class="./image/otherlogo/whatsapp.png"></span>WhatsApp Group</button></div>
-                        </a></li>
-                </ul>
-
-            </div>
-        </div>
-    </nav>
+    <?php 
+        include './backend/header.php';
+    ?>
     <div class="container">
         <div class="wow animate__fadeInDown animate__slower">
             <center><img src="./image/aboutus/1.png" style="width:90%;" />

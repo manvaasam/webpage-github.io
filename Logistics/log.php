@@ -9,9 +9,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Logistics Tracker</title>
   <link rel="shortcut icon" href="/image/fav_icon.png" type="image/png">
-
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.001.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.001.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -61,9 +60,6 @@
       -o-transition-duration: 0.5s;
     }
 
-    /*
-    Multicoloured Hover Variations
-*/
 
     #social-fb:hover {
       color: #3B5998;
@@ -174,62 +170,11 @@
 </head>
 
 <body class="index">
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="aboutus.html"><img class="logo" src="/image/manvasam_logo1.png"></a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav " style="margin-top:1%;margin-bottom:1%">
-          <li><a href="index.html">
-              <div class="tab-text">Home</div>
-            </a></li>
-          <li><a href="/product.html">
-              <div class="tab-text">Products</div>
-            </a></li>
-          <li><a href="/gallery.html">
-              <div class="tab-text">Gallery</div>
-            </a></li>
-          <li><a href="/course.html">
-              <div class="tab-text">Courses</div>
-            </a></li>
-          <li><a href="/aboutus.html">
-              <div class="tab-text">About us</div>
-            </a></li>
-          <li class="active"><a href="log.php">
-              <div class="tab-text">Logistics</div>
-            </a></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Login
-              <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="/Student_Login/loginindex.php" target="_blank">Student Login</a></li>
-              <li><a href="/Emp_Login/Mindex.html" target="_blank">Manvaasam Login</a></li>
-              <li><a href="/Admin_Login/admin.php" target="_blank">Admin Login</a></li>
-            </ul>
-          </li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right" style="margin-top:1%">
-          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdU3temNU7_tPoLRX__95b2Tdbw9frmZGswBFFx5AAM4tmZuA/viewform">
-              <div class="tab-join"><button class="btn btn-success btn-sm"><span class="glyphicon glyphicon-user"></span>Join with us</button></div>
-            </a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right" style="margin-top:1%">
-          <li><a href="https://chat.whatsapp.com/L419in2xs11E02ga8UTN2u">
-              <div class="tab-join"><button class="btn btn-success btn-sm"><span class="./image/otherlogo/whatsapp.png"></span>WhatsApp Group</button></div>
-            </a></li>
-        </ul>
+    <?php 
+      include_once "../backend/header.php";
+    ?>
 
-      </div>
-    </div>
-  </nav>
-  <div class="col-sm-6 flex-center">
+<div class="col-sm-6 flex-center">
     <img src="log.jpeg" class="img-fluid" style="width: 500px; height:500px;margin-top:100px; margin-left:100px" />
   </div>
   <div style="height:250px; width:400px; background-color: white; top:28%; left:63%; position:absolute; border-radius: 30px; box-sizing:border-box; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
