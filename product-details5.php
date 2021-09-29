@@ -13,6 +13,11 @@
 </head>
 
 <body>
+  
+  <?php
+  include './backend/header.php';
+  ?>
+
   <div class="container">
     <div class="navbar">
       <div class="logo">
@@ -27,29 +32,30 @@
   <div class="small-container single-product">
     <div class="row">
       <div class="col-2">
-        <img src="image/products/1bag.jpg" width="100%" id="ProductImg" />
+        <img src="image/products/growbag.jpeg" width="100%" id="ProductImg" />
 
         <div class="small-img-row">
           <div class="small-img-col">
-            <img src="image/products/1bag.jpg" class="small-img" />
+            <img src="image/products/growbag.jpeg" class="small-img" />
           </div>
           <div class="small-img-col">
-            <img src="image/products/2bag.jpg" class="small-img" />
+            <img src="image/products/growbags1.jpg" class="small-img" />
           </div>
           <div class="small-img-col">
-            <img src="image/products/3bag.jpg" class="small-img" />
-          </div>
-          <div class="small-img-col">
-            <img src="image/products/4bag.jpg" class="small-img" />
+            <img src="image/products/growbags2.jpg" class="small-img" />
           </div>
 
         </div>
       </div>
       <div class="col-2">
-        <p>Product / Bag</p>
-        <h2 id="ProductName">Manvaasam Bag</h2>
-        <h4 id="orderprice">Rs. 250.00 + Shipping fee*</h4>
-        
+        <p>Product / Growbags</p>
+        <h2 id="ProductName">Manvaasam Growbags</h2>
+        <h4 id="orderprice">Rs. 50.00 + Shipping fee*</h4>
+        <select onchange="changevalue()" id="ordersize" name="size" required>
+          <option value="small" selected>Small (4 x 6)</option>
+          <option value="medium">Medium(15 x 15)</option>
+          <option value="large">Large(18 x 24)</option>
+        </select>
         <input type="number" id="ordercount" value="1" onchange="changevalue()" name="count" required />
         <input type="hidden" name="product" value="manvaasam_cocopeate">
         <button id="myBtn">Buy Now</button>
@@ -94,6 +100,7 @@
             });
           });
         </script>
+
         <script>
           var modal = document.getElementById("myModal");
           var btn = document.getElementById("myBtn");
@@ -122,7 +129,6 @@
 
 
   </div>
-  <!-- js for product gallery -->
   <script>
     var ProductImg = document.getElementById("ProductImg");
     var smallImg = document.getElementsByClassName("small-img");
@@ -140,15 +146,23 @@
     };
 
     function changevalue() {
-    
+      var ordersize = document.getElementById('ordersize').value
       var ordercount = document.getElementById('ordercount').value
       var orderprice = document.getElementById('orderprice')
       var orderimg = document.getElementById('ProductImg')
-  
-        orderprice.innerHTML = 'Rs. ' + (250 * ordercount) + ' + Shipping fee*'
-        orderimg.src = 'image/products/1bag.jpg'
+      if (ordersize == 'small') {
+        orderprice.innerHTML = 'Rs. ' + (50 * ordercount) +' + Shipping fee*'
+        orderimg.src = 'image/products/growbag.jpeg'
 
-     
+      }
+      else if (ordersize == 'medium') {
+        orderprice.innerHTML = 'RS. ' + (100 * ordercount)+' + Shipping fee*'
+        orderimg.src = 'image/products/growbag.jpeg'
+      }
+      else {
+        orderprice.innerHTML = 'Rs. ' + (160 * ordercount)+' + Shipping fee*'
+        orderimg.src = 'image/products/growbag.jpeg'
+      }
     }
 
   </script>

@@ -13,6 +13,11 @@
 </head>
 
 <body>
+  
+  <?php
+  include './backend/header.php';
+  ?>
+
   <div class="container">
     <div class="navbar">
       <div class="logo">

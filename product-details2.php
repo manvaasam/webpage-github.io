@@ -13,7 +13,13 @@
 </head>
 
 <body>
-  <div class="container">
+
+
+
+  <?php
+  include './backend/header.php';
+  ?>
+<div class="container">
     <div class="navbar">
       <div class="logo">
         <a href="index.html">
@@ -27,33 +33,35 @@
   <div class="small-container single-product">
     <div class="row">
       <div class="col-2">
-        <img src="image/products/growbag.jpeg" width="100%" id="ProductImg" />
+        <img src="image/products/individual_plant.jpg" width="100%" id="ProductImg" />
 
         <div class="small-img-row">
           <div class="small-img-col">
-            <img src="image/products/growbag.jpeg" class="small-img" />
+            <img src="image/products/individual_plant.jpg" class="small-img" />
           </div>
           <div class="small-img-col">
-            <img src="image/products/growbags1.jpg" class="small-img" />
+            <img src="image/products/mpant1.jpg" class="small-img" />
           </div>
           <div class="small-img-col">
-            <img src="image/products/growbags2.jpg" class="small-img" />
+            <img src="image/products/mplant.jpg" class="small-img" />
           </div>
 
         </div>
       </div>
       <div class="col-2">
-        <p>Product / Growbags</p>
-        <h2 id="ProductName">Manvaasam Growbags</h2>
-        <h4 id="orderprice">Rs. 50.00 + Shipping fee*</h4>
-        <select onchange="changevalue()" id="ordersize" name="size" required>
-          <option value="small" selected>Small (4 x 6)</option>
-          <option value="medium">Medium(15 x 15)</option>
-          <option value="large">Large(18 x 24)</option>
-        </select>
-        <input type="number" id="ordercount" value="1" onchange="changevalue()" name="count" required />
-        <input type="hidden" name="product" value="manvaasam_cocopeate">
-        <button id="myBtn">Buy Now</button>
+        <p>Product / Plant</p>
+        <h2 id="ProductName">Manvaasam Plant</h2>
+        <h4 id="orderprice">Rs. 250.00 + Shipping fee*</h4>
+        <form method="POST" id="submitform" action="backend/order.php">
+          <select onchange="changevalue()" id="ordersize" name="size" required>
+            <option value="small" selected>Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+          <input type="number" id="ordercount" value="1" onchange="changevalue()" name="count" required />
+          <input type="hidden" name="product" value="manvaasam_cocopeate">
+          <button id="myBtn">Buy Now</button>
+        </form>
 
 
         <div id="myModal" class="modal">
@@ -63,7 +71,7 @@
               <h2>Manvaasam</h2>
             </div>
             <div class="modal-body">
-              <form action="./backend/order.php" method="POSt" id="LoginForm">
+              <form method="POST" id="LoginForm" >
                 <input type="text" name="customer_name" placeholder="Your Name" required /><br>
                 <input type="tel" name="customer_phone" placeholder="Phone No." required />
                 <textarea placeholder="Your Address" name="customer_address" id="" rows="6" required></textarea>
@@ -76,6 +84,22 @@
           </div>
         </div>
         <script>
+          var modal = document.getElementById("myModal");
+          var btn = document.getElementById("myBtn");
+          var span = document.getElementsByClassName("close")[0];
+          btn.onclick = function (e) {
+            e.preventDefault();
+            modal.style.display = "block";
+          }
+          span.onclick = function () {
+            modal.style.display = "none";
+          }
+          window.onclick = function (event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
+
           document.getElementById('LoginForm').addEventListener('submit', function (e) {
             e.preventDefault();
             var form = new FormData(this);
@@ -96,23 +120,6 @@
           });
         </script>
 
-        <script>
-          var modal = document.getElementById("myModal");
-          var btn = document.getElementById("myBtn");
-          var span = document.getElementsByClassName("close")[0];
-          btn.onclick = function () {
-            modal.style.display = "block";
-          }
-          span.onclick = function () {
-            modal.style.display = "none";
-          }
-          window.onclick = function (event) {
-            if (event.target == modal) {
-              modal.style.display = "none";
-            }
-          }
-        </script>
-
 
 
 
@@ -124,6 +131,7 @@
 
 
   </div>
+  <!-- js for product gallery -->
   <script>
     var ProductImg = document.getElementById("ProductImg");
     var smallImg = document.getElementsByClassName("small-img");
@@ -136,27 +144,23 @@
     smallImg[2].onclick = function () {
       ProductImg.src = smallImg[2].src;
     };
-    smallImg[3].onclick = function () {
-      ProductImg.src = smallImg[3].src;
-    };
-
     function changevalue() {
       var ordersize = document.getElementById('ordersize').value
       var ordercount = document.getElementById('ordercount').value
       var orderprice = document.getElementById('orderprice')
       var orderimg = document.getElementById('ProductImg')
       if (ordersize == 'small') {
-        orderprice.innerHTML = 'Rs. ' + (50 * ordercount) +' + Shipping fee*'
-        orderimg.src = 'image/products/growbag.jpeg'
+        orderprice.innerHTML = 'Rs. ' + (250 * ordercount) + ' + Shipping fee*'
+        orderimg.src = 'image/products/individual_plant.jpg'
 
       }
       else if (ordersize == 'medium') {
-        orderprice.innerHTML = 'RS. ' + (100 * ordercount)+' + Shipping fee*'
-        orderimg.src = 'image/products/growbag.jpeg'
+        orderprice.innerHTML = 'RS. ' + (300 * ordercount)+ ' + Shipping fee*'
+        orderimg.src = 'image/products/mpant1.jpg'
       }
       else {
-        orderprice.innerHTML = 'Rs. ' + (160 * ordercount)+' + Shipping fee*'
-        orderimg.src = 'image/products/growbag.jpeg'
+        orderprice.innerHTML = 'Rs. ' + (350 * ordercount)+ ' + Shipping fee*'
+        orderimg.src = 'image/products/mplant.jpg'
       }
     }
 
