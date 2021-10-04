@@ -41,7 +41,31 @@
       -ms-transform: translate(-50%, -50%);
       text-align: center;
     }
-
+    .dealer{
+      height:17%;
+      width:30%;
+      margin-left: 55%;
+      top:60%;
+      border-radius: 22px;
+      position: absolute;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin-top: 5%;
+    }
+    .dealer button{
+      left:35%;
+      position: relative;
+    font-size:large;
+    background-color: #4CAF50;
+    color:white;
+    border-radius: 25px;
+    height: 40px;
+    width: 100px;
+    border: none;
+    padding: 2px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    }
     .social:hover {
       transform: scale(1.1);
       -webkit-transform: scale(1.1);
@@ -164,20 +188,26 @@
         position: left;
 
       }
+      .dealer{
+        top:75%;
+        left:2%;
+        width:96%;
+        height: max-content;
+      }
     }
   </style>
 
 </head>
 
 <body class="index">
-    <?php 
+  <?php 
       include_once "../backend/header.php";
     ?>
 
 <div class="col-sm-6 flex-center">
     <img src="log.jpeg" class="img-fluid" style="width: 500px; height:500px;margin-top:100px; margin-left:100px" />
   </div>
-  <div style="height:250px; width:400px; background-color: white; top:28%; left:63%; position:absolute; border-radius: 30px; box-sizing:border-box; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+  <div style="height:250px; width:400px; background-color: white; top:28%; left:63%; position:absolute; border-radius: 30px; box-sizing:border-box;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ">
     <div style="    margin-left: 5%; margin-right: 5%;">
       <center>
         <h2>Track your couriers</h2>
@@ -190,6 +220,13 @@
         <p>Manvaasam logistics started in the focus of connecting small village around tamilnadu</p>
       </form>
     </div>
+
+
+    
+  </div>
+  <div class="dealer">
+    <p style="padding-top: 25px;padding-left: 10px;padding-right: 10px;">Want to become a dealer in Manvaasam logistics..</p>
+    <a href="https://forms.gle/kanHYMLLnMPuFkLa9"><button>Click me!</button></a>
   </div>
 </body>
 
