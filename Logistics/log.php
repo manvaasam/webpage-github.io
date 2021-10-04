@@ -10,7 +10,7 @@
   <title>Logistics Tracker</title>
   <link rel="shortcut icon" href="/image/fav_icon.png" type="image/png">
 
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.001.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.001.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -28,10 +28,12 @@
       background-size: 100% 100%;
       overflow: hidden;
     }
+
     .containers {
       position: relative;
       width: 50%;
     }
+
     .middle {
       transition: .5s ease;
       opacity: 0;
@@ -159,15 +161,116 @@
     }
 
 
+    /* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+    @media (min-width: 1281px) {
 
-    @media only screen and (max-width: 600px) {
-      .loginbox {
-        width: 80%;
-        top: 20%;
-        left: 9%;
-        position: left;
 
+      .img-truck {
+        width: 500px;
+        height: 500px;
+        margin-top: 100px;
+        margin-left: 100px
       }
+
+      .track-card {
+        height: 250px;
+        width: 400px;
+        background-color: white;
+        top: 28%;
+        left: 63%;
+        position: absolute;
+        border-radius: 30px;
+        box-sizing: border-box;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+    }
+
+    /* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+    @media (min-width: 1025px) and (max-width: 1280px) {
+
+      .img-truck {
+        width: 500px;
+        height: 500px;
+        margin-top: 100px;
+        margin-left: -90px;
+      }
+
+      .track-card {
+        height: 250px;
+        width: 400px;
+        background-color: white;
+        top: 28%;
+        left: 59%;
+        position: absolute;
+        border-radius: 30px;
+        box-sizing: border-box;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+    }
+
+    /* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+
+      .img-truck {
+        width: 500px;
+        height: 500px;
+        margin-top: 100px;
+        margin-left: 30px;
+      }
+
+      .track-card {
+        height: 250px;
+        width: 400px;
+        background-color: white;
+        top: 65%;
+        left: 26%;
+        position: absolute;
+        border-radius: 30px;
+        box-sizing: border-box;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+
+    }
+
+    /* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+    @media (min-width: 320px) and (max-width: 480px) {
+
+      .img-truck {
+        width: 250px;
+        height: 250px;
+        margin-top: 90px;
+        margin-left: -60px;
+      }
+
+      .track-card {
+        height: 250px;
+        width: 300px;
+        background-color: white;
+        top: 59%;
+        left: 9%;
+        position: absolute;
+        border-radius: 30px;
+        box-sizing: border-box;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+
     }
   </style>
 
@@ -183,23 +286,23 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="aboutus.html"><img class="logo" src="/image/manvasam_logo1.png"></a>
+        <a class="navbar-brand" href="aboutus.html"><img class="logo" src="\image\products\manvasam_logo1.png"></a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav " style="margin-top:1%;margin-bottom:1%">
           <li><a href="index.html">
               <div class="tab-text">Home</div>
             </a></li>
-          <li><a href="/product.html">
+          <li><a href="/product.php">
               <div class="tab-text">Products</div>
             </a></li>
-          <li><a href="/gallery.html">
+          <li><a href="/gallery.php">
               <div class="tab-text">Gallery</div>
             </a></li>
-          <li><a href="/course.html">
+          <li><a href="/course.php">
               <div class="tab-text">Courses</div>
             </a></li>
-          <li><a href="/aboutus.html">
+          <li><a href="/aboutus.php">
               <div class="tab-text">About us</div>
             </a></li>
           <li class="active"><a href="log.php">
@@ -230,9 +333,9 @@
     </div>
   </nav>
   <div class="col-sm-6 flex-center">
-    <img src="log.jpeg" class="img-fluid" style="width: 500px; height:500px;margin-top:100px; margin-left:100px" />
+    <img src="log.jpeg" class="img-truck" />
   </div>
-  <div style="height:250px; width:400px; background-color: white; top:28%; left:63%; position:absolute; border-radius: 30px; box-sizing:border-box; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+  <div class="track-card">
     <div style="    margin-left: 5%; margin-right: 5%;">
       <center>
         <h2>Track your couriers</h2>
