@@ -231,6 +231,31 @@ $user_id = $_SESSION['user_id'];
                 </div>
             </div>
         </div>
+        <div class="flex-center my-5">
+            <div class="box">
+                <svg class="fa2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="1rem" height="1rem" viewBox="0 0 1664 1408">
+                    <path d="M768 832v384q0 80-56 136t-136 56H192q-80 0-136-56T0 1216V512q0-104 40.5-198.5T150 150T313.5 40.5T512 0h64q26 0 45 19t19 45v128q0 26-19 45t-45 19h-64q-106 0-181 75t-75 181v32q0 40 28 68t68 28h224q80 0 136 56t56 136zm896 0v384q0 80-56 136t-136 56h-384q-80 0-136-56t-56-136V512q0-104 40.5-198.5T1046 150t163.5-109.5T1408 0h64q26 0 45 19t19 45v128q0 26-19 45t-45 19h-64q-106 0-181 75t-75 181v32q0 40 28 68t68 28h224q80 0 136 56t56 136z" fill="#fff" />
+                </svg>
+                <div class="text">
+                    <svg class="fa1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="1rem" height="1rem" viewBox="0 0 1664 1408">
+                        <path d="M768 192v704q0 104-40.5 198.5T618 1258t-163.5 109.5T256 1408h-64q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h64q106 0 181-75t75-181v-32q0-40-28-68t-68-28H192q-80 0-136-56T0 576V192q0-80 56-136T192 0h384q80 0 136 56t56 136zm896 0v704q0 104-40.5 198.5T1514 1258t-163.5 109.5T1152 1408h-64q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h64q106 0 181-75t75-181v-32q0-40-28-68t-68-28h-224q-80 0-136-56t-56-136V192q0-80 56-136t136-56h384q80 0 136 56t56 136z" fill="#fff" />
+                    </svg>
+                    <div>
+                        <h2 style="font-weight: bold;" class="pb-2">
+                        திருக்குறள்
+                        </h2>
+                        <h4 style="text-align:left;font-size: large">
+                            “உழுதுண்டு வாழ்வாரே வாழ்வார்மற் றெல்லாம்<br> தொழுதுண்டு பின்செல் பவர்.”<br><br>
+
+                            <b>பொருள்:</b> உழவு செய்து அதனால் கிடைத்ததைக் கொண்டு வாழ்கின்றவரே உரிமையோடு வாழ்கின்றவர், மற்றவர் எல்லோரும் பிறரைத் தொழுது உண்டு பின் செல்கின்றவரே.
+                        </h4>
+                        <p style="text-align: right;">
+                            - திருவள்ளுவர்
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="row p-3" style="
             background: #90d156;
             border-radius: 100px 0px 100px 0px;
