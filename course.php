@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <?php
+     <?php
     include './backend/header.php';
     ?>
 
@@ -39,78 +39,7 @@
         </div><br><br>
 
 
-        <div class="container">
-            <div class="row wow animate__fadeIn animate__slower" style="margin-top:1%;background-color:#90d156;margin-bottom:8%;border-radius: 60px 5px;box-shadow: 0 4px 8px 0 rgba(68, 67, 67, 0.2), 0 6px 20px 0 rgba(80, 79, 79, 0.19);">
-                <div class="container">
-                    <div class="row container">
-
-                        <center>
-                            <div class="container wow animate__pulse">
-                                <h1><b>CYBER SECURITY AND ETHICAL HACKING</b></h1>
-                                <h4 "><a><button onclick="window.open('whatsapp://send?text=MANVAASAM COURSES Course Name:CYBER SECURITY AND ETHICAL HACKING  Course cost:Rs.499/- Registeration Link:https://forms.gle/7Po8YLi5nWQvDY3SA')" type="button" class="btn btn-success">share this course</button></a><br><br><b>Share to a friend to get 10% offer </b></h4>
-
-                            </div>
-                        </center>
-                        <div class="col-sm-5 wow animate__fadeInLeft">
-                            <center>
-                                <img src="./image/courses/cybersec.jpg" class="img-fluid" alt="Responsive image" style="width:80%;height:80%;" />
-                            </center>
-                        </div>
-                        <div class="col-sm-7 wow animate__fadeInRight">
-                            <ul>
-                                <li>
-                                    <h4>Live attacks will be performed.</h4>
-                                </li>
-                                <li>
-                                    <h4>Class recordings will be given. </h4>
-                                </li>
-                                <li>
-                                    <h4>Students Login will be provided</h4>
-                                </li>
-                                <li>
-                                    <h4>Demo class will be conducted in the first three days </h4>
-                                </li>
-                            </ul>
-                            <div>
-                                <h3>Cost:</h3>
-                                <h4 style="margin-top: 2%;"><b>RS.</b> 499/-</h4>
-                            </div>
-                            <div>
-                                <br>
-
-                                <h4>Timing:<b>04:00PM</b> to <b>06:00PM</b></h4>
-                                <h4>Course duration: 14.08.2021 - 05.09.2021</h4>
-                                <h4>NOTE: This is a weekend course (Courses will be conducted on Saturday and Sunday)</h4>
-                                <a href="https://meet.google.com/smd-vihh-cjd"><button type="button" class="btn btn-success">DEMO CLASS LINK</button></a>
-                            </div>
-                        </div>
-                        <div class="col-sm-5 wow animate__fadeInRight">
-                            <br>
-                        </div>
-                    </div><br>
-                    <h3 class="wow animate__flipInX"><b>ABOUT INSTRUCTOR</b></h3>
-                    <div class="row">
-                        <div class="col-xs-3 wow animate__fadeInLeft" style="margin-top: 2%;">
-                            <center>
-                                <img src="./image/courses/hacker.png" class="img-fluid" alt="Responsive image" style="width:90%;height:auto;" />
-                            </center>
-                        </div>
-                        <div class="col-xs-8 wow animate__fadeInRight">
-                            <h2><b>Mr.Karthick</b></h2>
-
-                            <h4 style="margin-top: 5%;">I will be your trainer and I have around 3+ years of experience in CYBER SECURITY field, I will teach each and every single concept in a practical way to make you all understand it easily...Come Let's start to learn together in "Cyber security and Ethical Hacking " Course.</h4>
-                            <h5><b></b>.</h5>
-                            <h5>Reach me out on <a href="https://www.linkedin.com/in/karthick-arumugam-20b341142"><b>Linkedin</b></a>.</h5>
-                        </div>
-                    </div>
-                    <div style="margin-bottom: 2%;margin-top: 2%;">
-                        <center>
-                            <a href="https://forms.gle/7Po8YLi5nWQvDY3SA"><button type="button" class="btn btn-success">REGISTER NOW</button></a>
-                            <a href="tel:6380091001"><button type="button" class="btn btn-success">Call/Chat</button></a>
-                        </center>
-                    </div>
-                </div>
-            </div>
+        
 
             <div class="container">
                 <div class="row wow animate__fadeIn animate__slower" style="margin-top:1%;background-color:#90d156;margin-bottom:8%;border-radius: 60px 5px;box-shadow: 0 4px 8px 0 rgba(68, 67, 67, 0.2), 0 6px 20px 0 rgba(80, 79, 79, 0.19);">
@@ -174,72 +103,7 @@ Reach out with us in this webinar *CYBER SURVEY-3* !!!</h4>
 
 
 
-            <div class="container">
-                <div class="row wow animate__fadeIn animate__slower" style="margin-top:1%;background-color:#90d156;margin-bottom:8%;border-radius: 60px 5px;box-shadow: 0 4px 8px 0 rgba(68, 67, 67, 0.2), 0 6px 20px 0 rgba(80, 79, 79, 0.19);">
-                    <div class="container">
-                        <div class="row container">
-
-                            <center>
-                                <div class="container wow animate__pulse">
-                                    <h1><b>TNPSC GROUP 2</b></h1>
-                                    <h4 ><a><button onclick="window.open('whatsapp://send?text=MANVAASAM COURSES Course Name:TNPSC GROUP2  Course cost:Rs.4999/- Registeration Link:https://forms.gle/dWvxAPo3GEDmzKtr6')" type="button" class="btn btn-success">share this course</button></a><br><br><b>Share to a friend to get 10% offer </b></h4>
-
-                                </div>
-                            </center>
-                            <div class="col-sm-5 wow animate__fadeInLeft">
-                                <center>
-                                    <img src="./image/courses/tnpc.jpg" class="img-fluid" alt="Responsive image" style="width:80%;height:80%;" />
-                                </center>
-                            </div>
-                            <div class="col-sm-7 wow animate__fadeInRight">
-                                <ul>
-                                    <li>
-                                        <h4>Tests will be conducted on the daily basis.</h4>
-                                    </li>
-                                    <li>
-                                        <h4>Course materials will be shared. </h4>
-                                    </li>
-                                    <li>
-                                        <h4>Class recordings will be given!!</h4>
-                                    </li>
-                                    <li>
-                                        <h4>Students Login will be provided</h4>
-                                    </li>
-                                </ul>
-                                <div>
-                                    <h3>Cost:</h3>
-                                    <h4 style="margin-top: 2%;"><b>RS.</b> 4999/-</h4>
-                                </div>
-                                <div>
-                                    <br>
-                                    <h4>Demo class starts from <b>21.06.2021-23.06.2021</h4>
-                                    <h4>Timing:<b>10:30AM</b> to <b>11:30AM</b>(Monday-Friday)</h4>
-                                    <h4>Course duration: 150 Days</h4>
-                                    <a href="https://meet.google.com/hmg-gskk-qng"><button type="button" class="btn btn-success">DEMO CLASS LINK</button></a>
-                                </div>
-                            </div>
-                            <div class="col-sm-5 wow animate__fadeInRight">
-                                <br>
-                            </div>
-                        </div><br>
-                        <h3 class="wow animate__flipInX"><b>ABOUT INSTRUCTOR</b></h3>
-                        <div class="row">
-                            <div class="col-xs-3 wow animate__fadeInLeft" style="margin-top: 2%;">
-                                <center>
-                                    <img src="./image/courses/instructor_icon.png" class="img-fluid" alt="Responsive image" style="width:90%;height:auto;" />
-                                </center>
-                            </div>
-                            <div class="col-xs-8 wow animate__fadeInRight">
-                                <h2><b>Nithya</b></h2>
-
-                                <h4 style="margin-top: 5%;">I will be your lead trainer in this course.Within no time, I'll help you to understand the concepts in easy manner.</h4>
-                                <h5><b></b>.</h5>
-                                <h5>Reach me out on <a href="mailto:nithiimangai@gmail.com"><b>Email</b></a>.</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
         <!--  footer Tab   -->
         <div class="jumbotron wow animate__fadeIn animate__slower" style="margin-bottom:0;background: #90d156;padding-top: 5px;padding-bottom: 5px;border-radius: 50px 50px 10px 10px">
