@@ -38,7 +38,6 @@ $user_id = $_SESSION['user_id'];
             justify-content: center;
             z-index: 9999999;
         }
-
         .FloatingBox {
             position: fixed;
             right: 0;
@@ -184,6 +183,23 @@ $user_id = $_SESSION['user_id'];
             padding: 2px;
             margin-bottom: 10px;
         }
+        .button{
+            text-align: right;
+            border-radius: 100px;
+            box-sizing: 100px;
+            border: none;
+            width:auto;
+        }
+        
+        .buttons{
+
+            text-align: right;
+            border-radius: 100px;
+            background-color: #90d156;
+            box-sizing: 100px;
+            border: none;
+            width: auto;
+        }
     </style>
 </head>
 
@@ -195,6 +211,9 @@ $user_id = $_SESSION['user_id'];
     <div class="bg-video-wrap">
         <video src="./assets/videos/bg_autoplay_3.mp4" loop muted autoplay></video>
         <div class="overlay"></div>
+        <div>
+
+            
         <div class="content">
             <div class="heroWrap-content">
                 <h2>FARMER'S BEST FRIENDS</h2>
@@ -320,6 +339,10 @@ $user_id = $_SESSION['user_id'];
             </div>
         </div>
     </div>
+
+    <div>
+        
+    </div>
     <div class="row py-4">
         <div class="col-sm-6">
             <img src="./image/manvasam_logo1.png" style="width: 80%; height: 175px" />
@@ -342,11 +365,16 @@ $user_id = $_SESSION['user_id'];
         <div class="row">
             <div class="col-sm-6">
                 <div style="margin-left: 15%; padding: 5%">
-                    <a href="tel:6380091001"><img style="width: 25px; margin-right: 2%; margin-left: 2%" src="./image/otherlogo/whatsapp.png" /></a>
+                    <a href="tel:+91 6380091001"><img style="width:25px; margin-left: 2%" src="./image/otherlogo/call.png"/></a>
+                    <button class="buttons">+91 6380091001</button> <br />
+                    <a href="tel:+91 6380091001"><img style="width: 25px; margin-right: 2%; margin-left: 2%" src="./image/otherlogo/whatsapp.png" /></a>
                     +91 6380091001<br />
                     <a href="mailto:training@manvaasam.com"><img style="width: 25px; margin-left: 2%; margin-right: 2%" src="./image/otherlogo/gmail.png" /></a>training@manvaasam.com
                 </div>
             </div>
+            
+
+
 
             <div class="col-sm-6">
                 <div style="margin-top: 5%">
@@ -362,7 +390,7 @@ $user_id = $_SESSION['user_id'];
         </div>
     </div>
     <div class="FloatingButton">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
             <g fill="currentColor">
                 <path d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM7.194 4.766c.087.124.163.26.227.401c.428.948.393 2.377-.942 3.706a.446.446 0 0 1-.612.01a.405.405 0 0 1-.011-.59c.419-.416.672-.831.809-1.22c-.269.165-.588.26-.93.26C4.775 7.333 4 6.587 4 5.667C4 4.747 4.776 4 5.734 4c.271 0 .528.06.756.166l.008.004c.169.07.327.182.469.324c.085.083.161.174.227.272zM11 7.073c-.269.165-.588.26-.93.26c-.958 0-1.735-.746-1.735-1.666c0-.92.777-1.667 1.734-1.667c.271 0 .528.06.756.166l.008.004c.17.07.327.182.469.324c.085.083.161.174.227.272c.087.124.164.26.228.401c.428.948.392 2.377-.942 3.706a.446.446 0 0 1-.613.01a.405.405 0 0 1-.011-.59c.42-.416.672-.831.81-1.22z" />
             </g>
@@ -372,6 +400,7 @@ $user_id = $_SESSION['user_id'];
         <div>
             <img src="./image/products/manvasam_logo1.png">
         </div>
+
         <div class="p-2"></div>
         <div class="FloatingBoxInner">
             <div class="chat-box">
@@ -388,6 +417,7 @@ $user_id = $_SESSION['user_id'];
                 <div class="contentContainer">
 
                 </div>
+
             </div>
             <form action="#" class="typing-area">
                 <input type="text" name="message" class="input-field" placeholder="Type a message here..." autocomplete="off">
@@ -403,6 +433,7 @@ $user_id = $_SESSION['user_id'];
         </div>
     </div>
     <script>
+
         document.querySelector('.FloatingButton').addEventListener('click', function() {
             document.querySelector('.FloatingBox').classList.toggle('show');
         });
