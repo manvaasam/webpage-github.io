@@ -5,11 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>cocopeate</title>
-  <link rel="stylesheet" href="style.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.001.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
@@ -29,25 +30,25 @@
   </div>
 
   <!-- Single Products Detail -->
-  <div class="small-container single-product">
+  <div class="container single-product">
     <div class="row">
-      <div class="col-2">
+      <div class="col-md-6">
         <img src="image/products/fertilizer1.jpg" width="100%" id="ProductImg" />
 
-        <div class="small-img-row">
-          <div class="small-img-col">
+        <div class="row">
+          <div class="col">
             <img src="image/products/fertilizer1.jpg" class="small-img" />
           </div>
-          <div class="small-img-col">
+          <div class="col">
             <img src="image/products/fertilizer.jpg" class="small-img" />
           </div>
-          <div class="small-img-col">
+          <div class="col">
             <img src="image/products/fertilizer3.jpg" class="small-img" />
           </div>
 
         </div>
       </div>
-      <div class="col-2">
+      <div class="col-md-6">
         <p>Product / Fertilizer</p>
         <h2 id="ProductName">Manvaasam Fertilizer</h2>
         <h4 id="orderprice">Rs. 181.00</h4>
@@ -128,7 +129,7 @@
   <!-- js for product gallery -->
   <script>
     var ProductImg = document.getElementById("ProductImg");
-    var smallImg = document.getElementsByClassName("small-img");
+    var smallImg = document.getElementsByClassName("");
     smallImg[0].onclick = function () {
       ProductImg.src = smallImg[0].src;
     };

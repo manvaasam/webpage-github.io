@@ -4,11 +4,17 @@ include_once "./Mdb_conn.php";
 
 
 if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
+
     if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         $user_id = $_GET['user_id'];
         $sql = "SELECT * FROM messages WHERE user_id = '$user_id'";
         $result = $conn->query($sql);
-
+        $res = array();
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+                $res[] = $row;
+            }
+        }
 ?>
         <!DOCTYPE html>
         <html lang="en">
@@ -25,16 +31,21 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
         <body>
             <div class="wrapper">
                 <section class="chat-area">
-                    <header>
-                        <a href="users.php" class="back-icon"><i class="fas fa-arrow-left"></i></a>
-                        <div class="details">
-                            <span>Manvaasam</span>
-                            <p>active</p>
+                    <header class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <a href="users.php" class="back-icon"><i class="fas fa-arrow-left"></i></a>
+                            <div class="details">
+                                <span><?php echo $res[0]["uname"] ?></span>
+                                <p style="font-size: 80%;color:#c4c4c4">#<?php echo $res[0]["user_id"] ?></p>
+                            </div>
                         </div>
+                        <form action="close.php" method="post">
+                            <input type="hidden" name="user_name" value="<?php echo $res[0]["uname"] ?>">
+                            <input type="hidden" name="user_id" value="<?php echo $res[0]["user_id"] ?>">
+                            <input type="submit" class="btn btn-secondary btn-rounded" value="CLOSE">
+                        </form>
                     </header>
-
                     <div class="chat-box">
-
                         <div class="contentContainer">
 
                         </div>
@@ -76,7 +87,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                                 }
                             }
                         };
-                        xhr.send('message=' + message + '&user_id=' + user_id);
+                        xhr.send('message=' + message + '&user_id=' + user_id + '&uname=' + '<?php echo $res[0]["uname"] ?>');
                     }
                 });
 
@@ -100,7 +111,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                                         var text = '<div class="chat incoming"><div class="details"><p>' + response[i].message + '</p></div></div>'
                                         chat.insertAdjacentHTML('beforeend', text);
                                     } else {
-                                        var text = '<div class="chat outgoing"><div class="details"><p>' + response[i].message + '</p></div></div>'
+                                        var text = '<div class="chat outgoing"><div class="details"><p> <span style="font-size:75%;font-weight:bold" >' + response[i].sender.toUpperCase() + '</span><br/>' + response[i].message + '</p></div></div>'
                                         chat.insertAdjacentHTML('beforeend', text);
                                     }
                                 }
@@ -324,7 +335,6 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                     outline: none;
                     border-radius: 5px 0 0 5px;
                     opacity: 0;
-                    pointer-events: none;
                     transition: all 0.2s ease;
                 }
 
@@ -611,6 +621,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
     } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $message = $_POST["message"];
         $user_id = $_POST["user_id"];
+        $uname = $_POST["uname"];
         $Now = date("Y-m-d H:i:s");
         $type = $_SESSION['name'];
         // user_id only conntains numbers using regex
@@ -620,15 +631,11 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                 // check message is not too long
                 if (strlen($message) < 1000) {
                     // check message is not too short
-                    if (strlen($message) >= 5) {
-                        $sql = "INSERT INTO messages (message, user_id, sender, created_at) VALUES ('$message', '$user_id', '$type', '$Now')";
-                        if ($conn->query($sql) === TRUE) {
-                            echo "1";
-                        } else {
-                            echo "Error: " . $sql . "<br>" . $conn->error;
-                        }
+                    $sql = "INSERT INTO messages (message,uname, user_id, sender, created_at) VALUES ('$message','$uname', '$user_id', '$type', '$Now')";
+                    if ($conn->query($sql) === TRUE) {
+                        echo "1";
                     } else {
-                        echo "Message is too short";
+                        echo "Error: " . $sql . "<br>" . $conn->error;
                     }
                 } else {
                     echo "Message is too long";

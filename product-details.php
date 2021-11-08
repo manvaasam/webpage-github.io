@@ -5,11 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>cocopeate</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.001.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
@@ -29,17 +29,16 @@
   </div>
 
   <!-- Single Products Detail -->
-  <div class="small-container single-product">
+  <div class="container py-5 single-product">
     <div class="row">
-      <div class="col-2">
+      <div class="col-md-6">
         <img src="image/products/cocopeate_1kg.jpeg" width="100%" id="ProductImg" />
 
       </div>
-      <div class="col-2">
+      <div class="col-md-6">
         <p>Product / Cocopeat</p>
         <h2 id="ProductName">Manvaasam Cocopeat</h2>
         <h4 id="orderprice">Rs. 181.00 + Shipping fee*</h4>
-
         <select onchange="changevalue()" id="ordersize" name="size" required>
           <option value="small" selected>Small(1 kg)</option>
           <option value="medium">Medium(3 kg)</option>
@@ -47,20 +46,10 @@
         </select>
         <br>
         <input type="number" id="ordercount" value="1" onkeyup="changevalue()" onchange="changevalue()" name="count"
-          required />
+          required/>
         <input type="hidden" name="name" value="Manvaasam Cocopeate">
-        <input type="hidden" name="price" id="orderpriceinput" value="181"><br>
-        <button id="myBtn" style="  
-          display: inline-block;
-          background: #7ed32f;
-          color: #fff;
-          padding: 8px 30px;
-          margin: 30px 0;
-          border-radius: 5px;
-          transition: background 0.5s;
-          ">Buy Now</button>
-
-
+        <input type="hidden" name="price" id="orderpriceinput" value="181"/><br>
+        <button id="myBtn">Buy Now</button>
         <div id="myModal" class="modal">
           <div class="modal-content">
             <div class="modal-header">
@@ -76,7 +65,7 @@
               </form>
             </div>
             <div class="modal-footer">
-              <h3>Contact : 8946035845</h3>
+              <h3>Contact : 63800 91001</h3>
             </div>
           </div>
         </div>
