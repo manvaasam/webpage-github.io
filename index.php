@@ -22,6 +22,30 @@ $user_id = $_SESSION['user_id'];
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3/dist/js/bootstrap.min.js"></script>
     <style>
+        
+        .Floating-parent{
+            
+            bottom:20%;
+            right: 18px;
+            text-align: center;
+            color: green;
+        }
+        .Floating-parent .right-button{
+            position: fixed;
+            right: 0;
+            bottom: 80px;
+            right: 20px;
+            width: 50px;
+            height: 55px;
+            font-size: 25px;
+            color: #fff;
+            background: #1987314;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999999;
+        }
         .FloatingButton {
             position: fixed;
             right: 0;
@@ -365,8 +389,6 @@ $user_id = $_SESSION['user_id'];
         <div class="row">
             <div class="col-sm-6">
                 <div style="margin-left: 15%; padding: 5%">
-                    <a href="tel:+91 6380091001"><img style="width:25px; margin-left: 2%" src="./image/otherlogo/call.png"/></a>
-                    <button class="buttons">+91 6380091001</button> <br />
                     <a href="tel:+91 6380091001"><img style="width: 25px; margin-right: 2%; margin-left: 2%" src="./image/otherlogo/whatsapp.png" /></a>
                     +91 6380091001<br />
                     <a href="mailto:training@manvaasam.com"><img style="width: 25px; margin-left: 2%; margin-right: 2%" src="./image/otherlogo/gmail.png" /></a>training@manvaasam.com
@@ -388,6 +410,9 @@ $user_id = $_SESSION['user_id'];
                 </div>
             </div>
         </div>
+    </div>
+    <div class="Floating-parent">
+        <a href="tel:+91 6380091001" class="right-button"><img src="./image/otherlogo/calls.png" width="50px"alt=""></a>
     </div>
     <div class="FloatingButton">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
