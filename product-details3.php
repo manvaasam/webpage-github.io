@@ -5,12 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>cocopeate</title>
-  
-        <link rel="stylesheet" type="text/css" href="./assets/css/style.001.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3/dist/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.001.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
@@ -18,7 +18,7 @@
   <?php
   include './backend/header.php';
   ?>
-<div class="container">
+  <div class="container">
     <div class="navbar">
       <div class="logo">
         <a href="index.html">
@@ -55,8 +55,7 @@
           <option value="medium">Medium(3 kg)</option>
           <option value="large">Large(5 kg)</option>
         </select>
-        <input type="number" id="ordercount" value="1" onkeyup="changevalue()" onchange="changevalue()" name="count"
-          required />
+        <input type="number" id="ordercount" value="1" onkeyup="changevalue()" onchange="changevalue()" name="count" required />
         <input type="hidden" name="name" value="Manvaasam Cocopeate">
         <input type="hidden" name="price" id="orderpriceinput" value="181"><br>
         <button id="myBtn">Buy Now</button>
@@ -80,7 +79,7 @@
           </div>
         </div>
         <script>
-          document.getElementById('LoginForm').addEventListener('submit', function (e) {
+          document.getElementById('LoginForm').addEventListener('submit', function(e) {
             e.preventDefault();
             var form = new FormData(this);
             console.log(form);
@@ -92,9 +91,9 @@
             fetch('backend/order.php', {
               method: 'POST',
               body: form
-            }).then(function (response) {
+            }).then(function(response) {
               return response.text();
-            }).then(function (text) {
+            }).then(function(text) {
               alert(text);
             });
           });
@@ -103,13 +102,13 @@
           var modal = document.getElementById("myModal");
           var btn = document.getElementById("myBtn");
           var span = document.getElementsByClassName("close")[0];
-          btn.onclick = function () {
+          btn.onclick = function() {
             modal.style.display = "block";
           }
-          span.onclick = function () {
+          span.onclick = function() {
             modal.style.display = "none";
           }
-          window.onclick = function (event) {
+          window.onclick = function(event) {
             if (event.target == modal) {
               modal.style.display = "none";
             }
@@ -123,13 +122,13 @@
   <script>
     var ProductImg = document.getElementById("ProductImg");
     var smallImg = document.getElementsByClassName("small-img");
-    smallImg[0].onclick = function () {
+    smallImg[0].onclick = function() {
       ProductImg.src = smallImg[0].src;
     };
-    smallImg[1].onclick = function () {
+    smallImg[1].onclick = function() {
       ProductImg.src = smallImg[1].src;
     };
-    smallImg[2].onclick = function () {
+    smallImg[2].onclick = function() {
       ProductImg.src = smallImg[2].src;
     };
 
@@ -138,21 +137,22 @@
       var ordercount = document.getElementById('ordercount').value
       var orderprice = document.getElementById('orderprice')
       var orderimg = document.getElementById('ProductImg')
+      if (ordercount == 0) {
+        ordercount = 1
+      }
       if (ordersize == 'small') {
-        orderprice.innerHTML = 'Rs. ' + (25 * ordercount) + ' + Shipping fee*'
-        orderimg.src = 'image/products/vermicompost11.jpeg'
-
+         orderprice.innerHTML = 'Rs. ' + (25 * ordercount) + '.00 + Shipping fee*'
+        document.getElementById('ordercount').value = ordercount
       }
       else if (ordersize == 'medium') {
-        orderprice.innerHTML = 'RS. ' + (75 * ordercount) + ' + Shipping fee*'
-        orderimg.src = 'image/products/vermicompost2.jpeg'
+         orderprice.innerHTML = 'RS. ' + (75 * ordercount) + '.00 + Shipping fee*'
+        document.getElementById('ordercount').value = ordercount
       }
       else {
-        orderprice.innerHTML = 'Rs. ' + (125 * ordercount) + ' + Shipping fee*'
-        orderimg.src = 'image/products/vermicompost3.jpeg'
+         orderprice.innerHTML = 'Rs. ' + (125 * ordercount) + '.00 + Shipping fee*'
+        document.getElementById('ordercount').value = ordercount
       }
     }
-
   </script>
 
 

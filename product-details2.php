@@ -5,11 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>cocopeate</title>
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.001.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3/dist/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.001.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
@@ -19,7 +19,7 @@
   <?php
   include './backend/header.php';
   ?>
-<div class="container">
+  <div class="container">
     <div class="navbar">
       <div class="logo">
         <a href="index.html">
@@ -68,7 +68,7 @@
               <h2>Manvaasam</h2>
             </div>
             <div class="modal-body">
-              <form method="POST" id="LoginForm" >
+              <form method="POST" id="LoginForm">
                 <input type="text" name="customer_name" placeholder="Your Name" required /><br>
                 <input type="tel" name="customer_phone" placeholder="Phone No." required />
                 <textarea placeholder="Your Address" name="customer_address" id="" rows="6" required></textarea>
@@ -84,20 +84,20 @@
           var modal = document.getElementById("myModal");
           var btn = document.getElementById("myBtn");
           var span = document.getElementsByClassName("close")[0];
-          btn.onclick = function (e) {
+          btn.onclick = function(e) {
             e.preventDefault();
             modal.style.display = "block";
           }
-          span.onclick = function () {
+          span.onclick = function() {
             modal.style.display = "none";
           }
-          window.onclick = function (event) {
+          window.onclick = function(event) {
             if (event.target == modal) {
               modal.style.display = "none";
             }
           }
 
-          document.getElementById('LoginForm').addEventListener('submit', function (e) {
+          document.getElementById('LoginForm').addEventListener('submit', function(e) {
             e.preventDefault();
             var form = new FormData(this);
             console.log(form);
@@ -109,9 +109,9 @@
             fetch('backend/order.php', {
               method: 'POST',
               body: form
-            }).then(function (response) {
+            }).then(function(response) {
               return response.text();
-            }).then(function (text) {
+            }).then(function(text) {
               alert(text);
             });
           });
@@ -132,35 +132,37 @@
   <script>
     var ProductImg = document.getElementById("ProductImg");
     var smallImg = document.getElementsByClassName("small-img");
-    smallImg[0].onclick = function () {
+    smallImg[0].onclick = function() {
       ProductImg.src = smallImg[0].src;
     };
-    smallImg[1].onclick = function () {
+    smallImg[1].onclick = function() {
       ProductImg.src = smallImg[1].src;
     };
-    smallImg[2].onclick = function () {
+    smallImg[2].onclick = function() {
       ProductImg.src = smallImg[2].src;
     };
+
     function changevalue() {
       var ordersize = document.getElementById('ordersize').value
       var ordercount = document.getElementById('ordercount').value
       var orderprice = document.getElementById('orderprice')
       var orderimg = document.getElementById('ProductImg')
+      if (ordercount == 0) {
+        ordercount = 1
+      }
       if (ordersize == 'small') {
-        orderprice.innerHTML = 'Rs. ' + (250 * ordercount) + ' + Shipping fee*'
-        orderimg.src = 'image/products/individual_plant.jpg'
-
+        orderprice.innerHTML = 'Rs. ' + (250 * ordercount) + '.00 + Shipping fee*'
+        document.getElementById('ordercount').value = ordercount
       }
       else if (ordersize == 'medium') {
-        orderprice.innerHTML = 'RS. ' + (300 * ordercount)+ ' + Shipping fee*'
-        orderimg.src = 'image/products/mpant1.jpg'
+        orderprice.innerHTML = 'RS. ' + (300 * ordercount) + '.00 + Shipping fee*'
+        document.getElementById('ordercount').value = ordercount
       }
       else {
-        orderprice.innerHTML = 'Rs. ' + (350 * ordercount)+ ' + Shipping fee*'
-        orderimg.src = 'image/products/mplant.jpg'
+        orderprice.innerHTML = 'Rs. ' + (350 * ordercount) + '.00 + Shipping fee*'
+        document.getElementById('ordercount').value = ordercount
       }
     }
-
   </script>
 
 

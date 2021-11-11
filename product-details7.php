@@ -5,18 +5,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>cocopeate</title>
-  
-        <link rel="stylesheet" type="text/css" href="./assets/css/style.001.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3/dist/js/bootstrap.min.js"></script>
-    
-  
-        <link rel="stylesheet" type="text/css" href="style.css" />
+
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.001.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3/dist/js/bootstrap.min.js"></script>
+
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
-  
+
   <?php
   include './backend/header.php';
   ?>
@@ -53,67 +53,67 @@
         <p>Product / Gardening Setup</p>
         <h2 id="ProductName">Manvaasam Gardening Setup</h2>
         <h4 id="orderprice">for price contact +91 6380091001</h4>
-          
-          <input type="number" id="ordercount" value="1" onchange="changevalue()" name="count" required />
-          <input type="hidden" name="product" value="manvaasam_cocopeate">
-          <button id="myBtn" >Buy Now</button>
+
+        <input type="number" id="ordercount" value="1" onchange="changevalue()" name="count" required />
+        <input type="hidden" name="product" value="manvaasam_cocopeate">
+        <button id="myBtn">Buy Now</button>
 
 
-          <div id="myModal" class="modal">
-            <div class="modal-content">
-              <div class="modal-header">
-                <span class="close">&times;</span>
-                <h2>Manvaasam</h2>
-              </div>
-              <div class="modal-body">
-                <form action="./backend/order.php" method="POSt" id="LoginForm">
-                  <input type="text" name="customer_name" placeholder="Your Name" required /><br>
-                  <input type="tel" name="customer_phone" placeholder="Phone No." required />
-                  <textarea placeholder="Your Address" name="customer_address" id="" rows="6" required></textarea>
-                  <button type="submit" class="btn">Buy Now</button>
-                </form>
-              </div>
-              <div class="modal-footer">
-                <h3>Contact : 6380091001</h3>
-              </div>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Manvaasam</h2>
+            </div>
+            <div class="modal-body">
+              <form action="./backend/order.php" method="POSt" id="LoginForm">
+                <input type="text" name="customer_name" placeholder="Your Name" required /><br>
+                <input type="tel" name="customer_phone" placeholder="Phone No." required />
+                <textarea placeholder="Your Address" name="customer_address" id="" rows="6" required></textarea>
+                <button type="submit" class="btn">Buy Now</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <h3>Contact : 6380091001</h3>
             </div>
           </div>
-          <script>
-            document.getElementById('LoginForm').addEventListener('submit', function (e) {
-              e.preventDefault();
-              var form = new FormData(this);
-              console.log(form);
-              // add price to form
-              form.append("price", document.getElementById("orderprice").innerHTML);
-              form.append("name", document.getElementById("ProductName").innerHTML);
-              form.append("size", document.getElementById("ordersize").value);
-              form.append("count", document.getElementById("ordercount").value);
-              fetch('backend/order.php', {
-                method: 'POST',
-                body: form
-              }).then(function (response) {
-                return response.text();
-              }).then(function (text) {
-                alert(text);
-              });
+        </div>
+        <script>
+          document.getElementById('LoginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var form = new FormData(this);
+            console.log(form);
+            // add price to form
+            form.append("price", document.getElementById("orderprice").innerHTML);
+            form.append("name", document.getElementById("ProductName").innerHTML);
+            form.append("size", document.getElementById("ordersize").value);
+            form.append("count", document.getElementById("ordercount").value);
+            fetch('backend/order.php', {
+              method: 'POST',
+              body: form
+            }).then(function(response) {
+              return response.text();
+            }).then(function(text) {
+              alert(text);
             });
-          </script>
-          <script>
-            var modal = document.getElementById("myModal");
-            var btn = document.getElementById("myBtn");
-            var span = document.getElementsByClassName("close")[0];
-            btn.onclick = function () {
-              modal.style.display = "block";
-            }
-            span.onclick = function () {
+          });
+        </script>
+        <script>
+          var modal = document.getElementById("myModal");
+          var btn = document.getElementById("myBtn");
+          var span = document.getElementsByClassName("close")[0];
+          btn.onclick = function() {
+            modal.style.display = "block";
+          }
+          span.onclick = function() {
+            modal.style.display = "none";
+          }
+          window.onclick = function(event) {
+            if (event.target == modal) {
               modal.style.display = "none";
             }
-            window.onclick = function (event) {
-              if (event.target == modal) {
-                modal.style.display = "none";
-              }
-            }
-          </script>
+          }
+        </script>
 
 
 
@@ -145,16 +145,16 @@
   <script>
     var ProductImg = document.getElementById("ProductImg");
     var smallImg = document.getElementsByClassName("small-img");
-    smallImg[0].onclick = function () {
+    smallImg[0].onclick = function() {
       ProductImg.src = smallImg[0].src;
     };
-    smallImg[1].onclick = function () {
+    smallImg[1].onclick = function() {
       ProductImg.src = smallImg[1].src;
     };
-    smallImg[2].onclick = function () {
+    smallImg[2].onclick = function() {
       ProductImg.src = smallImg[2].src;
     };
-    smallImg[3].onclick = function () {
+    smallImg[3].onclick = function() {
       ProductImg.src = smallImg[3].src;
     };
 
@@ -167,17 +167,14 @@
         orderprice.innerHTML = 'Rs. ' + (181 * ordercount)
         orderimg.src = 'image/products/gardeningsetup.jpg'
 
-      }
-      else if (ordersize == 'medium') {
+      } else if (ordersize == 'medium') {
         orderprice.innerHTML = 'RS. ' + (249 * ordercount)
         orderimg.src = 'image/products/gardeningsetup1.jpg'
-      }
-      else {
+      } else {
         orderprice.innerHTML = 'Rs. ' + (314 * ordercount)
         orderimg.src = 'image/products/gardeningsetup2.jpg'
       }
     }
-
   </script>
 
 

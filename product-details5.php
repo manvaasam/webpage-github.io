@@ -5,15 +5,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>cocopeate</title>
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.001.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3/dist/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.001.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
-  
+
   <?php
   include './backend/header.php';
   ?>
@@ -81,7 +81,7 @@
           </div>
         </div>
         <script>
-          document.getElementById('LoginForm').addEventListener('submit', function (e) {
+          document.getElementById('LoginForm').addEventListener('submit', function(e) {
             e.preventDefault();
             var form = new FormData(this);
             console.log(form);
@@ -93,9 +93,9 @@
             fetch('backend/order.php', {
               method: 'POST',
               body: form
-            }).then(function (response) {
+            }).then(function(response) {
               return response.text();
-            }).then(function (text) {
+            }).then(function(text) {
               alert(text);
             });
           });
@@ -105,13 +105,13 @@
           var modal = document.getElementById("myModal");
           var btn = document.getElementById("myBtn");
           var span = document.getElementsByClassName("close")[0];
-          btn.onclick = function () {
+          btn.onclick = function() {
             modal.style.display = "block";
           }
-          span.onclick = function () {
+          span.onclick = function() {
             modal.style.display = "none";
           }
-          window.onclick = function (event) {
+          window.onclick = function(event) {
             if (event.target == modal) {
               modal.style.display = "none";
             }
@@ -132,39 +132,38 @@
   <script>
     var ProductImg = document.getElementById("ProductImg");
     var smallImg = document.getElementsByClassName("small-img");
-    smallImg[0].onclick = function () {
+    smallImg[0].onclick = function() {
       ProductImg.src = smallImg[0].src;
     };
-    smallImg[1].onclick = function () {
+    smallImg[1].onclick = function() {
       ProductImg.src = smallImg[1].src;
     };
-    smallImg[2].onclick = function () {
+    smallImg[2].onclick = function() {
       ProductImg.src = smallImg[2].src;
     };
-    smallImg[3].onclick = function () {
+    smallImg[3].onclick = function() {
       ProductImg.src = smallImg[3].src;
     };
 
     function changevalue() {
-      var ordersize = document.getElementById('ordersize').value
       var ordercount = document.getElementById('ordercount').value
       var orderprice = document.getElementById('orderprice')
+      var orderpriceinput = document.getElementById('orderpriceinput')
       var orderimg = document.getElementById('ProductImg')
+      if (ordercount == 0) {
+        ordercount = 1
+      }
       if (ordersize == 'small') {
-        orderprice.innerHTML = 'Rs. ' + (50 * ordercount) +' + Shipping fee*'
-        orderimg.src = 'image/products/growbag.jpeg'
-
-      }
-      else if (ordersize == 'medium') {
-        orderprice.innerHTML = 'RS. ' + (100 * ordercount)+' + Shipping fee*'
-        orderimg.src = 'image/products/growbag.jpeg'
-      }
-      else {
-        orderprice.innerHTML = 'Rs. ' + (160 * ordercount)+' + Shipping fee*'
-        orderimg.src = 'image/products/growbag.jpeg'
+        orderprice.innerHTML = 'Rs. ' + (50 * ordercount) + '.00 + Shipping fee*'
+        document.getElementById('ordercount').value = ordercount
+      } else if (ordersize == 'medium') {
+        orderprice.innerHTML = 'Rs. ' + (100 * ordercount) + '.00 + Shipping fee*'
+        document.getElementById('ordercount').value = ordercount
+      } else {
+        orderprice.innerHTML = 'Rs. ' + (160 * ordercount) + '.00 + Shipping fee*'
+        document.getElementById('ordercount').value = ordercount
       }
     }
-
   </script>
 
 
