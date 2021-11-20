@@ -22,46 +22,30 @@ $user_id = $_SESSION['user_id'];
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3/dist/js/bootstrap.min.js"></script>
     <style>
-        
-        .Floating-parent{
-            
-            bottom:20%;
-            right: 18px;
-            text-align: center;
-            color: green;
-        }
-        .Floating-parent .right-button{
-            position: fixed;
-            right: 0;
-            bottom: 80px;
-            right: 20px;
-            width: 50px;
-            height: 55px;
-            font-size: 25px;
-            color: #fff;
-            background: #1987314;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 9999999;
-        }
         .FloatingButton {
             position: fixed;
             right: 0;
             bottom: 20px;
             right: 20px;
-            width: 50px;
+            width: 125px;
             height: 50px;
             font-size: 25px;
             color: #fff;
             background: #198754;
-            border-radius: 50%;
+            border-radius: 20px;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-around;
             z-index: 9999999;
+            padding: 10px;
         }
+
+        .FloatingButton p {
+            white-space: nowrap;
+            font-size: 25px;
+            margin-bottom: 5px;
+        }
+
         .FloatingBox {
             position: fixed;
             right: 0;
@@ -132,7 +116,6 @@ $user_id = $_SESSION['user_id'];
             font-size: 19px;
             cursor: pointer;
             opacity: 0.7;
-            pointer-events: none;
             border-radius: 0 5px 5px 0;
             transition: all 0.3s ease;
             display: flex;
@@ -207,37 +190,17 @@ $user_id = $_SESSION['user_id'];
             padding: 2px;
             margin-bottom: 10px;
         }
-        .button{
-            text-align: right;
-            border-radius: 100px;
-            box-sizing: 100px;
-            border: none;
-            width:auto;
-        }
-        
-        .buttons{
-
-            text-align: right;
-            border-radius: 100px;
-            background-color: #90d156;
-            box-sizing: 100px;
-            border: none;
-            width: auto;
-        }
     </style>
 </head>
 
 <body style="overflow-x: hidden">
-<?php
+    <?php
     include_once './backend/header.php';
-?>
+    ?>
 
     <div class="bg-video-wrap">
         <video src="./assets/videos/bg_autoplay_3.mp4" loop muted autoplay></video>
         <div class="overlay"></div>
-        <div>
-
-            
         <div class="content">
             <div class="heroWrap-content">
                 <h2>FARMER'S BEST FRIENDS</h2>
@@ -262,30 +225,7 @@ $user_id = $_SESSION['user_id'];
                     </svg>
                     <div>
                         <h2 style="font-weight: bold;" class="pb-2">
-                            QUOTE OF THE DAY
-                        </h2>
-                        <h4>
-                            “As long as there’s a few farmers out there, we’ll keep fighting for them.”
-                        </h4>
-                        <p style="text-align: right;">
-                            - Willie Nelson
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="flex-center my-5">
-            <div class="box">
-                <svg class="fa2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="1rem" height="1rem" viewBox="0 0 1664 1408">
-                    <path d="M768 832v384q0 80-56 136t-136 56H192q-80 0-136-56T0 1216V512q0-104 40.5-198.5T150 150T313.5 40.5T512 0h64q26 0 45 19t19 45v128q0 26-19 45t-45 19h-64q-106 0-181 75t-75 181v32q0 40 28 68t68 28h224q80 0 136 56t56 136zm896 0v384q0 80-56 136t-136 56h-384q-80 0-136-56t-56-136V512q0-104 40.5-198.5T1046 150t163.5-109.5T1408 0h64q26 0 45 19t19 45v128q0 26-19 45t-45 19h-64q-106 0-181 75t-75 181v32q0 40 28 68t68 28h224q80 0 136 56t56 136z" fill="#fff" />
-                </svg>
-                <div class="text">
-                    <svg class="fa1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="1rem" height="1rem" viewBox="0 0 1664 1408">
-                        <path d="M768 192v704q0 104-40.5 198.5T618 1258t-163.5 109.5T256 1408h-64q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h64q106 0 181-75t75-181v-32q0-40-28-68t-68-28H192q-80 0-136-56T0 576V192q0-80 56-136T192 0h384q80 0 136 56t56 136zm896 0v704q0 104-40.5 198.5T1514 1258t-163.5 109.5T1152 1408h-64q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h64q106 0 181-75t75-181v-32q0-40-28-68t-68-28h-224q-80 0-136-56t-56-136V192q0-80 56-136t136-56h384q80 0 136 56t56 136z" fill="#fff" />
-                    </svg>
-                    <div>
-                        <h2 style="font-weight: bold;" class="pb-2">
-                        திருக்குறள்
+                            திருக்குறள்
                         </h2>
                         <h4 style="text-align:left;font-size: large">
                             “உழுதுண்டு வாழ்வாரே வாழ்வார்மற் றெல்லாம்<br> தொழுதுண்டு பின்செல் பவர்.”<br><br>
@@ -363,10 +303,6 @@ $user_id = $_SESSION['user_id'];
             </div>
         </div>
     </div>
-
-    <div>
-        
-    </div>
     <div class="row py-4">
         <div class="col-sm-6">
             <img src="./image/manvasam_logo1.png" style="width: 80%; height: 175px" />
@@ -389,14 +325,11 @@ $user_id = $_SESSION['user_id'];
         <div class="row">
             <div class="col-sm-6">
                 <div style="margin-left: 15%; padding: 5%">
-                    <a href="tel:+91 6380091001"><img style="width: 25px; margin-right: 2%; margin-left: 2%" src="./image/otherlogo/whatsapp.png" /></a>
+                    <a href="tel:6380091001"><img style="width: 25px; margin-right: 2%; margin-left: 2%" src="./image/otherlogo/whatsapp.png" /></a>
                     +91 6380091001<br />
                     <a href="mailto:training@manvaasam.com"><img style="width: 25px; margin-left: 2%; margin-right: 2%" src="./image/otherlogo/gmail.png" /></a>training@manvaasam.com
                 </div>
             </div>
-            
-
-
 
             <div class="col-sm-6">
                 <div style="margin-top: 5%">
@@ -411,21 +344,27 @@ $user_id = $_SESSION['user_id'];
             </div>
         </div>
     </div>
-    <div class="Floating-parent">
-        <a href="tel:+91 6380091001" class="right-button"><img src="./image/otherlogo/calls.png" width="50px"alt=""></a>
-    </div>
     <div class="FloatingButton">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
             <g fill="currentColor">
                 <path d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM7.194 4.766c.087.124.163.26.227.401c.428.948.393 2.377-.942 3.706a.446.446 0 0 1-.612.01a.405.405 0 0 1-.011-.59c.419-.416.672-.831.809-1.22c-.269.165-.588.26-.93.26C4.775 7.333 4 6.587 4 5.667C4 4.747 4.776 4 5.734 4c.271 0 .528.06.756.166l.008.004c.169.07.327.182.469.324c.085.083.161.174.227.272zM11 7.073c-.269.165-.588.26-.93.26c-.958 0-1.735-.746-1.735-1.666c0-.92.777-1.667 1.734-1.667c.271 0 .528.06.756.166l.008.004c.17.07.327.182.469.324c.085.083.161.174.227.272c.087.124.164.26.228.401c.428.948.392 2.377-.942 3.706a.446.446 0 0 1-.613.01a.405.405 0 0 1-.011-.59c.42-.416.672-.831.81-1.22z" />
             </g>
         </svg>
+        <p>CHAT</p>
+    </div>
+    <div class="FloatingButton" style="width: 50px;height: 50px;border-radius: 50%;bottom: 75px;">
+        <a href="tel:+91 6380091001" style="color: #fff;display: flex;justify-content: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                <g fill="none">
+                    <path d="M7.056 2.418l1.167-.351a2.75 2.75 0 0 1 3.302 1.505l.902 2.006a2.75 2.75 0 0 1-.633 3.139L10.3 10.11a.25.25 0 0 0-.078.155c-.044.397.225 1.17.845 2.245c.451.781.86 1.33 1.207 1.637c.242.215.375.261.432.245l2.01-.615a2.75 2.75 0 0 1 3.034 1.02l1.281 1.776a2.75 2.75 0 0 1-.339 3.605l-.886.84a3.75 3.75 0 0 1-3.587.889c-2.754-.769-5.223-3.093-7.435-6.924c-2.215-3.836-2.992-7.14-2.276-9.913a3.75 3.75 0 0 1 2.548-2.652zm.433 1.437a2.25 2.25 0 0 0-1.529 1.59c-.602 2.332.087 5.261 2.123 8.788c2.033 3.522 4.222 5.582 6.54 6.23a2.25 2.25 0 0 0 2.151-.534l.887-.84a1.25 1.25 0 0 0 .154-1.639l-1.28-1.775a1.25 1.25 0 0 0-1.38-.464l-2.015.617c-1.17.348-2.232-.593-3.372-2.568C9 11.93 8.642 10.9 8.731 10.099c.047-.416.24-.8.546-1.086l1.494-1.393a1.25 1.25 0 0 0 .288-1.427l-.902-2.006a1.25 1.25 0 0 0-1.5-.684l-1.168.352z" fill="currentColor" />
+                </g>
+            </svg>
+        </a>
     </div>
     <div class="FloatingBox card border-1 p-2 text-center">
         <div>
             <img src="./image/products/manvasam_logo1.png">
         </div>
-
         <div class="p-2"></div>
         <div class="FloatingBoxInner">
             <div class="chat-box">
@@ -442,7 +381,6 @@ $user_id = $_SESSION['user_id'];
                 <div class="contentContainer">
 
                 </div>
-
             </div>
             <form action="#" class="typing-area">
                 <input type="text" name="message" class="input-field" placeholder="Type a message here..." autocomplete="off">
@@ -458,7 +396,6 @@ $user_id = $_SESSION['user_id'];
         </div>
     </div>
     <script>
-
         document.querySelector('.FloatingButton').addEventListener('click', function() {
             document.querySelector('.FloatingBox').classList.toggle('show');
         });
@@ -512,7 +449,7 @@ $user_id = $_SESSION['user_id'];
                                 var text = '<div class="chat outgoing"><div class="details"><p>' + response[i].message + '</p></div></div>'
                                 chat.insertAdjacentHTML('beforeend', text);
                             } else {
-                                var text = '<div class="chat incoming"><div class="details"><p> <span style="font-size:75%;font-weight:bold" >'+response[i].sender.toUpperCase()+'</span><br/>' + response[i].message + '</p></div></div>'
+                                var text = '<div class="chat incoming"><div class="details"><p> <span style="font-size:75%;font-weight:bold" >' + response[i].sender.toUpperCase() + '</span><br/>' + response[i].message + '</p></div></div>'
                                 chat.insertAdjacentHTML('beforeend', text);
                             }
                         }
@@ -537,7 +474,5 @@ $user_id = $_SESSION['user_id'];
         }
     </script>
 </body>
-
-
 
 </html>

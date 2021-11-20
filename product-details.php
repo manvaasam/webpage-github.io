@@ -130,20 +130,23 @@
       var orderprice = document.getElementById('orderprice')
       var orderpriceinput = document.getElementById('orderpriceinput')
       var orderimg = document.getElementById('ProductImg')
+      if (ordercount == 0) {
+        ordercount = 1
+      }
       if (ordersize == 'small') {
         orderprice.innerHTML = 'Rs. ' + (181 * ordercount) + '.00 + Shipping fee*'
         orderpriceinput.value = (181 * ordercount)
-       
+        document.getElementById('ordercount').value = ordercount
       }
       else if (ordersize == 'medium') {
         orderprice.innerHTML = 'RS. ' + (249 * ordercount) + '.00 + Shipping fee*'
         orderpriceinput.value = (249 * ordercount)
-        
+        document.getElementById('ordercount').value = ordercount
       }
       else {
         orderprice.innerHTML = 'Rs. ' + (314 * ordercount) + '.00 + Shipping fee*'
         orderpriceinput.value = (314 * ordercount)
-        
+        document.getElementById('ordercount').value = ordercount
       }
     }
   </script>
