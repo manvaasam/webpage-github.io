@@ -100,28 +100,24 @@ session_start();
             let formData = new FormData(form);
             let xhr = new XMLHttpRequest();
             if (isRealDate(fromDate) && isRealDate(toDate)) {
-                if (new Date(fromDate) < new Date(toDate)) {
-                    xhr.open('POST', 'POST/leave.php', true);
-                    xhr.onload = function() {
-                        if (this.status == 200) {
-                            let response = JSON.parse(this.responseText);
-                            if (response.status == 'success') {
-                                alert(response.message);
-                                window.location.href = 'index.php';
-                                email.value = '';
-                                typeOfLeave.value = '';
-                                fromDate.value = '';
-                                toDate.value = '';
-                                reason.value = '';
-                            } else {
-                                alert(response.message);
-                            }
+                xhr.open('POST', 'POST/leave.php', true);
+                xhr.onload = function() {
+                    if (this.status == 200) {
+                        let response = JSON.parse(this.responseText);
+                        if (response.status == 'success') {
+                            alert(response.message);
+                            window.location.href = 'index.php';
+                            email.value = '';
+                            typeOfLeave.value = '';
+                            fromDate.value = '';
+                            toDate.value = '';
+                            reason.value = '';
+                        } else {
+                            alert(response.message);
                         }
                     }
-                    xhr.send(formData);
-                } else {
-                    alert('Leave dates does not match');
                 }
+                xhr.send(formData);
             } else {
                 alert('Please enter valid date');
             }

@@ -1,52 +1,103 @@
+<?php
+
+if (!isset($_SESSION)) {
+    session_start();
+}
+$user_id = "";
+$user_name = "";
+$user_contact = "";
+
+if (!isset($_SESSION['user_id'])) {
+    if (!isset($_COOKIE['user_name'])) {
+        $id = rand(1, 99999999999);
+        setcookie("user_id", $id, time() + (86400 * 365), "/");
+        $_SESSION["user_id"] = $id;
+    } else {
+        $_SESSION["user_id"] = $_COOKIE["user_id"];
+    }
+}
+if (isset($_COOKIE['user_name'])) {
+    $_SESSION["user_name"] = $_COOKIE['user_name'];
+    $user_name = $_COOKIE["user_name"];
+}
+if (isset($_COOKIE['user_contact'])) {
+    $_SESSION["user_contact"] = $_COOKIE['user_contact'];
+    $user_contact = $_COOKIE["user_contact"];
+}
+$user_id = $_SESSION["user_id"];
+$domainName = "https://manvaasam.com/";
+
+if ($_SERVER['SERVER_NAME'] == 'localhost') {
+    $domainName = "http://localhost/projects/manvaasam/webpage-github.io/";
+}
+echo '<link rel="stylesheet" href="' . $domainName . 'chat.css">';
+?>
 <nav class="shadow-sm navbar fixed-top navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="https://manvaasam.com/aboutus.php"><img class="logo" src="https://manvaasam.com/image/products/manvasam_logo1.png" /></a>
+        <a class="navbar-brand" href="<?= $domainName ?>aboutus.php"><img class="logo" src="<?= $domainName ?>image/products/manvasam_logo1.png" /></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link px-3" href="https://manvaasam.com/index.php">
+                <li class="nav-item <?php if ($_SERVER['REQUEST_URI'] == "/index.php") {
+                                        echo "active";
+                                    } ?>">
+                    <a class="nav-link px-3" href="<?= $domainName ?>index.php">
                         <div class="tab-text">Home</div>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link px-3" href="https://manvaasam.com/product.php">
-                        <div class="tab-text">Products</div>
-                    </a>
+                <?php
+                if (strpos($_SERVER['REQUEST_URI'], "product") !== false) {
+                    echo '<li class="nav-item active">';
+                } else {
+                    echo '<li class="nav-item">';
+                }
+                ?>
+                <a class="nav-link px-3" href="<?= $domainName ?>product.php">
+                    <div class="tab-text">Products</div>
+                </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link px-3" href="https://manvaasam.com/gallery.php">
+                <li class="nav-item <?php if ($_SERVER['REQUEST_URI'] == "/gallery.php") {
+                                        echo "active";
+                                    } ?>">
+                    <a class="nav-link px-3" href="<?= $domainName ?>gallery.php">
                         <div class="tab-text">Gallery</div>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link px-3" href="https://manvaasam.com/course.php">
+                <li class="nav-item <?php if ($_SERVER['REQUEST_URI'] == "/course.php") {
+                                        echo "active";
+                                    } ?>">
+                    <a class="nav-link px-3" href="<?= $domainName ?>course.php">
                         <div class="tab-text">Courses</div>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link px-3" href="https://manvaasam.com/aboutus.php">
+                <li class="nav-item <?php if ($_SERVER['REQUEST_URI'] == "/aboutus.php") {
+                                        echo "active";
+                                    } ?>">
+                    <a class="nav-link px-3" href="<?= $domainName ?>aboutus.php">
                         <div class="tab-text">About&nbsp;us</div>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link px-3" href="https://manvaasam.com/./Logistics/log.php">
+                <li class="nav-item <?php if ($_SERVER['REQUEST_URI'] == "/Logistics/log.php") {
+                                        echo "active";
+                                    } ?>">
+                    <a class="nav-link px-3" href="<?= $domainName ?>Logistics/log.php">
                         <div class="tab-text">Logistics</div>
                     </a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown <?php if ($_SERVER['REQUEST_URI'] == "/Student_Login/loginindex.php" || $_SERVER['REQUEST_URI'] == "/Emp_Login/Mindex.html" || $_SERVER['REQUEST_URI'] == "/Admin_Login/admin.php") {
+                                                    echo "active";
+                                                } ?>">
                     <a class="nav-link px-3 dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Login
                     </a>
                     <div style="right: 0" class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                        <a class="dropdown-item" href="https://manvaasam.com/Student_Login/loginindex.php">Student Login</a>
+                        <a class="dropdown-item" href="<?= $domainName ?>Student_Login/loginindex.php">Student Login</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="https://manvaasam.com/Emp_Login/Mindex.html">Manvaasam Login</a>
-
+                        <a class="dropdown-item" href="<?= $domainName ?>Emp_Login/Mindex.html">Manvaasam Login</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="https://manvaasam.com/Admin_Login/admin.php">Admin Login</a>
+                        <a class="dropdown-item" href="<?= $domainName ?>Admin_Login/admin.php">Admin Login</a>
                     </div>
                 </li>
             </ul>
@@ -75,3 +126,183 @@
         </div>
     </div>
 </nav>
+
+<div class="FloatingButton one">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+        <g fill="currentColor">
+            <path d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM7.194 4.766c.087.124.163.26.227.401c.428.948.393 2.377-.942 3.706a.446.446 0 0 1-.612.01a.405.405 0 0 1-.011-.59c.419-.416.672-.831.809-1.22c-.269.165-.588.26-.93.26C4.775 7.333 4 6.587 4 5.667C4 4.747 4.776 4 5.734 4c.271 0 .528.06.756.166l.008.004c.169.07.327.182.469.324c.085.083.161.174.227.272zM11 7.073c-.269.165-.588.26-.93.26c-.958 0-1.735-.746-1.735-1.666c0-.92.777-1.667 1.734-1.667c.271 0 .528.06.756.166l.008.004c.17.07.327.182.469.324c.085.083.161.174.227.272c.087.124.164.26.228.401c.428.948.392 2.377-.942 3.706a.446.446 0 0 1-.613.01a.405.405 0 0 1-.011-.59c.42-.416.672-.831.81-1.22z" />
+        </g>
+    </svg>
+    &nbsp;
+    Chat Us
+</div>
+<div class="FloatingButton" style="width: 50px;height: 50px;border-radius: 50%;bottom: 75px;">
+    <a href="tel:+91 6380091001" style="color: #fff;display: flex;justify-content: center;">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+            <g fill="none">
+                <path d="M7.056 2.418l1.167-.351a2.75 2.75 0 0 1 3.302 1.505l.902 2.006a2.75 2.75 0 0 1-.633 3.139L10.3 10.11a.25.25 0 0 0-.078.155c-.044.397.225 1.17.845 2.245c.451.781.86 1.33 1.207 1.637c.242.215.375.261.432.245l2.01-.615a2.75 2.75 0 0 1 3.034 1.02l1.281 1.776a2.75 2.75 0 0 1-.339 3.605l-.886.84a3.75 3.75 0 0 1-3.587.889c-2.754-.769-5.223-3.093-7.435-6.924c-2.215-3.836-2.992-7.14-2.276-9.913a3.75 3.75 0 0 1 2.548-2.652zm.433 1.437a2.25 2.25 0 0 0-1.529 1.59c-.602 2.332.087 5.261 2.123 8.788c2.033 3.522 4.222 5.582 6.54 6.23a2.25 2.25 0 0 0 2.151-.534l.887-.84a1.25 1.25 0 0 0 .154-1.639l-1.28-1.775a1.25 1.25 0 0 0-1.38-.464l-2.015.617c-1.17.348-2.232-.593-3.372-2.568C9 11.93 8.642 10.9 8.731 10.099c.047-.416.24-.8.546-1.086l1.494-1.393a1.25 1.25 0 0 0 .288-1.427l-.902-2.006a1.25 1.25 0 0 0-1.5-.684l-1.168.352z" fill="currentColor" />
+            </g>
+        </svg>
+    </a>
+</div>
+<div class="FloatingBox card border-1 p-2 text-center">
+    <div>
+        <img src="<?= $domainName ?>image/products/manvasam_logo1.png">
+    </div>
+    <div class="p-2"></div>
+    <div class="FloatingBoxInner">
+        <?php
+        if ($user_name == "") {
+        ?>
+            <div class="overlayInputBox">
+                <form id="userNameForm" method="post">
+                    <input id="inputName" type="text" name="name" class="form-control" placeholder="Enter your Name" autocomplete="off">
+                    <div class="p-2"></div>
+                    <input id="inputContact" type="text" name="contact" class="form-control" placeholder="Email ID or Phone number" autocomplete="off">
+                    <input type="hidden" name="user_id" value="<?php echo $user_id; ?>">
+                    <div class="p-2"></div>
+                    <button type="submit" class="btn btn-success w-100">
+                        START CHAT
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                            <g fill="none">
+                                <path d="M1.724 1.053a.5.5 0 0 0-.714.545l1.403 4.85a.5.5 0 0 0 .397.354l5.69.953c.268.053.268.437 0 .49l-5.69.953a.5.5 0 0 0-.397.354l-1.403 4.85a.5.5 0 0 0 .714.545l13-6.5a.5.5 0 0 0 0-.894l-13-6.5z" fill="currentColor" />
+                            </g>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        <?php
+        } else {
+        ?>
+            <div id="userNameForm" style="display: none;"></div>
+        <?php
+        }
+        ?>
+        <div class="chat-box">
+            <div class="alertMessage">
+
+            </div>
+            <div class="contentContainer">
+
+            </div>
+        </div>
+        <form action="#" class="typing-area" id="chatForm">
+            <input type="text" name="message" class="input-field" placeholder="Type a message here..." autocomplete="off">
+            <input type="hidden" name="user_id" value="<?php echo $user_id; ?>">
+            <input type="hidden" name="user_name" value="<?php echo $user_name; ?>">
+            <input type="hidden" name="user_contact" value="<?php echo $user_contact; ?>">
+            <button type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <g fill="none">
+                        <path d="M1.724 1.053a.5.5 0 0 0-.714.545l1.403 4.85a.5.5 0 0 0 .397.354l5.69.953c.268.053.268.437 0 .49l-5.69.953a.5.5 0 0 0-.397.354l-1.403 4.85a.5.5 0 0 0 .714.545l13-6.5a.5.5 0 0 0 0-.894l-13-6.5z" fill="currentColor" />
+                    </g>
+                </svg>
+            </button>
+        </form>
+    </div>
+</div>
+<script>
+    document.querySelector('.FloatingButton.one').addEventListener('click', function() {
+        document.querySelector('.FloatingBox').classList.toggle('show');
+    });
+    document.querySelector('form#chatForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        var message = document.querySelector('form#chatForm input[name=message]').value;
+        var user_id = document.querySelector('form#chatForm input[name=user_id]').value;
+        var user_name = document.querySelector('form#chatForm input[name=user_name]').value;
+        var user_contact = document.querySelector('form#chatForm input[name=user_contact]').value;
+        if (message.length > 0) {
+            message = sanitize(message);
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '<?= $domainName ?>sendMessage.php');
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var response = xhr.responseText;
+                    response = response.trim();
+                    if (response === '1') {
+                        var chat = document.querySelector('.chat-box .contentContainer');
+                        var text = '<div class="chat outgoing"><div class="details"><p>' + message + '</p></div></div>'
+                        chat.insertAdjacentHTML('beforeend', text);
+                        document.querySelector('.alertMessage').innerHTML = '<div class="alert alert-info" role="alert"><span class="message">You will get Notify when the admins comes online</span></div>'
+                        document.querySelector('form#chatForm input[name=message]').value = '';
+                    } else {
+                        alert(response);
+                    }
+                }
+            };
+            xhr.send('message=' + message + '&user_id=' + user_id + '&user_name=' + user_name + '&user_contact=' + user_contact);
+        }
+    });
+    document.querySelector('#userNameForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        var name = document.querySelector('#inputName').value;
+        var contact = document.querySelector('#inputContact').value;
+        var user_id = document.querySelector('form#userNameForm input[name=user_id]').value;
+        if (name.length > 0) {
+            name = sanitize(name);
+            contact = sanitize(contact);
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '<?= $domainName ?>setName.php');
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var response = xhr.responseText;
+                    response = response.trim();
+                    if (response === 'success') {
+                        alert('Welcome To Manvaasam Chat');
+                        document.querySelector('.overlayInputBox').style.display = 'none';
+                        document.querySelector('#chatForm input[name=user_name]').value = name;
+                    } else {
+                        alert(response);
+                    }
+                }
+            };
+            xhr.send('name=' + name + '&contact=' + contact + '&user_id=' + user_id);
+        }
+    });
+
+    function getMessages() {
+        var user_id = <?php echo $user_id ?>;
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', '<?= $domainName ?>getMessages.php');
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                var response = xhr.responseText;
+                response = response.trim();
+                if (response === 'Error') {
+                    alert(response);
+                } else {
+                    response = JSON.parse(response);
+                    var chat = document.querySelector('.chat-box .contentContainer');
+                    chat.innerHTML = '';
+                    for (var i = 0; i < response.length; i++) {
+                        if (response[i].sender == "you") {
+                            var text = '<div class="chat outgoing"><div class="details"><p>' + response[i].message + '</p></div></div>'
+                            chat.insertAdjacentHTML('beforeend', text);
+                        } else {
+                            var text = '<div class="chat incoming"><div class="details"><p> <span style="font-size:75%;font-weight:bold" >' + response[i].sender.toUpperCase() + '</span><br/>' + response[i].message + '</p></div></div>'
+                            chat.insertAdjacentHTML('beforeend', text);
+                        }
+                    }
+                }
+            }
+        };
+        xhr.send('id=' + user_id);
+    }
+    setInterval(getMessages, 2000);
+
+    function sanitize(string) {
+        const map = {
+            '&': '&amp;',
+            '<': '&lt;',
+            '>': '&gt;',
+            '"': '&quot;',
+            "'": '&#x27;',
+            "/": '&#x2F;',
+        };
+        const reg = /[&<>"'/]/ig;
+        return string.replace(reg, (match) => (map[match]));
+    }
+</script>

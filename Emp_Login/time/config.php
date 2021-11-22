@@ -1,22 +1,30 @@
-<?php 
+<?php
 // define("DB_HOST", "localhost");
 // define("DB_USER", "root");
 // define("DB_PASS", "");
 // define("DB_NAME", "manvaasam");
 
-define("DB_HOST", "localhost");
-define("DB_USER", "manvaasa_login");
-define("DB_NAME", "manvaasa_login");
-define("DB_PASS", "Iron_Man@#10");
-
-class Database{
+if ($_SERVER['SERVER_NAME'] == 'localhost') {
+    define("DB_HOST", "localhost");
+    define("DB_USER", "root");
+    define("DB_NAME", "manvaasam");
+    define("DB_PASS", "");
+} else {
+    define("DB_HOST", "localhost");
+    define("DB_USER", "manvaasa_login");
+    define("DB_NAME", "manvaasa_login");
+    define("DB_PASS", "Iron_Man@#10");
+}
+class Database
+{
     private $host = DB_HOST;
     private $user = DB_USER;
     private $pass = DB_PASS;
     private $dbname = DB_NAME;
 
     private $error;
-    public function getConnection() {
+    public function getConnection()
+    {
         $this->conn = null;
         try {
             $this->conn = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->dbname, $this->user, $this->pass);
@@ -28,6 +36,3 @@ class Database{
         return $this->conn;
     }
 }
-
-
-?>

@@ -5,10 +5,12 @@ $db_name="manvaasa_login";
 $unmae= "manvaasa_login";
 $password = "Iron_Man@#10";
 
-// $hostname= "localhost";
-// $db_name="manvaasam";
-// $unmae= "root";
-// $password = "";
+if ($_SERVER['SERVER_NAME'] == 'localhost') {
+  $hostname= "localhost";
+  $db_name="manvaasam";
+  $unmae= "root";
+  $password = "";  
+}
 
 
 $conn = mysqli_connect($hostname , $unmae, $password, $db_name);
