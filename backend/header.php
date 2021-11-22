@@ -1,9 +1,11 @@
 <?php
-include_once "Emp_Login/Mdb_conn.php";
 
-session_start();
+if (!isset($_SESSION)) {
+    session_start();
+}
 $user_id = "";
 $user_name = "";
+$user_contact = "";
 
 if (!isset($_SESSION['user_id'])) {
     if (!isset($_COOKIE['user_name'])) {
@@ -18,12 +20,21 @@ if (isset($_COOKIE['user_name'])) {
     $_SESSION["user_name"] = $_COOKIE['user_name'];
     $user_name = $_COOKIE["user_name"];
 }
+if (isset($_COOKIE['user_contact'])) {
+    $_SESSION["user_contact"] = $_COOKIE['user_contact'];
+    $user_contact = $_COOKIE["user_contact"];
+}
 $user_id = $_SESSION["user_id"];
+$domainName = "https://manvaasam.com/";
+
+if ($_SERVER['SERVER_NAME'] == 'localhost') {
+    $domainName = "http://localhost/projects/manvaasam/webpage-github.io/";
+}
+echo '<link rel="stylesheet" href="' . $domainName . 'chat.css">';
 ?>
-<link rel="stylesheet" href="https://manvaasam.com/chat.css">
 <nav class="shadow-sm navbar fixed-top navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="https://manvaasam.com/aboutus.php"><img class="logo" src="https://manvaasam.com/image/products/manvasam_logo1.png" /></a>
+        <a class="navbar-brand" href="<?= $domainName ?>aboutus.php"><img class="logo" src="<?= $domainName ?>image/products/manvasam_logo1.png" /></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -32,7 +43,7 @@ $user_id = $_SESSION["user_id"];
                 <li class="nav-item <?php if ($_SERVER['REQUEST_URI'] == "/index.php") {
                                         echo "active";
                                     } ?>">
-                    <a class="nav-link px-3" href="https://manvaasam.com/index.php">
+                    <a class="nav-link px-3" href="<?= $domainName ?>index.php">
                         <div class="tab-text">Home</div>
                     </a>
                 </li>
@@ -43,35 +54,35 @@ $user_id = $_SESSION["user_id"];
                     echo '<li class="nav-item">';
                 }
                 ?>
-                <a class="nav-link px-3" href="https://manvaasam.com/product.php">
+                <a class="nav-link px-3" href="<?= $domainName ?>product.php">
                     <div class="tab-text">Products</div>
                 </a>
                 </li>
                 <li class="nav-item <?php if ($_SERVER['REQUEST_URI'] == "/gallery.php") {
                                         echo "active";
                                     } ?>">
-                    <a class="nav-link px-3" href="https://manvaasam.com/gallery.php">
+                    <a class="nav-link px-3" href="<?= $domainName ?>gallery.php">
                         <div class="tab-text">Gallery</div>
                     </a>
                 </li>
                 <li class="nav-item <?php if ($_SERVER['REQUEST_URI'] == "/course.php") {
                                         echo "active";
                                     } ?>">
-                    <a class="nav-link px-3" href="https://manvaasam.com/course.php">
+                    <a class="nav-link px-3" href="<?= $domainName ?>course.php">
                         <div class="tab-text">Courses</div>
                     </a>
                 </li>
                 <li class="nav-item <?php if ($_SERVER['REQUEST_URI'] == "/aboutus.php") {
                                         echo "active";
                                     } ?>">
-                    <a class="nav-link px-3" href="https://manvaasam.com/aboutus.php">
+                    <a class="nav-link px-3" href="<?= $domainName ?>aboutus.php">
                         <div class="tab-text">About&nbsp;us</div>
                     </a>
                 </li>
                 <li class="nav-item <?php if ($_SERVER['REQUEST_URI'] == "/Logistics/log.php") {
                                         echo "active";
                                     } ?>">
-                    <a class="nav-link px-3" href="https://manvaasam.com/Logistics/log.php">
+                    <a class="nav-link px-3" href="<?= $domainName ?>Logistics/log.php">
                         <div class="tab-text">Logistics</div>
                     </a>
                 </li>
@@ -82,11 +93,11 @@ $user_id = $_SESSION["user_id"];
                         Login
                     </a>
                     <div style="right: 0" class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                        <a class="dropdown-item" href="https://manvaasam.com/Student_Login/loginindex.php">Student Login</a>
+                        <a class="dropdown-item" href="<?= $domainName ?>Student_Login/loginindex.php">Student Login</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="https://manvaasam.com/Emp_Login/Mindex.html">Manvaasam Login</a>
+                        <a class="dropdown-item" href="<?= $domainName ?>Emp_Login/Mindex.html">Manvaasam Login</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="https://manvaasam.com/Admin_Login/admin.php">Admin Login</a>
+                        <a class="dropdown-item" href="<?= $domainName ?>Admin_Login/admin.php">Admin Login</a>
                     </div>
                 </li>
             </ul>
@@ -136,7 +147,7 @@ $user_id = $_SESSION["user_id"];
 </div>
 <div class="FloatingBox card border-1 p-2 text-center">
     <div>
-        <img src="https://manvaasam.com/image/products/manvasam_logo1.png">
+        <img src="<?= $domainName ?>image/products/manvasam_logo1.png">
     </div>
     <div class="p-2"></div>
     <div class="FloatingBoxInner">
@@ -144,10 +155,14 @@ $user_id = $_SESSION["user_id"];
         if ($user_name == "") {
         ?>
             <div class="overlayInputBox">
-                <form class="typing-area" id="userNameForm" method="post">
-                    <input id="inputName" type="text" name="name" class="input-field" placeholder="Enter your Name" autocomplete="off">
+                <form id="userNameForm" method="post">
+                    <input id="inputName" type="text" name="name" class="form-control" placeholder="Enter your Name" autocomplete="off">
+                    <div class="p-2"></div>
+                    <input id="inputContact" type="text" name="contact" class="form-control" placeholder="Email ID or Phone number" autocomplete="off">
                     <input type="hidden" name="user_id" value="<?php echo $user_id; ?>">
-                    <button type="submit">
+                    <div class="p-2"></div>
+                    <button type="submit" class="btn btn-success w-100">
+                        START CHAT
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
                             <g fill="none">
                                 <path d="M1.724 1.053a.5.5 0 0 0-.714.545l1.403 4.85a.5.5 0 0 0 .397.354l5.69.953c.268.053.268.437 0 .49l-5.69.953a.5.5 0 0 0-.397.354l-1.403 4.85a.5.5 0 0 0 .714.545l13-6.5a.5.5 0 0 0 0-.894l-13-6.5z" fill="currentColor" />
@@ -175,6 +190,7 @@ $user_id = $_SESSION["user_id"];
             <input type="text" name="message" class="input-field" placeholder="Type a message here..." autocomplete="off">
             <input type="hidden" name="user_id" value="<?php echo $user_id; ?>">
             <input type="hidden" name="user_name" value="<?php echo $user_name; ?>">
+            <input type="hidden" name="user_contact" value="<?php echo $user_contact; ?>">
             <button type="submit">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
                     <g fill="none">
@@ -186,7 +202,7 @@ $user_id = $_SESSION["user_id"];
     </div>
 </div>
 <script>
-    document.querySelector('.FloatingButton one').addEventListener('click', function() {
+    document.querySelector('.FloatingButton.one').addEventListener('click', function() {
         document.querySelector('.FloatingBox').classList.toggle('show');
     });
     document.querySelector('form#chatForm').addEventListener('submit', function(e) {
@@ -194,10 +210,11 @@ $user_id = $_SESSION["user_id"];
         var message = document.querySelector('form#chatForm input[name=message]').value;
         var user_id = document.querySelector('form#chatForm input[name=user_id]').value;
         var user_name = document.querySelector('form#chatForm input[name=user_name]').value;
+        var user_contact = document.querySelector('form#chatForm input[name=user_contact]').value;
         if (message.length > 0) {
             message = sanitize(message);
             var xhr = new XMLHttpRequest();
-            xhr.open('POST', 'https://manvaasam.com/sendMessage.php');
+            xhr.open('POST', '<?= $domainName ?>sendMessage.php');
             xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
             xhr.onreadystatechange = function() {
                 if (xhr.readyState === 4 && xhr.status === 200) {
@@ -214,17 +231,19 @@ $user_id = $_SESSION["user_id"];
                     }
                 }
             };
-            xhr.send('message=' + message + '&user_id=' + user_id + '&user_name=' + user_name);
+            xhr.send('message=' + message + '&user_id=' + user_id + '&user_name=' + user_name + '&user_contact=' + user_contact);
         }
     });
     document.querySelector('#userNameForm').addEventListener('submit', function(e) {
         e.preventDefault();
         var name = document.querySelector('#inputName').value;
+        var contact = document.querySelector('#inputContact').value;
         var user_id = document.querySelector('form#userNameForm input[name=user_id]').value;
         if (name.length > 0) {
             name = sanitize(name);
+            contact = sanitize(contact);
             var xhr = new XMLHttpRequest();
-            xhr.open('POST', 'https://manvaasam.com/setName.php');
+            xhr.open('POST', '<?= $domainName ?>setName.php');
             xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
             xhr.onreadystatechange = function() {
                 if (xhr.readyState === 4 && xhr.status === 200) {
@@ -239,14 +258,14 @@ $user_id = $_SESSION["user_id"];
                     }
                 }
             };
-            xhr.send('name=' + name + '&user_id=' + user_id);
+            xhr.send('name=' + name + '&contact=' + contact + '&user_id=' + user_id);
         }
     });
 
     function getMessages() {
         var user_id = <?php echo $user_id ?>;
         var xhr = new XMLHttpRequest();
-        xhr.open('POST', 'https://manvaasam.com/getMessages.php');
+        xhr.open('POST', '<?= $domainName ?>getMessages.php');
         xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
         xhr.onreadystatechange = function() {
             if (xhr.readyState === 4 && xhr.status === 200) {

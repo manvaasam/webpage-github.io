@@ -36,7 +36,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                             <a href="users.php" class="back-icon"><i class="fas fa-arrow-left"></i></a>
                             <div class="details">
                                 <span><?php echo $res[0]["uname"] ?></span>
-                                <p style="font-size: 80%;color:#c4c4c4">#<?php echo $res[0]["user_id"] ?></p>
+                                <p style="font-size: 80%;color:#c4c4c4"><?php echo $res[0]["email"] ?></p>
                             </div>
                         </div>
                         <form action="close.php" method="post">
