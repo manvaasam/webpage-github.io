@@ -64,7 +64,7 @@
                     <img src="./image/aboutus/5.png" style="width:50%;height:50%;" class="wow animate__bounceInUp animate__slower">
                     <h1 class="wow animate__zoomInUp animate__slower">Come,Let us work together for the <b>Change</b>
                     </h1>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdU3temNU7_tPoLRX__95b2Tdbw9frmZGswBFFx5AAM4tmZuA/viewform" class="wow animate__flipInY animate__slower"><button class="btn btn-success btn-sm">Join with
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdU3temNU7_tPoLRX__95b2Tdbw9frmZGswBFFx5AAM4tmZuA/viewform" target="_blank" class="wow animate__flipInY animate__slower"><button class="btn btn-success btn-sm">Join with
                             us</button></a>
                 </div>
             </center>

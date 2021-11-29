@@ -223,7 +223,7 @@
   </div>
   <div class="dealer">
     <p style="padding-top: 25px;padding-left: 10px;padding-right: 10px;">Want to become a dealer in Manvaasam logistics..</p>
-    <a href="https://forms.gle/kanHYMLLnMPuFkLa9"><button>Click me!</button></a>
+    <a href="https://forms.gle/kanHYMLLnMPuFkLa9" target="_blank" ><button>Click me!</button></a>
   </div>
 </body>
 

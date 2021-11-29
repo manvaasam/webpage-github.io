@@ -30,7 +30,7 @@
                 <h3 class=" wow animate__fadeInLeft">Looking For a perfect place to share your Knowledge</h3>
                 <h4 class=" wow animate__fadeInRight">Come, Let us work together...</h4>
                 <div class=" wow animate__fadeInUp">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJgS-KRkk6DsR5NjVyQQva9UREGebJw6qReGbViTneZxztYw/viewform"><button type="button" class="btn btn-success">Reach Out</button></a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJgS-KRkk6DsR5NjVyQQva9UREGebJw6qReGbViTneZxztYw/viewform" target="_blank" ><button type="button" class="btn btn-success">Reach Out</button></a>
                 </div>
                 <center>
         </div><br><br>
