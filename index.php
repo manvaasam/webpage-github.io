@@ -37,7 +37,7 @@ $user_id = $_SESSION['user_id'];
                 <h1>Manvaasam</h1>
                 <p>We are the friend's of farmers. Our mission is to plant 100k tree before 2023
                 </p>
-                <a href="aboutus.html">
+                <a href="aboutus.php">
                     <span class="btn btn-outline-white myPrimary">ABOUT US</span>
                 </a>
             </div>

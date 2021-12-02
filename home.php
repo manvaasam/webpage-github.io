@@ -24,7 +24,7 @@
             </ol>
             <div class="carousel-inner wow animate__jackInTheBox">
                 <div class="item active">
-                    <img src="./image/home/home_1.jpg" alt="first" style="width:100%;">
+                    <img src="./image/home/home_1.jpg" alt="first" style="width:100 %;">
                     <div class="carousel-caption">
                         <h3>FARMER'S BEST FRIENDS</h3>
                         <p>We are the friend's of farmer</p>
