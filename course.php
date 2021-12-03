@@ -36,68 +36,6 @@
         </div><br><br>
 
 
-        
-
-            <div class="container">
-                <div class="row wow animate__fadeIn animate__slower" style="margin-top:1%;background-color:#90d156;margin-bottom:8%;border-radius: 60px 5px;box-shadow: 0 4px 8px 0 rgba(68, 67, 67, 0.2), 0 6px 20px 0 rgba(80, 79, 79, 0.19);">
-                    <div class="container">
-                        <div class="row container">
-
-                            <center>
-                                <div class="container wow animate__pulse">
-                                    <h1><b>CYBER SURVEY-3</b></h1>
-                                </div>
-                            </center>
-                            <div class="col-sm-5 wow animate__fadeInLeft">
-                                <center>
-                                    <img src="./image/courses/cybersurvey.jpg" class="img-fluid" alt="Responsive image" style="width:80%;height:80%;" />
-                                </center>
-                            </div>
-                            <div class="col-sm-7 wow animate__fadeInRight">
-                                <ul>
-                                    <li>
-                                        <h4>Are you Safe in this Digital World???</h4>
-                                    </li>
-                                    <li>
-                                        <h4>Want to know more about recent Cyber attacks & Threats.
-Reach out with us in this webinar *CYBER SURVEY-3* !!!</h4>
-                                    </li>
-                                    <li>
-                                        <h4>No registration fees ,This is a free webinar</h4>
-                                    </li>
-                                    <li>
-                                        <h4>*Note* : Meeting link will be sent to the registered mail id ...</h4>
-                                    </li>
-                                </ul>
-                                <div>
-                                    <br>
-                                    <h4>Date:<b>10.10.2021</h4>
-                                    <h4>Timing:<b>7PM</b> to<b>8PM</b></h4>
-                                    <a href="https://www.google.com/url?q=https://forms.gle/qkewjL9Qayfimk56A&sa=D&source=hangouts&ust=1633617535343000&usg=AOvVaw1R3wz4atamchlQWuiN9-sQ"><button type="button" class="btn btn-success">Registeration Link</button></a>
-                                </div>
-                            </div>
-                            <div class="col-sm-5 wow animate__fadeInRight">
-                                <br>
-                            </div>
-                        </div><br>
-                        <h3 class="wow animate__flipInX"><b>ABOUT INSTRUCTOR</b></h3>
-                        <div class="row">
-                            <div class="col-xs-3 wow animate__fadeInLeft" style="margin-top: 2%;">
-                                <center>
-                                <img src="./image/courses/hacker.png" class="img-fluid" alt="Responsive image" style="width:90%;height:auto;" />
-                                </center>
-                            </div>
-                            <div class="col-xs-8 wow animate__fadeInRight">
-                                <h2><b>Muhil</b></h2>
-
-                                <h4 style="margin-top: 5%;">I will be your lead trainer in this survey.Within no time, I'll help you to understand the concepts in easy manner.</h4>
-                                <h5><b></b>.</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <div class="container">
                 <div class="row wow animate__fadeIn animate__slower" style="margin-top:1%;background-color:#90d156;margin-bottom:8%;border-radius: 60px 5px;box-shadow: 0 4px 8px 0 rgba(68, 67, 67, 0.2), 0 6px 20px 0 rgba(80, 79, 79, 0.19);">
                     <div class="container">
