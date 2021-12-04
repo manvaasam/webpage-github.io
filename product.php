@@ -113,13 +113,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             padding-bottom: 5px;
             border-radius: 50px 50px 10px 10px;
             ">
-         <div class="row">
+        <div class="row">
             <div class="col-sm-6">
-               <div style="margin-left: 15%; padding: 5%">
-                  <a href="tel:6380091001"><img style="width: 25px; margin-right: 2%; margin-left: 2%" src="./image/otherlogo/whatsapp.png"></a>
-                  +91 6380091001<br>
-                  <a href="mailto:training@manvaasam.com"><img style="width: 25px; margin-left: 2%; margin-right: 2%" src="./image/otherlogo/gmail.png"></a>training@manvaasam.com
-               </div>
+                <div style="margin-left: 15%; padding: 5%" align="left" ;>
+                    <a href="tel:6380091001"><img style="width: 25px; margin-right: 2%; margin-left: 2%" src="./image/otherlogo/whatsapp.png" /></a>
+                    +91 6380091001
+                    <br />
+                    <a href="mailto:training@manvaasam.com"><img style="width: 25px; margin-left: 2%; margin-right: 2%" src="./image/otherlogo/gmail.png" /></a>training@manvaasam.com
+                </div>
             </div>
             <div class="col-sm-6">
                <div style="margin-top: 5%">

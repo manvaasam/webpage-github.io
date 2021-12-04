@@ -1,12 +1,19 @@
 <?php
-
-
-
-// if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
-
+session_start();
+if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
+  include './time/config.php';
+  $db = new Database();
+  $conn = $db->getConnection();
+  $date = date("Y-m-d");
+  $sql = "SELECT * FROM `leave` WHERE toDate >= :date";
+  $stmt = $conn->prepare($sql);
+  $stmt->bindParam(':date', $date);
+  $stmt->execute();
+  $result = $stmt->fetchAll();
+  // read Dashboard.json 
+  $json = file_get_contents('dashboard.json');
+  $data = json_decode($json, true);
 ?>
-
-
   <!DOCTYPE html>
   <html>
 
@@ -15,45 +22,290 @@
     <link rel="shortcut icon" href="../image/fav_icon.png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manvaasam Dashboard</title>
-
-    <style>
-      body {
-        background-image: url("../img/Cover Image.png");
-        background-repeat: repeat-x;
-        background-position: center;
-        height: 30%;
-        background-size: cover;
-      }
-    </style>
-
-
-
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
   </head>
 
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" onclick="openNav()">&#9776;</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
-      
-      
-
-
-    <span style="font-size:30px;cursor:pointer;color: rgb(255, 255, 255);" onclick="openNav()">&#9776; Manvaasam Login</span><a href="Mlogout.php"><button type="button" class="btn btn-success">Logout</button></a>
-    <style>
-      button {
-        font-size: large;
-        background-color: rgb(70, 136, 3);
-        color: white;
-        border-radius: 25px;
-        height: 40px;
-        width: 100px;
-        outline: none;
-        padding: 2px;
-        margin-bottom: 0px;
-        margin-left: 900px;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-    </style>
-    
+            <li class="nav-item">
+              <a class="nav-link btn btn-success text-white" href="Mlogout.php">LOGOUT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="lastUpdated">
+      <h5 class="date"><?= explode(" ", $data['lastUpdated'])[0]; ?></h5>
+      <h5 class="time"><?= explode(" ", $data['lastUpdated'])[1]; ?></h5>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">
+              <h3>General Update</h3>
+            </div>
+            <div class="card-body">
+              <?= $data['generalUpdate']; ?>
+            </div>
+          </div>
+        </div>
+        <!-- Social Media follwers count in table with linkedin, youtube, facebook, instagram -->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">
+              <h3>Social Media</h3>
+            </div>
+            <div class="card-body">
+              <!-- table -->
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">Media Name</th>
+                    <th scope="col">Followers</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <?php
+                  try {
+                    // Linkedin: 12\r\nYoutube: 1000\r\nFacebook: 1000\r\nInstagram: 1000\r\n
+                    $socialMedia = explode("\r\n", $data['socialMedia']);
+                    for ($i = 0; $i < count($socialMedia); $i++) {
+                      $socialMediaName = explode(": ", $socialMedia[$i])[0];
+                      $socialMediaFollowers = explode(": ", $socialMedia[$i])[1];
+                      echo "<tr>";
+                      echo "<td>" . $socialMediaName . "</td>";
+                      echo "<td>" . $socialMediaFollowers . "</td>";
+                      echo "</tr>";
+                    }
+                  } catch (Exception $e) {
+                  }
+                  ?>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!-- Hero of the week award. with circular image and description -->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">
+              <h3>Hero of the week</h3>
+            </div>
+            <div class="card-body text-center">
+              <div class="d-block">
+                <img src="hero.png" class="img-fluid rounded-circle" alt="" style="width: 100px;height:100px;object-fit:cover">
+              </div>
+              <br />
+              <?= $data['herodescription']; ?>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-2"></div>
+      <div class="row">
+        <div class="col-md-8">
+          <!-- Youtube Iframe video -->
+          <div class="card">
+            <div class="card-header">
+              <h3>Youtube Video</h3>
+            </div>
+            <div class="card-body text-center">
+              <?= $data['ytLink']; ?>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <!-- Take Assesment -->
+          <div class="card">
+            <div class="card-header">
+              <h3>Give Feedback</h3>
+            </div>
+            <div class="card-body">
+              <?= $data['feedbackDes']; ?>
+              <br />
+              <br />
+              <div class="text-center">
+                <a href="<?= $data['feedbackLink']; ?>" class="btn btn-success">Fill Feedback</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-2"></div>
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header">
+              <h3>Employee List</h3>
+            </div>
+            <div class="card-body">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">S.No</th>
+                    <th scope="col">Employee ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>MT0001</td>
+                    <td>Karthick</td>
+                    <td>manvaasamtreebank2020@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>MT0002</td>
+                    <td>Sridhar</td>
+                    <td>sridhar.manvaasam@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <td>03</td>
+                    <td>MT0003</td>
+                    <td>Nikitha B </td>
+                    <td>nikitha.manvaasam@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <td>04</td>
+                    <td>MT0004</td>
+                    <td>Hariharan R </td>
+                    <td>hari.manvaasam@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <td>05</td>
+                    <td>MT0005</td>
+                    <td>AJITH.M </td>
+                    <td>ajith.manvasam@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <td>06</td>
+                    <td>MT0006</td>
+                    <td>Abila Jesy. J </td>
+                    <td>abilajesy.manvaasam@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <td>09</td>
+                    <td>MT0009</td>
+                    <td>Nehru M </td>
+                    <td>nehru.manvaasam@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>MT0010</td>
+                    <td> Gokula krishnan k</td>
+                    <td>gokulakrishnank.manvaasam@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>MT0011</td>
+                    <td>Abhiram R </td>
+                    <td>abhiram.manvaasam@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>MT0012</td>
+                    <td>Kishore Kumar S </td>
+                    <td>kishorekumar.manvaasam@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>MT0013</td>
+                    <td>M.Sowmiya </td>
+                    <td>sowmiya.manvaasam@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>MT0014</td>
+                    <td>A.Monisha </td>
+                    <td>monisha.manvaasam@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>MT0015</td>
+                    <td>N.Rakesh </td>
+                    <td>rakesh.manvaasam@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>MT0016</td>
+                    <td>Susin P</td>
+                    <td>susinmanvaasam@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>MT0018</td>
+                    <td>R.Lakshmanan </td>
+                    <td>lakshmanan.manvaasam@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <td>20</td>
+                    <td>MT0020</td>
+                    <td>Muhil Kannan </td>
+                    <td>muhilkannan.manvaasam@gmail.com</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-2"></div>
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <!-- Leave list -->
+            <div class="card-header">
+              <h3>Leave List</h3>
+            </div>
+            <div class="card-body">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Leave ID</th>
+                    <th>Employee ID</th>
+                    <th>Name</th>
+                    <th>Leave Type</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <?php foreach ($result as $row) { ?>
+                    <tr>
+                      <td><?php echo $row['id']; ?></td>
+                      <td><?php echo $row['user_name'] ?></td>
+                      <td><?php echo $row['name']; ?></td>
+                      <td><?php echo $row['typeOfLeave']; ?></td>
+                      <td><?php echo $row['fromDate']; ?></td>
+                      <td><?php echo $row['toDate']; ?></td>
+                      <td><?php echo $row['status']; ?></td>
+                      <td>
+                        <a href="leave_details.php?id=<?php echo $row['id']; ?>">View</a>
+                    </tr>
+                  <?php } ?>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-2"></div>
+      <div class="row">
+      </div>
+    </div>
     <script>
       function openNav() {
         document.getElementById("mySidenav").style.width = "300px";
@@ -64,7 +316,6 @@
       }
 
       setInterval(function() {
-        // XMlRequest Post request to iAmAlive.php file
         var formData = new FormData();
         formData.append('emp_id', '<?php echo $_SESSION['user_name']; ?>');
         formData.append('emp_name', '<?php echo $_SESSION['name']; ?>');
@@ -79,10 +330,6 @@
 
       }, 10000);
     </script>
-    
-    
-
-
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <img src="../img/manvaasam.jpg" alt="manvaasam logo" style="height: 150px; width: 150px; margin-left: 60px;"><br>
@@ -98,7 +345,7 @@
           </g>
         </svg>&nbsp;Slack</a>
       <a href="payroll.html"><img src="../img/Payroll.png" height="15px" width="15px">Payroll</a>
-      <a target="_blank" href="https://manvaasam.atlassian.net/jira/projects"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+      <a target="_blank" href="https://manvaasamteam.atlassian.net/jira/projects"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
           <path d="M12.004 0c-2.35 2.395-2.365 6.185.133 8.585l3.412 3.413l-3.197 3.198a6.501 6.501 0 0 1 1.412 7.04l9.566-9.566a.95.95 0 0 0 0-1.344L12.004 0zm-1.748 1.74L.67 11.327a.95.95 0 0 0 0 1.344C4.45 16.44 8.22 20.244 12 24c2.295-2.298 2.395-6.096-.08-8.533l-3.47-3.469l3.2-3.2c-1.918-1.955-2.363-4.725-1.394-7.057z" fill="currentColor"></path>
         </svg>&nbsp;Jira</a>
       <a href="documentCenter.php">
@@ -126,113 +373,40 @@
         Time Management</a>
       <a href="./leave/index.php"><img src="../img/Apply Leave.png" height="18px" width="18px"> Apply Leave</a>
     </div>
-    <br>
-    <br>
-    <br>
-      <h5 class="date">25-11-2021</h5>
-      <h5 class="time">07:00:00 PM</h5>
-
-    <h2 style="color: white;">Lets root for each other</h2>
-    <h2 style="color: white;">and watch each other grow!</h2>
-
-    <br>
-
-    <h2 class="ml10" style="color:white;">
-      <span class="text-wrapper">
-        <!-- <span class="letters">WELCOME <b>//<?php echo $_SESSION['name']; ?></b></span> -->
-      </span>
-    </h2>
-      <footer>
-      
-      <h5 class="last">Last Updated 25-11-2021 07:00:00 PM</h5>
-      </footer>
-    
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-
     <style>
-      .ml10 {
-        position: relative;
-        font-weight: 500;
-        font-size: 2em;
+      .date {
+        position: fixed;
+        bottom: 4px;
+        color: #101010;
+        font-size: 18px;
+        right: 16px;
+        z-index: 1000;
       }
 
-      .ml10 .text-wrapper {
-        position: relative;
-        display: inline-block;
-        padding-top: 0.2em;
-        padding-right: 0.05em;
-        padding-bottom: 0.1em;
-
-      }
-
-      .ml10 .letter {
-        display: inline-block;
-        line-height: 1em;
-        transform-origin: 0 0;
-      }
-      
-      .date{
-        position:absolute;
-        top:4px;
-        color: #F0F8FF;
-        font-size:18px;
-        right:16px;
-        
-        
-      }
-      .time{
-        position:absolute;
-        top:33px;
-        color: #F0F8FF;
+      .time {
+        position: fixed;
+        bottom: 30px;
+        color: #101010;
         font-size: 17px;
-        right:16px;
-        
+        right: 16px;
+        z-index: 1000;
       }
-      
-      .last{
-        position:absolute;
-        bottom:5px;
+
+      .last {
+        position: absolute;
+        bottom: 5px;
         color: auto;
         font-size: 17px;
-        right:16px;
-        
+        right: 16px;
+
       }
-
     </style>
-    <script>
-      // Wrap every letter in a span
-      var textWrapper = document.querySelector('.ml10 .letters');
-      textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-      anime.timeline({
-          loop: true
-        })
-        .add({
-          targets: '.ml10 .letter',
-          rotateY: [-90, 0],
-          duration: 1000,
-          delay: (el, i) => 45 * i
-        }).add({
-          targets: '.ml10',
-          opacity: 0,
-          duration: 1000,
-          easing: "easeOutExpo",
-          delay: 1000
-        });
-    </script>
   </body>
 
   </html>
-
-  
-
-
-
-<!-- <?php
-// } 
-  // else {
-  // header("Location: Mindex.php");
-  // exit();
-//}
-?> -->
+<?php
+} else {
+  header("Location: Mindex.php");
+  exit();
+}
+?>
