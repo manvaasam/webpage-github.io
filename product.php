@@ -6,6 +6,13 @@
    <meta name="viewport" content="width=device-width, initial-scale=1" />
    <link rel="shortcut icon" href="./image/fav_icon.png" type="image/png" />
    <title>Manvaasam</title>
+   <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MNFWDS3');</script>
+<!-- End Google Tag Manager -->
    <link rel="stylesheet" type="text/css" href="./assets/css/style.001.css" />
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -106,13 +113,14 @@
             padding-bottom: 5px;
             border-radius: 50px 50px 10px 10px;
             ">
-         <div class="row">
+        <div class="row">
             <div class="col-sm-6">
-               <div style="margin-left: 15%; padding: 5%">
-                  <a href="tel:6380091001"><img style="width: 25px; margin-right: 2%; margin-left: 2%" src="./image/otherlogo/whatsapp.png"></a>
-                  +91 6380091001<br>
-                  <a href="mailto:training@manvaasam.com"><img style="width: 25px; margin-left: 2%; margin-right: 2%" src="./image/otherlogo/gmail.png"></a>training@manvaasam.com
-               </div>
+                <div style="margin-left: 15%; padding: 5%" align="left" ;>
+                    <a href="tel:6380091001"><img style="width: 25px; margin-right: 2%; margin-left: 2%" src="./image/otherlogo/whatsapp.png" /></a>
+                    +91 6380091001
+                    <br />
+                    <a href="mailto:training@manvaasam.com"><img style="width: 25px; margin-left: 2%; margin-right: 2%" src="./image/otherlogo/gmail.png" /></a>training@manvaasam.com
+                </div>
             </div>
             <div class="col-sm-6">
                <div style="margin-top: 5%">
@@ -128,6 +136,10 @@
          </div>
       </div>
    </div>
+   <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNFWDS3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 </body>
 
 </html>
