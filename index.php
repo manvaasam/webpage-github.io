@@ -1,4 +1,4 @@
-<?php
+ <?php
 session_start();
 if (!isset($_SESSION['user_id'])) {
     $id = rand(1, 99999999999);
@@ -37,7 +37,7 @@ $user_id = $_SESSION['user_id'];
                 <h1>Manvaasam</h1>
                 <p>We are the friend's of farmers. Our mission is to plant 100k tree before 2023
                 </p>
-                <a href="aboutus.html">
+                <a href="aboutus.php">
                     <span class="btn btn-outline-white myPrimary">ABOUT US</span>
                 </a>
             </div>
@@ -98,7 +98,7 @@ $user_id = $_SESSION['user_id'];
                         </ol>
                         <br />
                         <div class="text-center">
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfyt21exsn0OtuFcaF4TtngpT6RuaYDWvFLk0o6EQ4yH8Vgqg/viewform" target="_blank"><button class="btn btn-success wow animate__heartBeat animate__slower">Book Your Slot</button></a>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfyt21exsn0OtuFcaF4TtngpT6RuaYDWvFLk0o6EQ4yH8Vgqg/viewform" target="_blank" ><button class="btn btn-success wow animate__heartBeat animate__slower">Book Your Slot</button></a>
                         </div>
                     </div>
                 </div>

@@ -230,7 +230,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
   <div class="dealer">
     <p style="padding-top: 25px;padding-left: 10px;padding-right: 10px;">Want to become a dealer in Manvaasam logistics..</p>
-    <a href="https://forms.gle/kanHYMLLnMPuFkLa9"><button>Click me!</button></a>
+    <a href="https://forms.gle/kanHYMLLnMPuFkLa9" target="_blank" ><button>Click me!</button></a>
   </div>
   <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNFWDS3"
