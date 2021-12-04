@@ -8,6 +8,13 @@
   <link rel="shortcut icon" href="fav_icon.png" type="image/png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Logistics Tracker</title>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MNFWDS3');</script>
+<!-- End Google Tag Manager -->
   <link rel="shortcut icon" href="/image/fav_icon.png" type="image/png">
   <link rel="stylesheet" type="text/css" href="../assets/css/style.001.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
@@ -225,6 +232,10 @@
     <p style="padding-top: 25px;padding-left: 10px;padding-right: 10px;">Want to become a dealer in Manvaasam logistics..</p>
     <a href="https://forms.gle/kanHYMLLnMPuFkLa9" target="_blank" ><button>Click me!</button></a>
   </div>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNFWDS3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 </body>
 
 </html>

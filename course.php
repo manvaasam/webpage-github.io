@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="./image/fav_icon.png" type="image/png">
     <title>Manvasam Courses</title>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MNFWDS3');</script>
+<!-- End Google Tag Manager -->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.001.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -35,68 +42,6 @@
                 <center>
         </div><br><br>
 
-
-        
-
-            <div class="container">
-                <div class="row wow animate__fadeIn animate__slower" style="margin-top:1%;background-color:#90d156;margin-bottom:8%;border-radius: 60px 5px;box-shadow: 0 4px 8px 0 rgba(68, 67, 67, 0.2), 0 6px 20px 0 rgba(80, 79, 79, 0.19);">
-                    <div class="container">
-                        <div class="row container">
-
-                            <center>
-                                <div class="container wow animate__pulse">
-                                    <h1><b>CYBER SURVEY-3</b></h1>
-                                </div>
-                            </center>
-                            <div class="col-sm-5 wow animate__fadeInLeft">
-                                <center>
-                                    <img src="./image/courses/cybersurvey.jpg" class="img-fluid" alt="Responsive image" style="width:80%;height:80%;" />
-                                </center>
-                            </div>
-                            <div class="col-sm-7 wow animate__fadeInRight">
-                                <ul>
-                                    <li>
-                                        <h4>Are you Safe in this Digital World???</h4>
-                                    </li>
-                                    <li>
-                                        <h4>Want to know more about recent Cyber attacks & Threats.
-Reach out with us in this webinar *CYBER SURVEY-3* !!!</h4>
-                                    </li>
-                                    <li>
-                                        <h4>No registration fees ,This is a free webinar</h4>
-                                    </li>
-                                    <li>
-                                        <h4>*Note* : Meeting link will be sent to the registered mail id ...</h4>
-                                    </li>
-                                </ul>
-                                <div>
-                                    <br>
-                                    <h4>Date:<b>10.10.2021</h4>
-                                    <h4>Timing:<b>7PM</b> to<b>8PM</b></h4>
-                                    <a href="https://www.google.com/url?q=https://forms.gle/qkewjL9Qayfimk56A&sa=D&source=hangouts&ust=1633617535343000&usg=AOvVaw1R3wz4atamchlQWuiN9-sQ"><button type="button" class="btn btn-success">Registeration Link</button></a>
-                                </div>
-                            </div>
-                            <div class="col-sm-5 wow animate__fadeInRight">
-                                <br>
-                            </div>
-                        </div><br>
-                        <h3 class="wow animate__flipInX"><b>ABOUT INSTRUCTOR</b></h3>
-                        <div class="row">
-                            <div class="col-xs-3 wow animate__fadeInLeft" style="margin-top: 2%;">
-                                <center>
-                                <img src="./image/courses/hacker.png" class="img-fluid" alt="Responsive image" style="width:90%;height:auto;" />
-                                </center>
-                            </div>
-                            <div class="col-xs-8 wow animate__fadeInRight">
-                                <h2><b>Muhil</b></h2>
-
-                                <h4 style="margin-top: 5%;">I will be your lead trainer in this survey.Within no time, I'll help you to understand the concepts in easy manner.</h4>
-                                <h5><b></b>.</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <div class="container">
                 <div class="row wow animate__fadeIn animate__slower" style="margin-top:1%;background-color:#90d156;margin-bottom:8%;border-radius: 60px 5px;box-shadow: 0 4px 8px 0 rgba(68, 67, 67, 0.2), 0 6px 20px 0 rgba(80, 79, 79, 0.19);">
@@ -220,6 +165,57 @@ Reach out with us in this webinar *CYBER SURVEY-3* !!!</h4>
                 </div>
             </div>
 
+            <div class="container">
+                <div class="row wow animate__fadeIn animate__slower" style="margin-top:1%;background-color:#90d156;margin-bottom:8%;border-radius: 60px 5px;box-shadow: 0 4px 8px 0 rgba(68, 67, 67, 0.2), 0 6px 20px 0 rgba(80, 79, 79, 0.19);">
+                    <div class="container">
+                        <div class="row container">
+
+                            <center>
+                                <div class="container wow animate__pulse">
+                                    <h1><b>Python Workshop</b></h1>
+                                </div>
+                            </center>
+                            <div class="col-sm-5 wow animate__fadeInLeft">
+                                <center>
+                                    <img src="./image/courses/pws.jpg" class="img-fluid" alt="Responsive image" style="width:80%;height:80%;" />
+                                </center>
+                            </div>
+                            <div class="col-sm-7 wow animate__fadeInRight">
+                                <br>
+                                <br>
+                                
+                        
+                                <div>
+                                    <br>
+                                    <h4>webinar Name:<b> Python Workshop</h4>
+                                    <h4>Organizer:<b> MANVAASAM</h4>
+                                    <h4>Date     :<b> (10/12/2021) to (11/12/2021)</h4>
+                                    <h4>Timing   :<b> 9AM</b> to<b> 5PM</b></h4>
+                                    <h4>Webinar Medium :<b> Offline- Bharathidasan engineering College,Nattrampalli<b></h4>
+                                    <h4>Cost Of The webinar :<b> Rs. 50/-</h4>
+                                    <a href="https://forms.gle/DRUNjjVL3kygBhsA8Moving"><button type="button" class="btn btn-success">Registeration Link</button></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-5 wow animate__fadeInRight">
+                                <br>
+                            </div>
+                        </div><br>
+                        <h3 class="wow animate__flipInX"><b></b></h3>
+                        <div class="row">
+                            <div class="col-xs-3 wow animate__fadeInLeft" style="margin-top: 2%;">
+                                
+                            </div>
+                            <div class="col-xs-8 wow animate__fadeInRight">
+                                
+
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
 
             
@@ -249,6 +245,10 @@ Reach out with us in this webinar *CYBER SURVEY-3* !!!</h4>
             </div>
         </div>
         <!--  End of footer Tab  -->
+        <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNFWDS3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 </body>
 
 </html>
