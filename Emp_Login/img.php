@@ -1,7 +1,8 @@
 <?php
-session_start();
 
-if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
+
+
+// if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 
 ?>
 
@@ -27,9 +28,13 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 
 
 
+
   </head>
 
   <body>
+
+      
+      
 
 
     <span style="font-size:30px;cursor:pointer;color: rgb(255, 255, 255);" onclick="openNav()">&#9776; Manvaasam Login</span><a href="Mlogout.php"><button type="button" class="btn btn-success">Logout</button></a>
@@ -48,6 +53,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
         font-family: Arial, Helvetica, sans-serif;
       }
     </style>
+    
     <script>
       function openNav() {
         document.getElementById("mySidenav").style.width = "300px";
@@ -73,6 +79,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 
       }, 10000);
     </script>
+    
+    
 
 
     <div id="mySidenav" class="sidenav">
@@ -121,7 +129,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
     <br>
     <br>
     <br>
-
+      <h5 class="date">25-11-2021</h5>
+      <h5 class="time">07:00:00 PM</h5>
 
     <h2 style="color: white;">Lets root for each other</h2>
     <h2 style="color: white;">and watch each other grow!</h2>
@@ -130,9 +139,14 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 
     <h2 class="ml10" style="color:white;">
       <span class="text-wrapper">
-        <span class="letters">WELCOME <b><?php echo $_SESSION['name']; ?></b></span>
+        <!-- <span class="letters">WELCOME <b>//<?php echo $_SESSION['name']; ?></b></span> -->
       </span>
     </h2>
+      <footer>
+      
+      <h5 class="last">Last Updated 25-11-2021 07:00:00 PM</h5>
+      </footer>
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
@@ -157,6 +171,34 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
         line-height: 1em;
         transform-origin: 0 0;
       }
+      
+      .date{
+        position:absolute;
+        top:4px;
+        color: #F0F8FF;
+        font-size:18px;
+        right:16px;
+        
+        
+      }
+      .time{
+        position:absolute;
+        top:33px;
+        color: #F0F8FF;
+        font-size: 17px;
+        right:16px;
+        
+      }
+      
+      .last{
+        position:absolute;
+        bottom:5px;
+        color: auto;
+        font-size: 17px;
+        right:16px;
+        
+      }
+
     </style>
     <script>
       // Wrap every letter in a span
@@ -183,10 +225,14 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 
   </html>
 
+  
 
-<?php
-} else {
-  header("Location: Mindex.php");
-  exit();
-}
-?>
+
+
+<!-- <?php
+// } 
+  // else {
+  // header("Location: Mindex.php");
+  // exit();
+//}
+?> -->

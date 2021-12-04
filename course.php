@@ -220,6 +220,57 @@ Reach out with us in this webinar *CYBER SURVEY-3* !!!</h4>
                 </div>
             </div>
 
+            <div class="container">
+                <div class="row wow animate__fadeIn animate__slower" style="margin-top:1%;background-color:#90d156;margin-bottom:8%;border-radius: 60px 5px;box-shadow: 0 4px 8px 0 rgba(68, 67, 67, 0.2), 0 6px 20px 0 rgba(80, 79, 79, 0.19);">
+                    <div class="container">
+                        <div class="row container">
+
+                            <center>
+                                <div class="container wow animate__pulse">
+                                    <h1><b>Python Workshop</b></h1>
+                                </div>
+                            </center>
+                            <div class="col-sm-5 wow animate__fadeInLeft">
+                                <center>
+                                    <img src="./image/courses/pws.jpg" class="img-fluid" alt="Responsive image" style="width:80%;height:80%;" />
+                                </center>
+                            </div>
+                            <div class="col-sm-7 wow animate__fadeInRight">
+                                <br>
+                                <br>
+                                
+                        
+                                <div>
+                                    <br>
+                                    <h4>webinar Name:<b> Python Workshop</h4>
+                                    <h4>Organizer:<b> MANVAASAM</h4>
+                                    <h4>Date     :<b> (10/12/2021) to (11/12/2021)</h4>
+                                    <h4>Timing   :<b> 9AM</b> to<b> 5PM</b></h4>
+                                    <h4>Webinar Medium :<b> Offline- Bharathidasan engineering College,Nattrampalli<b></h4>
+                                    <h4>Cost Of The webinar :<b> Rs. 50/-</h4>
+                                    <a href="https://forms.gle/DRUNjjVL3kygBhsA8Moving"><button type="button" class="btn btn-success">Registeration Link</button></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-5 wow animate__fadeInRight">
+                                <br>
+                            </div>
+                        </div><br>
+                        <h3 class="wow animate__flipInX"><b></b></h3>
+                        <div class="row">
+                            <div class="col-xs-3 wow animate__fadeInLeft" style="margin-top: 2%;">
+                                
+                            </div>
+                            <div class="col-xs-8 wow animate__fadeInRight">
+                                
+
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
 
             
