@@ -43,69 +43,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div><br><br>
 
 
-            <div class="container">
-                <div class="row wow animate__fadeIn animate__slower" style="margin-top:1%;background-color:#90d156;margin-bottom:8%;border-radius: 60px 5px;box-shadow: 0 4px 8px 0 rgba(68, 67, 67, 0.2), 0 6px 20px 0 rgba(80, 79, 79, 0.19);">
-                    <div class="container">
-                        <div class="row container">
-
-                            <center>
-                                <div class="container wow animate__pulse">
-                                    <h1><b>DEBATE</b></h1>
-                                </div>
-                            </center>
-                            <div class="col-sm-5 wow animate__fadeInLeft">
-                                <center>
-                                    <img src="./image/courses/depate.jpg" class="img-fluid" alt="Responsive image" style="width:80%;height:80%;" />
-                                </center>
-                            </div>
-                            <div class="col-sm-7 wow animate__fadeInRight">
-                                <br>
-                                <br>
-                                <ul>
-                                    <li>
-                                        <h4>We are aware that big issue was going on students Offline exam or Online exam.</h4>
-                                    </li>
-                                    <li>
-                                        <h4>Education system has changed in many ways over the last decade, with the most important change coming in mode of learning and examination.</h4>
-                                    </li>
-                                    <li>
-                                    <h4>It's a free debate, make sure your presence and share your opinions to others.</h4>
-                                    </li>
-                                    <li>
-                                        <h4><b>Note: </b>We are planning to come live on youtube channel as well.</h4>
-                                    </li>
-                                </ul>
-                        
-                                <div>
-                                    <br>
-                                    <h4>webinar Name:<b>   DEBATE</h4>
-                                    <h4>Organizer:   <b>   MANVAASAM</h4>
-                                    <h4>Guest    :   <b>   MR. ANBU</h4>
-                                    <h4>Date     :   <b>   21.11.2021</h4>
-                                    <h4>Timing   :   <b>   7PM</b> to<b> 8PM</b></h4>
-                                    <h4>Platform :   <b>   GOOGLE MEET<b></h4>
-                                    <a href="https://forms.gle/iayS6G7LYDWrPHCZ8"><button type="button" class="btn btn-success">Registeration Link</button></a>
-                                </div>
-                            </div>
-                            <div class="col-sm-5 wow animate__fadeInRight">
-                                <br>
-                            </div>
-                        </div><br>
-                        <h3 class="wow animate__flipInX"><b></b></h3>
-                        <div class="row">
-                            <div class="col-xs-3 wow animate__fadeInLeft" style="margin-top: 2%;">
-                                
-                            </div>
-                            <div class="col-xs-8 wow animate__fadeInRight">
-                                
-
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+           
 
             <div class="container">
                 <div class="row wow animate__fadeIn animate__slower" style="margin-top:1%;background-color:#90d156;margin-bottom:8%;border-radius: 60px 5px;box-shadow: 0 4px 8px 0 rgba(68, 67, 67, 0.2), 0 6px 20px 0 rgba(80, 79, 79, 0.19);">
