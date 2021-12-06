@@ -131,7 +131,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                     <h4>Timing   :<b> 9AM</b> to<b> 5PM</b></h4>
                                     <h4>Webinar Medium :<b> Offline- Bharathidasan engineering College,Nattrampalli<b></h4>
                                     <h4>Cost Of The webinar :<b> Rs. 50/-</h4>
-                                    <a href="https://forms.gle/DRUNjjVL3kygBhsA8Moving"><button type="button" class="btn btn-success">Registeration Link</button></a>
+                                    <a href="https://forms.gle/DRUNjjVL3kygBhsA8"><button type="button" class="btn btn-success">Registeration Link</button></a>
                                 </div>
                             </div>
                             <div class="col-sm-5 wow animate__fadeInRight">
