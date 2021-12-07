@@ -78,7 +78,6 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <img src="../img/manvaasam.jpg" alt="manvaasam logo" style="height: 150px; width: 150px; margin-left: 60px;"><br>
-      <a href="https://drive.google.com/file/d/1uFunFq8GkvYiXXqzf_2FaMHGaZsbXKhP/view?usp=sharing"><img src="../img/Dashboard.png" height="16px" width="16px"> Dashboard</a>
       <a href="https://drive.google.com/file/d/1RZGkxP_B3jA7nHKPNCdkcMzhJx0Zs-md/view?usp=sharing"><img src="../img/Organisational .png" height="18px" width="18px"> Organization Structure</a>
       <a href="https://mail.google.com/mail/"><img src="../img/Gmail.png" style="height: 16px; width: 16px;"> Check Email</a>
       <a href="https://app.slack.com/client/T02JN4H1J7Q/C02K7J1PNAV"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
