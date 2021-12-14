@@ -52,7 +52,14 @@
       <div class="col-md-6">
         <p>Product / Gardening Setup</p>
         <h2 id="ProductName">Manvaasam Gardening Setup</h2>
-        <h4 id="orderprice">for price contact +91 6380091001</h4>
+        <h4 id="orderprice">for price contact +91 6380091001</h4><br>
+        <select onchange="changegar()" id="ordersize" name="size" required>
+          <option value="small" selected>Small(1 kg)</option>
+          <option value="medium">Medium(3 kg)</option>
+          <option value="large">Large(5 kg)</option>
+        </select>
+        <br>
+
 
         <input type="number" id="ordercount" value="1" onchange="changevalue()" name="count" required />
         <input type="hidden" name="product" value="manvaasam_cocopeate">
@@ -75,6 +82,13 @@
             </div>
             <div class="modal-footer">
               <h3>Contact : 6380091001</h3>
+            </div>
+            <div>
+            <select onchange="changevalue()" id="ordersize" name="size" required>
+          <option value="small" selected>Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
             </div>
           </div>
         </div>

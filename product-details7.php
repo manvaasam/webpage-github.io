@@ -52,11 +52,16 @@
       <div class="col-md-6">
         <p>Product / Gardening Setup</p>
         <h2 id="ProductName">Manvaasam Gardening Setup</h2>
-        <h4 id="orderprice">for price contact +91 6380091001</h4>
+        <h4 id="orderprice">Rs. 499.00 + Shipping fee*<br>1) 3 TYPES OF GROW BAG<br>2) 8 VARIETIES OF SEEDS<br>3) 500 gms OF VERMICOMPOST<br>4) 250 gms OF COCOPEAT</h4><br>
+        <select onchange="changegar()" id="ordersize" name="size" required>
+          <option value="small" selected>Small(1 kg)</option>
+          <option value="medium">Medium(3 kg)</option>
+          <option value="large">Large(5 kg)</option>
+        </select><br>
 
-        <input type="number" id="ordercount" value="1" onchange="changevalue()" name="count" required />
+        <input type="number" id="ordercount" value="1" onchange="changegar()" min="1"  name="count" required />
         <input type="hidden" name="product" value="manvaasam_cocopeate">
-        <button id="myBtn">Buy Now</button>
+        <button id="myBtn">Buy Now </button>
 
 
         <div id="myModal" class="modal">
@@ -157,24 +162,35 @@
     smallImg[3].onclick = function() {
       ProductImg.src = smallImg[3].src;
     };
-
-    function changevalue() {
+    function changegar() {
       var ordersize = document.getElementById('ordersize').value
       var ordercount = document.getElementById('ordercount').value
       var orderprice = document.getElementById('orderprice')
+      var orderpriceinput = document.getElementById('orderpriceinput')
       var orderimg = document.getElementById('ProductImg')
+      if (ordercount == 0) {
+        ordercount = 1
+      }
       if (ordersize == 'small') {
-        orderprice.innerHTML = 'Rs. ' + (181 * ordercount)
-        orderimg.src = 'image/products/gardeningsetup.jpg'
-
-      } else if (ordersize == 'medium') {
-        orderprice.innerHTML = 'RS. ' + (249 * ordercount)
-        orderimg.src = 'image/products/gardeningsetup1.jpg'
-      } else {
-        orderprice.innerHTML = 'Rs. ' + (314 * ordercount)
-        orderimg.src = 'image/products/gardeningsetup2.jpg'
+        orderprice.innerHTML = 'Rs. '+ (499 * ordercount) +'.00 + Shipping fee*<br>1) 3 TYPES OF GROW BAG<br>2) 8 VARIETIES OF SEEDS<br>3) 500 gms OF VERMICOMPOST<br>4) 250 gms OF COCOPEAT'
+        orderpriceinput.value = (499 * ordercount)
+        document.getElementById('ordercount').value = ordercount
+        
+      }
+      else if (ordersize == 'medium') {
+        orderprice.innerHTML = 'Rs. '+ (999 * ordercount) +'.00 + Shipping fee*<br>1) 6 TYPES OF GROW BAG<br>2) 12 VARIETIES OF SEEDS<br>3) 1 kg OF VERMICOMPOST<br>4) 500 gms OF COCOPEAT<br>5) 1 YEAR WARRENTY & ONLINE MAINTAINANCE'
+        orderpriceinput.value = (999 * ordercount)
+        document.getElementById('ordercount').value = ordercount
+      }
+      else {
+        orderprice.innerHTML = 'Rs.'+(1399 * ordercount)+'.00 + Shipping fee*<br>1) 10 TYPES OF GROW BAG<br>2) 20 VARIETIES OF SEEDS<br>3) 2.5 kg OF VERMICOMPOST<br>4) 2 kg OF COCOPEAT<br>5) HANDMADE WATERING CAN<br>6) 1 YEAR WARRENTY & 24*7 ONLINE ASSISTANCE'
+        orderpriceinput.value = (1399 * ordercount)
+        document.getElementById('ordercount').value = ordercount
       }
     }
+
+    
+    
   </script>
 
 
