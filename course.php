@@ -154,6 +154,58 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>
             </div>
 
+            <div class="container">
+                <div class="row wow animate__fadeIn animate__slower" style="margin-top:1%;background-color:#90d156;margin-bottom:8%;border-radius: 60px 5px;box-shadow: 0 4px 8px 0 rgba(68, 67, 67, 0.2), 0 6px 20px 0 rgba(80, 79, 79, 0.19);">
+                    <div class="container">
+                        <div class="row container">
+
+                            <center>
+                                <div class="container wow animate__pulse">
+                                    <h1><b>HR connect 4</b></h1>
+                                </div>
+                            </center>
+                            <div class="col-sm-5 wow animate__fadeInLeft">
+                                <center>
+                                    <img src="./image/courses/hrmeet.jpeg" class="img-fluid" alt="Responsive image" style="width:80%;height:80%;" />
+                                </center>
+                            </div>
+                            <div class="col-sm-7 wow animate__fadeInRight">
+                                <br>
+                                <br>
+                                
+                        
+                                <div>
+                                    <br>
+                                    <h4>webinar Name:<b> HR connect 4</h4>
+                                    <h4>Organizer:<b> MANVAASAM</h4>
+                                    <h4>Date     :<b> 26/12/2021</h4>
+                                    <h4>Timing   :<b> 7PM</b> to<b> 9PM</b></h4>
+                                    <h4>Webinar Medium :<b>Google meet<b></h4>
+                                    <h4>Departments :<b> Civil ,Mechanical, IT, Teaching</h4>
+                                    <a href="https://forms.gle/yb2YbnSTiNdvju9q8"><button type="button" class="btn btn-success">Registeration Link</button></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-5 wow animate__fadeInRight">
+                                <br>
+                            </div>
+                        </div><br>
+                        <h3 class="wow animate__flipInX"><b></b></h3>
+                        <div class="row">
+                            <div class="col-xs-3 wow animate__fadeInLeft" style="margin-top: 2%;">
+                                
+                            </div>
+                            <div class="col-xs-8 wow animate__fadeInRight">
+                                
+
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
 
 
             
