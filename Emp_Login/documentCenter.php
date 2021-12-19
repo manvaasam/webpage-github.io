@@ -62,12 +62,14 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                                     echo '<td>' . $row['created_at'] . '</td>';
                                     if ($_SESSION['user_name'] == "MT0001") {
                                         echo '<td>';
-                                        echo '<a href="delete.php?id=' . $row['id'] . '" class="btn btn-danger">Delete</a>';
-                                        echo '<a href="view.php?id=' . $row['id'] . '" class="btn btn-primary">View</a>';
+                                        echo '<a href="delete.php?id=' . $row['id'] . '" class="btn btn-danger">Delete</a>&nbsp;';
+                                        echo '<a href="view.php?id=' . $row['id'] . '" class="btn btn-primary">View</a>&nbsp;';
+                                        echo '<a href="' . $row['path'] . '" class="btn btn-success">Download</a>';
                                         echo '</td>';
-                                    }else {
+                                    } else {
                                         echo '<td>';
-                                        echo '<a href="view.php?id=' . $row['id'] . '" class="btn btn-primary">View</a>';
+                                        echo '<a href="view.php?id=' . $row['id'] . '" class="btn btn-primary">View</a>&nbsp;';
+                                        echo '<a href="' . $row['path'] . '" class="btn btn-success">Download</a>';
                                         echo '</td>';
                                     }
                                     echo '</tr>';

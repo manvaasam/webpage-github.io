@@ -7,12 +7,15 @@
     <link rel="shortcut icon" href="./image/fav_icon.png" type="image/png">
     <title>Manvasam Courses</title>
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MNFWDS3');</script>
-<!-- End Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MNFWDS3');</script>
+    <!-- End Google Tag Manager -->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.001.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -23,7 +26,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 
 <body>
-     <?php
+    <?php
     include './backend/header.php';
     ?>
 
@@ -31,22 +34,45 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <center>
             <h1 class="wow animate__fadeInUp">Our Courses and Training Programs</h1>
         </center>
-        <div class="container" style="border:1px solid #a5d17e;border-radius: 5px;margin-bottom: 1%;padding-bottom: 1%;box-shadow: 0 4px 8px 0 #a5d17e, 0 6px 20px 0 #a5d17e;">
+        <div class="container"
+            style="border:1px solid #a5d17e;border-radius: 5px;margin-bottom: 1%;padding-bottom: 1%;box-shadow: 0 4px 8px 0 #a5d17e, 0 6px 20px 0 #a5d17e;">
             <center>
                 <h2 class="wow animate__fadeInDown">Are you a Industrial Expert..?</h2>
                 <h3 class=" wow animate__fadeInLeft">Looking For a perfect place to share your Knowledge</h3>
                 <h4 class=" wow animate__fadeInRight">Come, Let us work together...</h4>
                 <div class=" wow animate__fadeInUp">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJgS-KRkk6DsR5NjVyQQva9UREGebJw6qReGbViTneZxztYw/viewform" target="_blank" ><button type="button" class="btn btn-success">Reach Out</button></a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJgS-KRkk6DsR5NjVyQQva9UREGebJw6qReGbViTneZxztYw/viewform"
+                        target="_blank"><button type="button" class="btn btn-success">Reach Out</button></a>
                 </div>
                 <center>
         </div><br><br>
 
 
-           
+        <div class="container" style="margin-bottom:5%;margin-top:8%">
+            <center>
+                <h1 class="wow animate__fadeInUp">Our Courses and Training Programs</h1>
+            </center>
+            <div class="container"
+                style="border:1px solid #a5d17e;border-radius: 5px;margin-bottom: 1%;padding-bottom: 1%;box-shadow: 0 4px 8px 0 #a5d17e, 0 6px 20px 0 #a5d17e;">
+                <center>
+                    <h2 class="wow animate__fadeInDown">Are you a Industrial Expert..?</h2>
+                    <h3 class=" wow animate__fadeInLeft">Looking For a perfect place to share your Knowledge</h3>
+                    <h4 class=" wow animate__fadeInRight">Come, Let us work together...</h4>
+                    <div class=" wow animate__fadeInUp">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJgS-KRkk6DsR5NjVyQQva9UREGebJw6qReGbViTneZxztYw/viewform"
+                            target="_blank"><button type="button" class="btn btn-success">Reach Out</button></a>
+                    </div>
+                    <center>
+                    </center>
+                </center>
+            </div><br><br>
+
+
+
 
             <div class="container">
-                <div class="row wow animate__fadeIn animate__slower" style="margin-top:1%;background-color:#90d156;margin-bottom:8%;border-radius: 60px 5px;box-shadow: 0 4px 8px 0 rgba(68, 67, 67, 0.2), 0 6px 20px 0 rgba(80, 79, 79, 0.19);">
+                <div class="row wow animate__fadeIn animate__slower"
+                    style="margin-top:1%;background-color:#90d156;margin-bottom:8%;border-radius: 60px 5px;box-shadow: 0 4px 8px 0 rgba(68, 67, 67, 0.2), 0 6px 20px 0 rgba(80, 79, 79, 0.19);">
                     <div class="container">
                         <div class="row container">
 
@@ -57,54 +83,66 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             </center>
                             <div class="col-sm-5 wow animate__fadeInLeft">
                                 <center>
-                                    <img src="./image/courses/linkpro.jpg" class="img-fluid" alt="Responsive image" style="width:80%;height:80%;" />
+                                    <img src="./image/courses/linkpro.jpg" class="img-fluid" alt="Responsive image"
+                                        style="width:80%;height:80%;">
                                 </center>
                             </div>
                             <div class="col-sm-7 wow animate__fadeInRight">
                                 <br>
                                 <br>
                                 <ul>
-                                <li>
-                                        <h4>We are going to launch the Linkedin account creation & profile building webinar for students,</h4>
+                                    <li>
+                                        <h4>We are going to launch the Linkedin account creation &amp; profile building
+                                            webinar for students,</h4>
                                     </li>
-                                   <li>
+                                    <li>
                                         <h4><b>Note :</b> Meeting link will be sent to the registered mail id ...</h4>
                                     </li>
                                 </ul>
-                        
+
                                 <div>
                                     <br>
-                                    <h4>webinar Name:<b> Linkedin Profile Building</h4>
-                                    <h4>Organizer:<b> MANVAASAM</h4>
-                                    <h4>Date     :<b> 28.11.2021</h4>
-                                    <h4>Timing   :<b> 7PM</b> to<b> 8PM</b></h4>
-                                    <h4>Platform :<b> Google Meet<b></h4>
-                                    <h4>Cost Of The webinar :<b> Rs. 20/-</h4>
-                                    <a href="https://forms.gle/bzfGwY2M747MmCDP6"><button type="button" class="btn btn-success">Registeration Link</button></a>
+                                    <h4>webinar Name:<b> Linkedin Profile Building</b></h4><b>
+                                        <h4>Organizer:<b> MANVAASAM</b></h4><b>
+                                            <h4>Date :<b> 28.11.2021</b></h4><b>
+                                                <h4>Timing :<b> 7PM</b> to<b> 8PM</b></h4>
+                                                <h4>Platform :<b> Google Meet<b></b></b></h4><b><b>
+                                                        <h4>Cost Of The webinar :<b> Rs. 20/-</b></h4><b>
+                                                            <a href="https://forms.gle/bzfGwY2M747MmCDP6"><button
+                                                                    type="button" class="btn btn-success">Registeration
+                                                                    Link</button></a>
+                                                        </b>
+                                                    </b></b>
+                                            </b>
+                                        </b>
+                                    </b>
                                 </div>
+
                             </div>
                             <div class="col-sm-5 wow animate__fadeInRight">
                                 <br>
                             </div>
+
                         </div><br>
                         <h3 class="wow animate__flipInX"><b></b></h3>
                         <div class="row">
                             <div class="col-xs-3 wow animate__fadeInLeft" style="margin-top: 2%;">
-                                
+
                             </div>
                             <div class="col-xs-8 wow animate__fadeInRight">
-                                
 
-                                
-                                
+
+
+
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
-
             <div class="container">
-                <div class="row wow animate__fadeIn animate__slower" style="margin-top:1%;background-color:#90d156;margin-bottom:8%;border-radius: 60px 5px;box-shadow: 0 4px 8px 0 rgba(68, 67, 67, 0.2), 0 6px 20px 0 rgba(80, 79, 79, 0.19);">
+                <div class="row wow animate__fadeIn animate__slower"
+                    style="margin-top:1%;background-color:#90d156;margin-bottom:8%;border-radius: 60px 5px;box-shadow: 0 4px 8px 0 rgba(68, 67, 67, 0.2), 0 6px 20px 0 rgba(80, 79, 79, 0.19);">
                     <div class="container">
                         <div class="row container">
 
@@ -115,47 +153,59 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             </center>
                             <div class="col-sm-5 wow animate__fadeInLeft">
                                 <center>
-                                    <img src="./image/courses/pws.jpg" class="img-fluid" alt="Responsive image" style="width:80%;height:80%;" />
+                                    <img src="./image/courses/pws.jpg" class="img-fluid" alt="Responsive image"
+                                        style="width:80%;height:80%;">
                                 </center>
                             </div>
                             <div class="col-sm-7 wow animate__fadeInRight">
                                 <br>
                                 <br>
-                                
-                        
+
+
                                 <div>
                                     <br>
-                                    <h4>webinar Name:<b> Python Workshop</h4>
-                                    <h4>Organizer:<b> MANVAASAM</h4>
-                                    <h4>Date     :<b> (10/12/2021) to (11/12/2021)</h4>
-                                    <h4>Timing   :<b> 9AM</b> to<b> 5PM</b></h4>
-                                    <h4>Webinar Medium :<b> Offline- Bharathidasan engineering College,Nattrampalli<b></h4>
-                                    <h4>Cost Of The webinar :<b> Rs. 50/-</h4>
-                                    <a href="https://forms.gle/DRUNjjVL3kygBhsA8"><button type="button" class="btn btn-success">Registeration Link</button></a>
+                                    <h4>webinar Name:<b> Python Workshop</b></h4><b>
+                                        <h4>Organizer:<b> MANVAASAM</b></h4><b>
+                                            <h4>Date :<b> (10/12/2021) to (11/12/2021)</b></h4><b>
+                                                <h4>Timing :<b> 9AM</b> to<b> 5PM</b></h4>
+                                                <h4>Webinar Medium :<b> Offline- Bharathidasan engineering
+                                                        College,Nattrampalli<b></b></b></h4><b><b>
+                                                        <h4>Cost Of The webinar :<b> Rs. 50/-</b></h4><b>
+                                                            <a href="https://forms.gle/DRUNjjVL3kygBhsA8"><button
+                                                                    type="button" class="btn btn-success">Registeration
+                                                                    Link</button></a>
+                                                        </b>
+                                                    </b></b>
+                                            </b>
+                                        </b>
+                                    </b>
                                 </div>
+
                             </div>
                             <div class="col-sm-5 wow animate__fadeInRight">
                                 <br>
                             </div>
+
                         </div><br>
                         <h3 class="wow animate__flipInX"><b></b></h3>
                         <div class="row">
                             <div class="col-xs-3 wow animate__fadeInLeft" style="margin-top: 2%;">
-                                
+
                             </div>
                             <div class="col-xs-8 wow animate__fadeInRight">
-                                
 
-                                
-                                
+
+
+
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
-
             <div class="container">
-                <div class="row wow animate__fadeIn animate__slower" style="margin-top:1%;background-color:#90d156;margin-bottom:8%;border-radius: 60px 5px;box-shadow: 0 4px 8px 0 rgba(68, 67, 67, 0.2), 0 6px 20px 0 rgba(80, 79, 79, 0.19);">
+                <div class="row wow animate__fadeIn animate__slower"
+                    style="margin-top:1%;background-color:#90d156;margin-bottom:8%;border-radius: 60px 5px;box-shadow: 0 4px 8px 0 rgba(68, 67, 67, 0.2), 0 6px 20px 0 rgba(80, 79, 79, 0.19);">
                     <div class="container">
                         <div class="row container">
 
@@ -166,78 +216,136 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             </center>
                             <div class="col-sm-5 wow animate__fadeInLeft">
                                 <center>
-                                    <img src="./image/courses/hrmeet.jpeg" class="img-fluid" alt="Responsive image" style="width:80%;height:80%;" />
+                                    <img src="./image/courses/hrmeet.jpeg" class="img-fluid" alt="Responsive image"
+                                        style="width:80%;height:80%;">
                                 </center>
                             </div>
                             <div class="col-sm-7 wow animate__fadeInRight">
                                 <br>
                                 <br>
-                                
-                        
+
+
                                 <div>
                                     <br>
-                                    <h4>webinar Name:<b> HR connect 4</h4>
-                                    <h4>Organizer:<b> MANVAASAM</h4>
-                                    <h4>Date     :<b> 26/12/2021</h4>
-                                    <h4>Timing   :<b> 7PM</b> to<b> 9PM</b></h4>
-                                    <h4>Webinar Medium :<b>Google meet<b></h4>
-                                    <h4>Departments :<b> Civil ,Mechanical, IT, Teaching</h4>
-                                    <a href="https://forms.gle/yb2YbnSTiNdvju9q8"><button type="button" class="btn btn-success">Registeration Link</button></a>
+                                    <h4>webinar Name:<b> HR connect 4</b></h4><b>
+                                        <h4>Organizer:<b> MANVAASAM</b></h4><b>
+                                            <h4>Date :<b> 26/12/2021</b></h4><b>
+                                                <h4>Timing :<b> 7PM</b> to<b> 9PM</b></h4>
+                                                <h4>Webinar Medium :<b>Google meet<b></b></b></h4><b><b>
+                                                        <h4>Departments :<b> Civil ,Mechanical, IT, Teaching</b></h4><b>
+                                                            <a href="https://forms.gle/yb2YbnSTiNdvju9q8"><button
+                                                                    type="button" class="btn btn-success">Registeration
+                                                                    Link</button></a>
+                                                        </b>
+                                                    </b></b>
+                                            </b>
+                                        </b>
+                                    </b>
                                 </div>
+
                             </div>
                             <div class="col-sm-5 wow animate__fadeInRight">
                                 <br>
                             </div>
+
                         </div><br>
                         <h3 class="wow animate__flipInX"><b></b></h3>
                         <div class="row">
                             <div class="col-xs-3 wow animate__fadeInLeft" style="margin-top: 2%;">
-                                
+
                             </div>
                             <div class="col-xs-8 wow animate__fadeInRight">
-                                
 
-                                
-                                
+
+
+
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
+            <div class="container">
+                <div class="row wow animate__fadeIn animate__slower" style="margin-top:1%;background-color:#90d156;margin-bottom:8%;border-radius: 60px 5px;box-shadow: 0 4px 8px 0 rgba(68, 67, 67, 0.2), 0 6px 20px 0 rgba(80, 79, 79, 0.19);">
+                    <div class="container">
+                        <div class="row container">
+
+                            <center>
+                                <div class="container wow animate__pulse">
+                                    <h1><b>MANVAASAM VIRTUAL CAREER CONCLAVE- 2021</b></h1>
+                                </div>
+                            </center>
+                            
+                            <div class="wow animate__fadeInRight">
+                                
+                                
 
 
+                                <div>
+                                    <br>
+                                    <h4>Webinar Name:<b>MANVAASAM VIRTUAL CAREER CONCLAVE</b></h4><b>
+                                        <h4>Organizer:<b> MANVAASAM</b></h4><b>
+                                            <h4>Date :<b>22-12-2021</b></h4><b>
+                                                <h4>Timing :  6:00 – 7:00pm</h4>
+                                                <h4>Webinar Medium :<b>Google meet<b></b></b></h4><b><b>
+                                                        <h4>Departments :<b>COMPUTER SCIENCE AND ENGINEERING </b></h4><h4>Note :<b>Only Jerusalem engineering college</b></h4><b>
+                                                            <a href="https://forms.gle/qmCrSqqHMQTjLhgo6"><button type="button" class="btn btn-success">Registration Link</button></a>
+                                                        </b>
+                                                    </b></b>
+                                            </b>
+                                        </b>
+                                    </b>
+                                </div>
 
+                            </div>
+                            
 
-            
-        </div>
-        <!--  footer Tab   -->
-        <div class="jumbotron wow animate__fadeIn animate__slower" style="margin-bottom:0;background: #90d156;padding-top: 5px;padding-bottom: 5px;border-radius: 50px 50px 10px 10px">
-            <!--  Left panel of Footer  -->
-            <div class="row">
-                <div class="col-sm-6">
-                    <div style="margin-left:15%;padding:5%">
-                        <a href="tel:6380091001"><img style="width:25px;margin-right:2%;margin-left:2%;" src="./image/otherlogo/whatsapp.png" /></a> +91 6380091001</br>
-                        <a href="mailto:training@manvaasam.com"><img style="width:25px;margin-left:2%;margin-right:2%;" src="./image/otherlogo/gmail.png" /></a>training@manvaasam.com                 </div>
-                </div>
-                <!--   Right Panel of Footer  -->
-                <div class="col-sm-6">
-                    <div style="margin-top:5%">
-                        <center>
-                            <a href="https://manvaasamteam.wordpress.com/2021/02/24/a-gratitude-note/"><img style="width:35px;margin-right:8%;" src="./image/otherlogo/blog.png" /></a>
-                            <a href="https://www.linkedin.com/in/manvaasam-team-/"><img style="width:35px;margin-right:8%;" src="./image/otherlogo/linkedin.png" /></a>
-                            <a href="https://www.facebook.com/107974564140846/posts/133516268253342/?substory_index=0"><img style="width:35px;margin-right:8%;" src="./image/otherlogo/fb.png" /></a>
-                            <a href="https://www.instagram.com/manvaasam_/"><img style="width:35px;margin-right:8%;" src="./image/otherlogo/insta.png" /></a>
-                            <a href="https://www.youtube.com/channel/UCTybxerFOmv86ekeIO1hUQw"><img style="width:45px;" src="./image/otherlogo/youtube.png" /></a></br>
-                        </center>
+                        </div><br>
+                        
+                        
+
                     </div>
                 </div>
             </div>
         </div>
-        <!--  End of footer Tab  -->
-        <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNFWDS3"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    </div>
+    <!--  footer Tab   -->
+    <div class="jumbotron wow animate__fadeIn animate__slower"
+        style="margin-bottom:0;background: #90d156;padding-top: 5px;padding-bottom: 5px;border-radius: 50px 50px 10px 10px">
+        <!--  Left panel of Footer  -->
+        <div class="row">
+            <div class="col-sm-6">
+                <div style="margin-left:15%;padding:5%">
+                    <a href="tel:6380091001"><img style="width:25px;margin-right:2%;margin-left:2%;"
+                            src="./image/otherlogo/whatsapp.png" /></a> +91 6380091001</br>
+                    <a href="mailto:training@manvaasam.com"><img style="width:25px;margin-left:2%;margin-right:2%;"
+                            src="./image/otherlogo/gmail.png" /></a>training@manvaasam.com
+                </div>
+            </div>
+            <!--   Right Panel of Footer  -->
+            <div class="col-sm-6">
+                <div style="margin-top:5%">
+                    <center>
+                        <a href="https://manvaasamteam.wordpress.com/2021/02/24/a-gratitude-note/"><img
+                                style="width:35px;margin-right:8%;" src="./image/otherlogo/blog.png" /></a>
+                        <a href="https://www.linkedin.com/in/manvaasam-team-/"><img style="width:35px;margin-right:8%;"
+                                src="./image/otherlogo/linkedin.png" /></a>
+                        <a href="https://www.facebook.com/107974564140846/posts/133516268253342/?substory_index=0"><img
+                                style="width:35px;margin-right:8%;" src="./image/otherlogo/fb.png" /></a>
+                        <a href="https://www.instagram.com/manvaasam_/"><img style="width:35px;margin-right:8%;"
+                                src="./image/otherlogo/insta.png" /></a>
+                        <a href="https://www.youtube.com/channel/UCTybxerFOmv86ekeIO1hUQw"><img style="width:45px;"
+                                src="./image/otherlogo/youtube.png" /></a></br>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  End of footer Tab  -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNFWDS3" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 </body>
 
 </html>
