@@ -48,25 +48,7 @@
         </div><br><br>
 
 
-        <div class="container" style="margin-bottom:5%;margin-top:8%">
-            <center>
-                <h1 class="wow animate__fadeInUp">Our Courses and Training Programs</h1>
-            </center>
-            <div class="container"
-                style="border:1px solid #a5d17e;border-radius: 5px;margin-bottom: 1%;padding-bottom: 1%;box-shadow: 0 4px 8px 0 #a5d17e, 0 6px 20px 0 #a5d17e;">
-                <center>
-                    <h2 class="wow animate__fadeInDown">Are you a Industrial Expert..?</h2>
-                    <h3 class=" wow animate__fadeInLeft">Looking For a perfect place to share your Knowledge</h3>
-                    <h4 class=" wow animate__fadeInRight">Come, Let us work together...</h4>
-                    <div class=" wow animate__fadeInUp">
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJgS-KRkk6DsR5NjVyQQva9UREGebJw6qReGbViTneZxztYw/viewform"
-                            target="_blank"><button type="button" class="btn btn-success">Reach Out</button></a>
-                    </div>
-                    <center>
-                    </center>
-                </center>
-            </div><br><br>
-
+       
 
 
 
