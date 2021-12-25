@@ -168,6 +168,69 @@
             </div>
         </div>
     </div>
+
+    <div class="container">
+                <div class="row wow animate__fadeIn animate__slower"
+                    style="margin-top:1%;background-color:#90d156;margin-bottom:8%;border-radius: 60px 5px;box-shadow: 0 4px 8px 0 rgba(68, 67, 67, 0.2), 0 6px 20px 0 rgba(80, 79, 79, 0.19);">
+                    <div class="container">
+                        <div class="row container">
+
+                            <center>
+                                <div class="container wow animate__pulse">
+                                    <h1><b>MANVAASAM BGM CONTEST</b></h1>
+                                </div>
+                            </center>
+                            <div class="col-sm-5 wow animate__fadeInLeft">
+                                <center>
+                                    <img src="./image/courses/BGM.jpeg" class="img-fluid" alt="Responsive image"
+                                        style="width:80%;height:80%;">
+                                </center>
+                            </div>
+                            <div class="col-sm-7 wow animate__fadeInRight">
+                                <br>
+                                <br>
+
+
+                                <div>
+                                    <br>
+                                    <h4>Webinar Name:<b> MANVAASAM BGM CONTEST</b></h4><b>
+                                        <h4>Organizer:<b> MANVAASAM</b></h4><b>
+                                            <h4>Date :<b> 30/12/2021</b></h4><b>
+                                                <h4>Timing :<b> 7PM</b> to<b> 8PM</b></h4>
+                                                <h4>Webinar Medium :<b>Google meet<b></b></b></h4><b><b>
+                                                        
+                                                            <a href="https://forms.gle/7Aha7A8Rb7UtYWXw6"><button
+                                                                    type="button" class="btn btn-success">Registeration
+                                                                    Link</button></a>
+                                                        </b>
+                                                    </b></b>
+                                            </b>
+                                        </b>
+                                    </b>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-5 wow animate__fadeInRight">
+                                <br>
+                            </div>
+
+                        </div><br>
+                        <h3 class="wow animate__flipInX"><b></b></h3>
+                        <div class="row">
+                            <div class="col-xs-3 wow animate__fadeInLeft" style="margin-top: 2%;">
+
+                            </div>
+                            <div class="col-xs-8 wow animate__fadeInRight">
+
+
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
     <!--  footer Tab   -->
     <div class="jumbotron wow animate__fadeIn animate__slower"
         style="margin-bottom:0;background: #90d156;padding-top: 5px;padding-bottom: 5px;border-radius: 50px 50px 10px 10px">
