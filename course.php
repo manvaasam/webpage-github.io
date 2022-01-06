@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3/dist/js/bootstrap.min.js"></script>
+    
     <script>
         new WOW().init();
     </script>
@@ -226,6 +227,66 @@
 
 
                             </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row wow animate__fadeIn animate__slower"
+                    style="margin-top:1%;background-color:#90d156;margin-bottom:8%;border-radius: 60px 5px;box-shadow: 0 4px 8px 0 rgba(68, 67, 67, 0.2), 0 6px 20px 0 rgba(80, 79, 79, 0.19);">
+                    <div class="container">
+                        <div class="row container">
+
+                            <center>
+                                <div class="container wow animate__pulse">
+                                    <h1><b>CEO CONNECT</b></h1>
+                                </div>
+                            </center>
+                            <div class="col-sm-5 wow animate__fadeInLeft">
+                                <center>
+                                    <img src="./image/courses/ceomeet.jpeg" class="img-fluid" alt="Responsive image"
+                                        style="width:80%;height:80%;">
+                                </center>
+                            </div>
+                            <div class="col-sm-7 wow animate__fadeInRight">
+                                <br>
+                                <br>
+
+
+                                <div>
+                                    <br>
+                                    <h4>Webinar Name:<b> CEO CONNECT</b></h4><b>
+                                        <h4>Organizer:<b> MANVAASAM</b></h4><b>
+                                            <h4>Date :<b> 10/01/2022</b></h4><b>
+                                                <h4>Timing :<b> 7PM</b> to<b> 8PM</b></h4>
+                                                <h4>Webinar Medium :<b>Google meet<b></b></b></h4><b><b>
+                                                        
+                                                            <a href="https://forms.gle/bvKNaQAFxGwhG1t89"><button
+                                                                    type="button" class="btn btn-success">Registeration
+                                                                    Link</button></a>
+                                                                        
+                                                        </b>
+                                                    </b></b>
+                                            </b>
+                                        </b>
+                                    </b>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-5 wow animate__fadeInRight">
+                                <br>
+                            </div>
+
+                        </div><br>
+                        <h3 class="wow animate__flipInX"><b></b></h3>
+                        <div class="row">
+                            <div class="col-xs-3 wow animate__fadeInLeft" style="margin-top: 2%;">
+
+                            </div>
+                            <div class="col-xs-8 wow animate__fadeInRight">
+                        </div>
                         </div>
 
                     </div>
