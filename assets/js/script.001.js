@@ -18,3 +18,4 @@ let showQuickOrders = (id) => {
         $(".MYmodal-wrapper").remove();
     });
 };
+
