@@ -134,6 +134,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="col-sm-6">
                <div style="margin-top: 5%">
                   <center>
+                     <a href="https://t.me/manvaasam"><img target="_blank" style="width: 35px; margin-right: 8%" src="./image/otherlogo/telegram.png" /></a>
                      <a href="https://manvaasamteam.wordpress.com/2021/02/24/a-gratitude-note/"><img target="_blank" style="width: 35px; margin-right: 8%" src="./image/otherlogo/blog.png"></a>
                      <a href="https://www.linkedin.com/in/manvaasam-team-/"><img style="width: 35px; margin-right: 8%" target="_blank" src="./image/otherlogo/linkedin.png"></a>
                      <a href="https://www.facebook.com/107974564140846/posts/133516268253342/?substory_index=0"><img target="_blank" style="width: 35px; margin-right: 8%" src="./image/otherlogo/fb.png"></a>
