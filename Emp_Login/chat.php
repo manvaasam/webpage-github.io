@@ -522,14 +522,14 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                     font-size: 19px;
                     cursor: pointer;
                     opacity: 0.7;
-                    pointer-events: none;
+                    
                     border-radius: 0 5px 5px 0;
                     transition: all 0.3s ease;
                 }
 
                 .typing-area button.active {
                     opacity: 1;
-                    pointer-events: auto;
+                   
                 }
 
                 /* Responive media query */
