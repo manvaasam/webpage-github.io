@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     $stmt = $conn->prepare($sql);
     $stmt->bindParam(':id', $id);
     $stmt->execute();
-    
+    // ccheck if the leavve is updated
     echo "Leave application approved successfully";
     $to = $email;
     $subject = "Leave Application Approved";
