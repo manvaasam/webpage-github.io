@@ -1,4 +1,7 @@
 <?php
+
+session_start();
+if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 if (isset($_GET['id'])) {
     include "Mdb_conn.php";
     $id = $_GET['id'];
@@ -152,5 +155,9 @@ if (isset($_GET['id'])) {
 <?php
 } else {
     header("location: documentCenter.php");
+}
+} else {
+  header("Location: /");
+  exit();
 }
 ?>

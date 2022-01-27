@@ -1,6 +1,7 @@
 <?php 
-include('../config.php');
+include('../../config.php');
 // Server post request
+try {
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (isset($_POST['name']) && isset($_POST['id']) && isset($_POST['email']) && isset($_POST['typeOfLeave']) && isset($_POST['fromDate']) && isset($_POST['toDate']) && isset($_POST['reason'])) {
         $name = $_POST['name'];
@@ -68,16 +69,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <b>To Date:</b> $toDate <br>
             <b>Reason:</b> $reason <br><br>";
             // Create Track and Approve Button
-            $message .= "<a href='https://localhost/projects/webpage-github.io/Emp_login/leave/approve.php?id=$last_id&name=$name&email=$email'>Approve</a>";
+            $message .= "<a href='https://manvaasam.com/Emp_Login/leave/approve.php?id=$last_id&name=$name&email=$email'>Approve</a>";
             $message .= "&nbsp;&nbsp; . &nbsp;&nbsp;";
-            $message .= "<a href='https://localhost/projects/webpage-github.io/Emp_login/leave/leave_details.php?id=$last_id'>Track</a>";
-            $message .= "<br><br>Thanks,<br>
-            Leave Management System";
-            
+            $message .= "<a href='https://manvaasam.com/Emp_Login/leave/reject.php?id=$last_id&name=$name&email=$email'>Reject</a>";
+            $message .= "&nbsp;&nbsp; . &nbsp;&nbsp;";
+            $message .= "<a href='https://manvaasam.com/Emp_Login/leave/leave_details.php?id=$last_id'>Track</a>";
+            $message .= "<br><br>Thanks,<br>Leave Management System";
             $headers = "MIME-Version: 1.0" . "\r\n";
             $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
             $headers .= 'From: 	Manvaasam Leave Management <manvaasamtreebank2020@manvaasam.com> ' . "\r\n";
-            mail("klakshmanan48@gmail.com",$subject, $message, $headers);
+            mail("manvaasamhr@gmail.com,manvaasamtreebank2020@gmail.com,lakshmanan.manvaasam@gmail.com",$subject, $message, $headers);
 
             echo json_encode(array('status' => 'success', 'message' => 'Leave request submitted successfully'));
         } else {
@@ -85,7 +86,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
     }
 }
-
+} catch(Exception $e) {
+  echo 'Message: ' .$e->getMessage();
+}
 function changeDateFormat($date) {
     $date = explode('/', $date);
     $date = $date[2].'-'.$date[1].'-'.$date[0];

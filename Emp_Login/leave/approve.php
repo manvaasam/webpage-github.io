@@ -1,7 +1,8 @@
 <?php
 
 session_start();
-include("./config.php");
+include("../config.php");
+
 $db = new Database();
 $conn = $db->getConnection();
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
@@ -12,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     $stmt = $conn->prepare($sql);
     $stmt->bindParam(':id', $id);
     $stmt->execute();
-    
+    // ccheck if the leavve is updated
     echo "Leave application approved successfully";
     $to = $email;
     $subject = "Leave Application Approved";

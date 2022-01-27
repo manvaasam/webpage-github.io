@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-include("config.php");
+include("../config.php");
 $db = new Database();
 $conn = $db->getConnection();
 $sql = "SELECT * FROM employees";
@@ -60,6 +60,9 @@ function convertSecondsToTime($sec)
             $stmt->execute();
             $result = $stmt->fetchAll();
         ?>
+        <div style="position: fixed;top: 0;right: 0;z-index:9999999">
+            <a class="btn btn-success" href="<?= $user["gForm"] ?>" target="_blank">GROWTH TRACKING</a>
+        </div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">

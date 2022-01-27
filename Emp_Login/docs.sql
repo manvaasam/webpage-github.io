@@ -1,9 +1,8 @@
-Create table if not exists `docs` (
-    `id` int(11) NOT NULL AUTO_INCREMENT,
-    `name` varchar(255) NOT NULL,
-    `path` varchar(255) NOT NULL,
-    `type` varchar(255) NOT NULL,
-    `size` varchar(255) NOT NULL,
-    `created_at` datetime NOT NULL,
-    PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+ALTER TABLE `employees`
+    ADD COLUMN `about` TEXT NULL;
+-- email
+ALTER TABLE `employees`
+    ADD COLUMN `email` VARCHAR(255) NULL;
+-- phone
+ALTER TABLE `employees`
+    ADD COLUMN `phone` VARCHAR(255) NULL;

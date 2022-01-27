@@ -1,7 +1,8 @@
 <?php
 
 session_start();
-include("./config.php");
+include("../config.php");
+
 $db = new Database();
 $conn = $db->getConnection();
 
@@ -98,7 +99,7 @@ if ($request == "POST") {
         <link rel="stylesheet" href="style.css">
     </head>
 
-    <body>
+    <body class="body">
         <?php
         $id = $_GET['id'];
         $sql = "SELECT * FROM `leave` WHERE id = :id";

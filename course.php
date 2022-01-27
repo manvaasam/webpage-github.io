@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3/dist/js/bootstrap.min.js"></script>
-    
     <script>
         new WOW().init();
     </script>
@@ -76,7 +75,7 @@
                             </center>
                             <div class="col-sm-5 wow animate__fadeInLeft">
                                 <center>
-                                    <img src="./image/courses/hrmeet.jpeg" class="img-fluid" alt="Responsive image"
+                                    <img src="./image/courses/htmeets.jpeg" class="img-fluid" alt="Responsive image"
                                         style="width:80%;height:80%;">
                                 </center>
                             </div>
@@ -89,11 +88,11 @@
                                     <br>
                                     <h4>webinar Name:<b> HR connect 4</b></h4><b>
                                         <h4>Organizer:<b> MANVAASAM</b></h4><b>
-                                            <h4>Date :<b> 26/12/2021</b></h4><b>
-                                                <h4>Timing :<b> 7PM</b> to<b> 9PM</b></h4>
+                                            <h4>Date :<b> 30/01/2022</b></h4><b>
+                                                <h4>Timing :<b> 6PM</b> to<b> 7PM</b></h4>
                                                 <h4>Webinar Medium :<b>Google meet<b></b></b></h4><b><b>
                                                         <h4>Departments :<b> Civil ,Mechanical, IT, Teaching</b></h4><b>
-                                                            <a href="https://forms.gle/yb2YbnSTiNdvju9q8"><button
+                                                            <a href="https://forms.gle/Ri41UT9txA59GhLP9"><button
                                                                     type="button" class="btn btn-success">Registeration
                                                                     Link</button></a>
                                                         </b>
@@ -232,7 +231,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="container">
                 <div class="row wow animate__fadeIn animate__slower"
                     style="margin-top:1%;background-color:#90d156;margin-bottom:8%;border-radius: 60px 5px;box-shadow: 0 4px 8px 0 rgba(68, 67, 67, 0.2), 0 6px 20px 0 rgba(80, 79, 79, 0.19);">
@@ -286,7 +284,7 @@
 
                             </div>
                             <div class="col-xs-8 wow animate__fadeInRight">
-                        </div>
+                         </div>
                         </div>
 
                     </div>
@@ -309,6 +307,7 @@
             <div class="col-sm-6">
                 <div style="margin-top:5%">
                     <center>
+                        <a href="https://t.me/manvaasam"><img target="_blank" style="width: 35px; margin-right: 8%" src="./image/otherlogo/telegram.png" /></a>
                         <a href="https://manvaasamteam.wordpress.com/2021/02/24/a-gratitude-note/"><img
                                 style="width:35px;margin-right:8%;" src="./image/otherlogo/blog.png" /></a>
                         <a href="https://www.linkedin.com/in/manvaasam-team-/"><img style="width:35px;margin-right:8%;"

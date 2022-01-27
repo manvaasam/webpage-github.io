@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
-    if ($_SESSION['user_name'] == "MT0018") {
+    if ($_SESSION['user_name'] == "MT0018" || $_SESSION['user_name'] == "MT0001" || $_SESSION['user_name'] == "MT0006" || $_SESSION['user_name'] == "MT0013") {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             // heroImage is the name of the input field in the HTML form
             if (isset($_FILES['heroImage'])){
@@ -79,7 +79,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                             <div class="col-md-6">
                                 <div class="p-2"></div>
                                 <div class="form-group">
-                                    <label for="taskCompleted">Task Completed</label>
+                                    <label for="taskCompleted">Pending Tasks</label>
                                     <textarea class="form-control" id="taskCompleted" name="taskCompleted" rows="3" placeholder="Enter Task Completion Details"><?php echo $data['taskCompleted'] ?></textarea>
                                 </div>
                             </div>
