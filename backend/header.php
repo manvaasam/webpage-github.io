@@ -86,7 +86,7 @@ echo '<link rel="stylesheet" href="' . $domainName . 'chat.css">';
                         <div class="tab-text">Logistics</div>
                     </a>
                 </li>
-                <li class="nav-item dropdown <?php if ($_SERVER['REQUEST_URI'] == "/Student_Login/loginindex.php" || $_SERVER['REQUEST_URI'] == "/Emp_Login/Mindex.html" || $_SERVER['REQUEST_URI'] == "/Admin_Login/admin.php") {
+                <li class="nav-item dropdown <?php if ($_SERVER['REQUEST_URI'] == "/Student_Login/loginindex.php" || $_SERVER['REQUEST_URI'] == "/Emp_Login/index.php" || $_SERVER['REQUEST_URI'] == "/Admin_Login/admin.php") {
                                                     echo "active";
                                                 } ?>">
                     <a class="nav-link px-3 dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -95,7 +95,7 @@ echo '<link rel="stylesheet" href="' . $domainName . 'chat.css">';
                     <div style="right: 0" class="dropdown-menu" aria-labelledby="navbarDropdown1">
                         <a class="dropdown-item" href="<?= $domainName ?>Student_Login/loginindex.php">Student Login</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="<?= $domainName ?>Emp_Login/Mindex.html">Manvaasam Login</a>
+                        <a class="dropdown-item" href="<?= $domainName ?>Emp_Login/index.php">Manvaasam Login</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="<?= $domainName ?>Admin_Login/admin.php">Admin Login</a>
                     </div>
