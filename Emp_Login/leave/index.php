@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="body">
     <div class="main">
         <div class="container" style="overflow-x: auto">
             <div class="signup-form">

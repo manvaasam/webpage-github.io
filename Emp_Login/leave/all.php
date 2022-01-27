@@ -20,7 +20,7 @@ $conn = $db->getConnection();
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="body">
     <?php
     $date = date("Y-m-d");
     $sql = "SELECT * FROM `leave` WHERE toDate >= :date";

@@ -19,7 +19,7 @@ session_start();
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="body">
 
     <div class="main">
         <div class="container">

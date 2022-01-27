@@ -28,7 +28,7 @@ $user_id = $_SESSION["user_id"];
 $domainName = "https://manvaasam.com/";
 
 if ($_SERVER['SERVER_NAME'] == 'localhost') {
-    $domainName = "http://localhost/projects/manvaasam/webpage-github.io/";
+    $domainName = "http://localhost/webpage-github.io/";
 }
 echo '<link rel="stylesheet" href="' . $domainName . 'chat.css">';
 ?>

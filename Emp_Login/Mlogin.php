@@ -29,7 +29,7 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
 		exit();
 	} else {
 		$sql = "SELECT * FROM employees WHERE user_name='$uname' AND password='$pass'";
-        
+
 		$result = mysqli_query($conn, $sql);
 
 		if (mysqli_num_rows($result) === 1) {
@@ -38,7 +38,7 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
 			$_SESSION['name'] = $row['name'];
 			$_SESSION['id'] = $row['id'];
 			$dateTime = date("Y-m-d H:i:s");
-			$sql  = "INSERT INTO time (emp_id,name, time_in) VALUES (:emp_id,:name, :time_in)";
+			$sql  = "INSERT INTO `time` (emp_id,`name`, time_in) VALUES (:emp_id,:name, :time_in)";
 			$stmt = $conn2->prepare($sql);
 			$stmt->bindParam(':emp_id', $_SESSION['user_name']);
 			$stmt->bindParam(':name', $_SESSION['name']);

@@ -1,9 +1,15 @@
 <?php 
-
-define("DB_HOST", "localhost");
-define("DB_USER", "manvaasa_login");
-define("DB_NAME", "manvaasa_login");
-define("DB_PASS", "Iron_Man@#10");
+if ($_SERVER['SERVER_NAME'] == 'localhost') {
+     define("DB_HOST", "localhost");
+     define("DB_NAME", "manvaasa_login");
+     define("DB_USER", "root");
+     define("DB_PASS", "");
+} else {
+    define("DB_HOST", "localhost");
+    define("DB_USER", "manvaasa_login");
+    define("DB_NAME", "manvaasa_login");
+    define("DB_PASS", "Iron_Man@#10");
+}
 
 class Database{
     private $host = DB_HOST;
@@ -24,6 +30,3 @@ class Database{
         return $this->conn;
     }
 }
-
-
-?>
